@@ -1,0 +1,10 @@
+{
+    "name": "activity",
+    "title": "Activity",
+    "description": "This is description for module activity",
+    "namespace": "Modules\\Activity\\",
+    "provider": "Modules\\Activity\\Providers\\ActivityServiceProvider",
+    "author": "MITECH",
+    "url": "https://mitechcenter.vn",
+    "version": "1.0.0"
+}

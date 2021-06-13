@@ -1,0 +1,10 @@
+{
+    "name": "page",
+    "title": "Page",
+    "description": "This is description for module page",
+    "namespace": "Modules\\Page\\",
+    "provider": "Modules\\Page\\Providers\\PageServiceProvider",
+    "author": "MITECH",
+    "url": "https://mitechcenter.vn",
+    "version": "1.0.0"
+}
