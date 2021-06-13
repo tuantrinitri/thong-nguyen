@@ -2,203 +2,1637 @@
 @section('custom_css')
 @endsection
 @section('page_content')
-<!-- slider  -->
-<section class="slider">
-   @widgetGroup('SLIDE_HOME')
-</section>
-<!-- link to  -->
-<section class="connect-page">
-   <div class="container">
-      <div class="d-flex justify-content-around align-items-center">
-         <div class="item">
-            <a href="#" target="_blank" title="{{ trans('web::common.tunna') }}">
-               <span class="icon">
-                  <img src="{{ asset('assets/web/images/icon/tuna.webp') }}" alt="alt-image">
-               </span>
-               <span class="title">{{ trans('web::common.tunna') }}</span>
-            </a>
-         </div>
-         <div class="item">
-            <a href="http://vinatuna.org.vn/" target="_blank" title="{{ trans('web::common.company_tunna') }}">
-               <span class="icon">
-                  <img src="{{ asset('assets/web/images/cil_building.png') }}" alt="alt-image">
-               </span>
-               <span class="title">{{ trans('web::common.company_tunna') }}</span>
-            </a>
-         </div>
-      </div>
-   </div>
-</section>
-   <div class="connect-bottom">
-         <!-- banner  -->
-         <div class="container">
-            @widgetGroup('TOP_BANNER')
-         </div>
-         {{-- end baner top --}}
-      </div>
-<section class="module pb-0" id="works" style="display: block; max-width: 100%;max-height: 100%;height: 530px;">
-   <div class="container">
-      <div class="row">
-         <div class="text-center" style="padding-left: 35%">
-            <h2 class="font-alt">{{ trans('web::common.activity') }}</h2>
-            <div class="module-subtitle font-serif"></div>
-         </div>
-      </div>
-   </div>
-   @widgetGroup('ACTIVITY')
-</section>
- <div class="connect-bottom">
-        <div class="container">
-            @widgetGroup('BOTTOM_BANNER')
+     <div class="banner banner-home">
+          <!-- revolution slider starts -->
+          <div
+            id="rev_slider_279_1_wrapper"
+            class="rev_slider_wrapper fullscreen-container"
+            data-alias="restaurant-header"
+            style="
+              margin: 0px auto;
+              background-color: #474d4b;
+              padding: 0px;
+              margin-top: 0px;
+              margin-bottom: 0px;
+            "
+          >
+            <div
+              id="rev_slider_70_1"
+              class="rev_slider fullscreenabanner"
+              style="display: none"
+              data-version="5.1.4"
+            >
+              <ul>
+                <li
+                  class="slider-color-schema-dark"
+                  data-index="rs-2"
+                  data-transition="fade"
+                  data-slotamount="7"
+                  data-easein="default"
+                  data-easeout="default"
+                  data-masterspeed="1000"
+                  data-rotate="0"
+                  data-saveperformance="off"
+                  data-title="Slide"
+                  data-description=""
+                >
+                  <!-- main image for revolution slider -->
+                  <img
+                    src="{{ asset('assets/web/img/banner/img-01.jpg') }}"
+                    alt="image description"
+                    data-bgposition="center center"
+                    data-kenburns="on"
+                    data-duration="30000"
+                    data-ease="Linear.easeNone"
+                    data-scalestart="100"
+                    data-scaleend="120"
+                    data-rotatestart="0"
+                    data-rotateend="0"
+                    data-offsetstart="0 0"
+                    data-offsetend="0 0"
+                    data-bgparallax="10"
+                    class="rev-slidebg"
+                    data-bgfit="cover"
+                    data-no-retina
+                  />
 
+                  <div
+                    class="tp-caption tp-resizeme"
+                    id="slide-897-layer-7"
+                    data-x="['center','center','center','center']"
+                    data-hoffset="['0','0','0','0']"
+                    data-y="['top','top','middle','middle']"
+                    data-voffset="['160','120','-120','-70']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-transform_idle="o:1;"
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;"
+                    data-transform_out="opacity:0;s:300;s:300;"
+                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                    data-start="1500"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-responsive_offset="on"
+                    style="
+                      z-index: 9;
+                      white-space: nowrap;
+                      font-size: 60px;
+                      line-height: 100px;
+                      text-align: center;
+                    "
+                  >
+                    <span class="icon-wildlife"></span>
+                  </div>
+
+                  <div
+                    class="tp-caption banner-heading-sub tp-resizeme rs-parallaxlevel-0"
+                    data-x="['center','center','center','center']"
+                    data-hoffset="['0','0','0','0']"
+                    data-y="['top','top','middle','middle']"
+                    data-voffset="['280','240','10','20']"
+                    data-fontsize="['48','48','44','28']"
+                    data-lineheight="['85','85','50','50']"
+                    data-width="['1200','1000','750','480']"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-transform_idle="o:1;"
+                    data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                    data-mask_in="x:0px;y:0px;"
+                    data-mask_out="x:inherit;y:inherit;"
+                    data-start="1000"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-responsive_offset="on"
+                    style="
+                      z-index: 7;
+                      letter-spacing: 0;
+                      font-weight: 100;
+                      text-align: center;
+                      color: #ffffff;
+                    "
+                  >
+                    EXPEDITION OF UNEXPLORED
+                  </div>
+
+                  <div
+                    class="tp-caption banner-heading-sub tp-resizeme rs-parallaxlevel-10"
+                    data-x="['center','center','center','center']"
+                    data-hoffset="['0','0','0','0']"
+                    data-y="['top','top','middle','middle']"
+                    data-voffset="['340','290','70','70']"
+                    data-fontsize="['60','60','60','40']"
+                    data-lineheight="['110','110','100','60']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-transform_idle="o:1;"
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;"
+                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                    data-start="1000"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-responsive_offset="on"
+                    style="
+                      z-index: 8;
+                      padding-right: 10px;
+                      text-indent: 5px;
+                      font-weight: 900;
+                      white-space: nowrap;
+                    "
+                  >
+                    TERRITORY
+                  </div>
+
+                  <div
+                    class="tp-caption rev-btn rs-parallaxlevel-10"
+                    id="slide-163-layer-2"
+                    data-x="['center','center','center','center']"
+                    data-hoffset="['0','0','0','0']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-voffset="['150','160','180','150']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-transform_idle="o:1;"
+                    data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeOut;"
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                    data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                    data-mask_out="x:inherit;y:inherit;"
+                    data-start="1250"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-164","delay":""}]'
+                    data-responsive_offset="on"
+                  >
+                    <a class="btn btn-banner" href="#">PURCHASE</a>
+                  </div>
+                </li>
+
+                <li
+                  data-index="rs-81"
+                  data-transition="slideoverup"
+                  data-slotamount="7"
+                  data-easein="default"
+                  data-easeout="default"
+                  data-masterspeed="1000"
+                  data-rotate="0"
+                  data-saveperformance="off"
+                  data-title="The Menu"
+                  data-description=""
+                >
+                  <!-- main image for revolution slide -->
+                  <img
+                    alt="image description"
+                    src="{{ asset('assets/web/img/banner/img-01.jpg') }}"
+                    data-lazyload="{{ asset('assets/web/img/banner/img-02.jpg') }}"
+                    data-bgposition="right center"
+                    data-kenburns="on"
+                    data-duration="30000"
+                    data-ease="Power1.easeOut"
+                    data-scalestart="110"
+                    data-scaleend="100"
+                    data-rotatestart="0"
+                    data-rotateend="0"
+                    data-offsetstart="0 0"
+                    data-offsetend="0 0"
+                    class="rev-slidebg"
+                    data-no-retina
+                  />
+
+                  <div
+                    class="tp-caption tp-resizeme"
+                    id="slide-897-layer1-7"
+                    data-x="['center','center','center','center']"
+                    data-hoffset="['0','0','0','0']"
+                    data-y="['top','top','middle','middle']"
+                    data-voffset="['160','120','-120','-70']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-transform_idle="o:1;"
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;"
+                    data-transform_out="opacity:0;s:300;s:300;"
+                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                    data-start="1500"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-responsive_offset="on"
+                    style="
+                      z-index: 9;
+                      white-space: nowrap;
+                      font-size: 60px;
+                      line-height: 100px;
+                      text-align: center;
+                    "
+                  >
+                    <span class="icon-hiking-camping"></span>
+                  </div>
+
+                  <div
+                    class="tp-caption banner-heading-sub tp-resizeme rs-parallaxlevel-0"
+                    data-x="['center','center','center','center']"
+                    data-hoffset="['0','0','0','0']"
+                    data-y="['top','top','middle','middle']"
+                    data-voffset="['280','240','10','20']"
+                    data-fontsize="['48','48','44','28']"
+                    data-lineheight="['85','85','50','50']"
+                    data-width="['1200','1000','750','480']"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-transform_idle="o:1;"
+                    data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                    data-mask_in="x:0px;y:0px;"
+                    data-mask_out="x:inherit;y:inherit;"
+                    data-start="1000"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-responsive_offset="on"
+                    style="
+                      z-index: 7;
+                      letter-spacing: 0;
+                      font-weight: 100;
+                      text-align: center;
+                      color: #ffffff;
+                    "
+                  >
+                    ADEVENTURE TOUR TEMPLATE
+                  </div>
+
+                  <div
+                    class="tp-caption tp-resizeme banner-heading-sub rs-parallaxlevel-10"
+                    data-x="['center','center','center','center']"
+                    data-hoffset="['-80','-80','-80','-60']"
+                    data-y="['top','top','middle','middle']"
+                    data-voffset="['330','280','60','60']"
+                    data-fontsize="['60','60','60','40']"
+                    data-lineheight="['110','110','100','60']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-transform_idle="o:1;"
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;"
+                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                    data-start="1000"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-responsive_offset="on"
+                    style="
+                      z-index: 8;
+                      padding-right: 10px;
+                      text-indent: 5px;
+                      font-weight: 300;
+                      font-style: italic;
+                      white-space: nowrap;
+                      color: ;
+                    "
+                  >
+                    of
+                  </div>
+
+                  <div
+                    class="tp-caption tp-resizeme banner-heading-sub rs-parallaxlevel-10"
+                    data-x="['center','center','center','center']"
+                    data-hoffset="['30','30','30','20']"
+                    data-y="['top','top','middle','middle']"
+                    data-voffset="['330','280','60','60']"
+                    data-fontsize="['60','60','60','40']"
+                    data-lineheight="['110','110','100','60']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-transform_idle="o:1;"
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;"
+                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                    data-start="1000"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-responsive_offset="on"
+                    style="
+                      z-index: 8;
+                      padding-right: 10px;
+                      text-indent: 5px;
+                      font-weight: 900;
+                      white-space: nowrap;
+                    "
+                  >
+                    2016
+                  </div>
+
+                  <div
+                    class="tp-caption rev-btn rs-parallaxlevel-10"
+                    id="slide-163-layer1-2"
+                    data-x="['center','center','center','center']"
+                    data-hoffset="['0','0','0','0']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-voffset="['150','160','180','150']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-transform_idle="o:1;"
+                    data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeOut;"
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                    data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                    data-mask_out="x:inherit;y:inherit;"
+                    data-start="800"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-164","delay":""}]'
+                    data-responsive_offset="on"
+                  >
+                    <a class="btn btn-banner" href="#">PURCHASE</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="feature-block">
+            <div class="holder">
+              <ul>
+                <li>
+                  <a href="#">
+                    <span class="ico">
+                      <span class="icon-bungee"></span>
+                    </span>
+                    <span class="info">Bungee Jump</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="ico">
+                      <span class="icon-hiking"></span>
+                    </span>
+                    <span class="info">Hiking Trips</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="ico">
+                      <span class="icon-wildlife"></span>
+                    </span>
+                    <span class="info">Wildlife Safari</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="ico">
+                      <span class="icon-peak-climbing"></span>
+                    </span>
+                    <span class="info">Peak Climbing</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="ico">
+                      <span class="icon-mountain-biking"></span>
+                    </span>
+                    <span class="info">Mount Biking</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="ico">
+                      <span class="icon-scuba-diving"></span>
+                    </span>
+                    <span class="info">Scuba Diving</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="ico">
+                      <span class="icon-hunting"></span>
+                    </span>
+                    <span class="info">Hunting Trip</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="ico">
+                      <span class="icon-boating"></span>
+                    </span>
+                    <span class="info">Sailing Trips</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </div>
-<section class="section-news">
-   <div class="container">
-      <div class="row">
-         <!-- list post  -->
-         @widgetGroup('POST')
-      </div>
-      
-   </div>
-</section>
-
-@if (app()->getLocale() == 'vi')
-<section class="information">
-   <div class="container">
-      <div class="row" style="color: aliceblue; text-align: justify; ">
-         <div class="col-md-6">
-            <div class="heading-category mb-4">
-               <h2 class="heading-2 heading-2--information">Mục tiêu của FIP</h2>
-            </div>
-            <div class="list-item">
-               <div>Mục tiêu tổng quát của Dự án FIP cá ngừ là đạt được chứng nhận MSC vào năm 2022. Một số mục tiêu trung gian của FIP cũng được xác định để hỗ trợ cải thiện quản lý nghề cá bao gồm:
-                  <ul>
-                     <li> - Hỗ trợ xây dựng và thực thi các quy định về kiểm soát thu hoạch và các điểm tham chiếu giới hạn, hợp tác cùng dự án WPEA và WCPFC&nbsp; (Uỷ ban nghề cá Trung Tây Thái Bình Dương);</li>
-                     <li>- Tiếp tục mở rộng, thử nghiệm và triển khai chương trình Quan sát viên trên tàu khai thác cá ngừ, bao gồm thí điểm sổ nhật ký điện tử (phối hợp trực tiếp với các doanh nghiệp tham gia FIP;</li>
-                     <li>&nbsp;Hỗ trợ việc xây dựng Chương trình quan sát viên Quốc gia và đảm bảo nguồn tài chính bền vững để triển khai Chương trình hướng tới các mục tiêu của WCPFC;</li>
-                     <li> - Xây dựng và áp dụng vào quản lý Chiến lược giảm thiểu các loài bị khai thác không chủ đích trong quản lý nghề cá bao gồm báo cáo đầy đủ về việc tương tác với rùa và cá mập;</li>
-                     <li> - Thúc đẩy xã hội hoá và mở rộng việc sử dụng lưỡi câu vòng trong nghề khai thác cá ngừ (nghề câu tay) hướng tới đưa lưỡi câu vòng thành tiêu chuẩn trong nghề khai thác cá ngừ đại dương;</li>
-                     <li> - Triển khai chương trình Truy xuất nguồn gốc, đã triển khai được ở một số nhà máy chế biến và đã thực hiện đánh giá bởi đơn vị đánh giá độc lập.&nbsp;</li>
-                     <li> - Tiếp tục triển khai các hoạt động truyền thông nâng cao nhận thức cho ngư dân, doanh nghiệp chế biến và các bên có liên quan trong dự án FIP.</li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-
-         <div class="col-md-6">
-            <div class="heading-category mb-4">
-               <h2 class="heading-2 heading-2--information">THÀNH TỰU CỦA DỰ ÁN</h2>
-            </div>
-            <div class="list-post">
-               <div>Những kết quả đáng được ghi nhận đến tháng 1 năm 2020:
-                  <ul>
-                     <li> - Hỗ trợ tiến trình Việt Nam gia nhập Tổ chức nghề cá Trung Tây Thái Bình Dương (WCPFC)</li>
-                     <li> - Thúc đẩy sử dụng lưỡi câu vòng trong nghề khai thác trong đó thực hiện tốt Chiến lược giảm thiểu khai thác không chủ đích trong khi không làm giảm sản lượng loài khai thác mục tiêu (cá ngừ vây vàng).</li>
-                     <li> - Tuyên truyền cho ngư dân và thực về bảo tồn rùa biển và cá mập.</li>
-                     <li> - Hỗ trợ Bộ Nông nghiệp và Phát triển Nông thôn xây dựng Kế hoạch Quốc gia Quản lý nghề khai thác cá ngừ, cũng như hỗ trợ xây dựng các chính sách, quy định mới (sửa đổi/bổ sung các biện pháp kiểm soát thu hoạch, thí điểm hệ thống hạn ngạch khai thác, áp dụng quản lý rủi ro và bảo vệ các loài nguy cấp).</li>
-                     <li> - Xây dựng và thí điểm sử dụng nhật ký điện tử trong nghề khai thác cá ngừ;</li>
-                     <li> - Tiếp tục tập huấn và triển khai chương trình quan sát viên trên biển để hỗ trợ việc quản lý và phát triển Chiến lược giảm thiểu khai thác không chủ đích và hỗ trợ xây dựng Chương trình Quan sát viên Quốc gia.</li>
-                     <li> - Thiết kế, xây dựng và thí điểm chương trình truy xuất nguồn gốc FIP với các doanh nghiệp trong nước để phân biệt sản phẩm cá ngừ từ tàu Việt Nam (sản phẩm FIP) với các sản phẩm khác trên thị trường xuất khẩu.</li>
-                  </ul>
-               </div>
-
-            </div>
-         </div>
-
-      </div>
-   </div>
-</section>
-@else
-<section class="information">
-   <div class="container">
-      <div class="row" style="color: aliceblue; text-align: justify; ">
-         <div class="col-md-6">
-            <div class="heading-category mb-4">
-               <h2 class="heading-2 heading-2--information">OBJECTIVES</h2>
-            </div>
-            <div class="list-item">
-               <div>The overarching goal is to <u><strong>achieve MSC certification by 2022</strong></u>.&nbsp; Several intermediate objectives of the FIP have been identified, in contribution to the continual improvement in management of the fishery. These include:
-                  <ul>
-                     <li> - <strong>Supporting the development and implementation in management of harvest control rules</strong> and limit reference points, in partnership with WPEA project and wider WCPFC</li>
-                     <li> - <strong>Continued expansion of training</strong>, piloting and at-sea deployment of onboard observers in the handline fishery, including piloting of electronic logbooks, in direct partnership with industry (FIP Participants)</li>
-                     <li> - <strong>Supporting the establishment of a National Observer Program</strong> and securing the sustainable financing of its implementation towards WCPFC targets</li>
-                     <li> - <strong>Development and application in management of a Bycatch Mitigation Strategy</strong>, including full reporting of sea turtle and shark encounters&nbsp;</li>
-                     <li> - <strong>Continued socialization and expansion in the use of Circle Hooks</strong> in the handline fishery, mainstreaming their adoption across the sector</li>
-                     <li> - <strong>Implementation of FIP traceability program</strong>, fully applied in all relevant processors and verified through independent 3rd party audits</li>
-                     <li> - <strong>Ongoing communication</strong> and awareness programs with fishers, processors and other stakeholders related to the FIP</li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-
-         <div class="col-md-6">
-            <div class="heading-category mb-4">
-               <h2 class="heading-2 heading-2--information">ACHIEVEMENTS</h2>
-            </div>
-            <div class="list-post">
-               <div>The following achievements have been recorded as of January 2020:
-                  <ul>
-                     <li> - <strong>Support the process of Viet Nam joining WCPFC</strong></li>
-                     <li> - <strong>Expanding the use of circle hooks in the fishery</strong> which is a successful bycatch mitigation strategy that does not sacrifice target catch levels</li>
-                     <li> - <strong>Communication on protection of sea turtles and sharks</strong></li>
-                     <li> - <strong>Actively engaging with MARD in the development of a National Tuna Management Plan</strong> and other reformative policies and legal instruments (e.g. adoption of harvest control measures, piloting of quota systems, application of risk management and protection of at-risk species)</li>
-                     <li> - <strong>Developing and piloting the use of e-logbooks</strong> in the handline tuna fleet</li>
-                     <li> - <strong>Continuing to train and deploy at-sea fishery observers</strong> to inform the development of additional bycatch mitigation strategies and support the establishment of a National Observer Program</li>
-                     <li> - <strong>Designing, developing, and piloting a first-of-its-kind FIP traceability program</strong> with domestic tuna processors to identify “FIP-eligible” yellowfin tuna products in the market</li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-@endif
-{{-- truc tiep do tu file --}}
-<section class="mutilmedia" style="padding-top: 5px">
-   <div class="container">
-      <ul class="tabs">
-         <li><a href="#gallery">{{ trans('web::common.image_gallery') }}</a></li>
-         <li><a href="#video">{{ trans('web::common.video_gallery') }}</a></li>
-      </ul>
-      <div class="box-panel">
-
-         <div id="gallery" class="panel">
-            <div class="main">
-               <div class="row">
-
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                     <div class="slider slider-for">
-                        @foreach ($images as $image)
-                        <div class="item">
-                           <a href="{{ asset('/upload/image-gallery/'.$image->getFilename()) }}" data-fancybox="images" data-caption="">
-                              <img src="{{ asset('/upload/image-gallery/'.$image->getFilename()) }}" alt="gallery">
-                           </a>
-                        </div>
-                        @endforeach
-                     </div>
+        <!-- main container -->
+        <main id="main">
+          <section class="content-block bg-white">
+            <div class="container">
+              <header class="content-heading">
+                <h2 class="main-heading">THE ADVENTURE</h2>
+                <span class="main-subtitle"
+                  >Mastering the art of perfect adventure for 10+ years in the
+                  wild.</span
+                >
+                <div class="seperator"></div>
+              </header>
+              <div class="adventure-holder gallery-home-holder">
+                <div class="row">
+                  <div class="col-md-6 img-block">
+                    <!-- gallery list -->
+                    <ul class="gallery-list gallery-with-icon">
+                      <li>
+                        <a href="#" class="thumbnail">
+                          <img
+                            src="{{ asset('assets/web/img/gallery/img-01.jpg') }}"
+                            height="165"
+                            width="170"
+                            alt="image description"
+                          />
+                          <span class="hover icon-bird"></span>
+                          <span class="info">aerial</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="thumbnail">
+                          <img
+                            src="{{ asset('assets/web/img/gallery/img-02.jpg') }}"
+                            height="165"
+                            width="170"
+                            alt="image description"
+                          />
+                          <span class="hover icon-peak"></span>
+                          <span class="info">land</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="thumbnail">
+                          <img
+                            src="{{ asset('assets/web/img/gallery/img-03.jpg') }}"
+                            height="165"
+                            width="170"
+                            alt="image description"
+                          />
+                          <span class="hover icon-water"></span>
+                          <span class="info">water</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="thumbnail">
+                          <img
+                            src="{{ asset('assets/web/img/gallery/img-04.jpg') }}"
+                            height="165"
+                            width="170"
+                            alt="image description"
+                          />
+                          <span class="hover icon-asia"></span>
+                          <span class="info">asia</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="thumbnail">
+                          <img
+                            src="{{ asset('assets/web/img/gallery/img-05.jpg') }}"
+                            height="165"
+                            width="170"
+                            alt="image description"
+                          />
+                          <span class="hover icon-arctic"></span>
+                          <span class="info">arctic</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="thumbnail">
+                          <img
+                            src="{{ asset('assets/web/img/gallery/img-06.jpg') }}"
+                            height="165"
+                            width="170"
+                            alt="image description"
+                          />
+                          <span class="hover icon-africa"></span>
+                          <span class="info">africa</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="thumbnail">
+                          <img
+                            src="{{ asset('assets/web/img/gallery/img-07.jpg') }}"
+                            height="165"
+                            width="170"
+                            alt="image description"
+                          />
+                          <span class="hover icon-plant"></span>
+                          <span class="info">nature</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="thumbnail">
+                          <img
+                            src="{{ asset('assets/web/img/gallery/img-08.jpg') }}"
+                            height="165"
+                            width="170"
+                            alt="image description"
+                          />
+                          <span class="hover icon-wildlife"></span>
+                          <span class="info">wildness</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="thumbnail">
+                          <img
+                            src="{{ asset('assets/web/img/gallery/img-09.jpg') }}"
+                            height="165"
+                            width="170"
+                            alt="image description"
+                          />
+                          <span class="hover icon-diamond"></span>
+                          <span class="info">all</span>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
-
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                     <div class="slider slider-nav">
-                        @foreach ($images as $image)
-                        <div class="item">
-                           <img src="{{ asset('/upload/image-gallery/'.$image->getFilename()) }}" alt="gallery">
-                        </div>
-                        @endforeach
-                     </div>
+                  <div class="col-md-6 text-block">
+                    <div class="centered">
+                      <h2 class="intro-heading">Living a Life of Adventure</h2>
+                      <p class="intro">
+                        This is Photoshop's version of Lorem Ipsum. Proin
+                        gravida nibh vel velit auctor aliquet. Aenean
+                        sollicitudin, lorem quis bibendum auctor, nisi elit
+                        consequat ipsum, nec sagittis sem nibh id elit. Duis sed
+                        odio sit amet nibh vulputate cursus a sit amet mauris.
+                        Morbi accumsan ipsum velit.
+                      </p>
+                      <a
+                        href="#"
+                        class="btn btn-info-sub btn-md btn-shadow radius"
+                        >Dig More</a
+                      >
+                    </div>
                   </div>
-
-               </div>
+                </div>
+              </div>
             </div>
-         </div>
-
-         <div id="video" class="panel">
-            <div class="rvs-container">
-               @widgetGroup('VIDEO_GALLRY')
+          </section>
+          <!-- special block -->
+          <aside class="special-block">
+            <div class="container">
+              <p class="special-text">
+                Get special discount on select treks, this week.
+                <strong>Call <a href="tel:157757525">+1 5775 7525</a></strong>
+              </p>
             </div>
-         </div>
-      </div>
-</section>
-
+          </aside>
+          <!-- article list holder -->
+          <div class="content-block content-spacing">
+            <div class="container">
+              <header class="content-heading">
+                <h2 class="main-heading">POPULAR TOURS</h2>
+                <span class="main-subtitle"
+                  >We have a unique way of meeting your adventurous
+                  expectations!</span
+                >
+                <div class="seperator"></div>
+              </header>
+              <div class="content-holder">
+                <div class="row db-3-col">
+                  <article class="col-sm-6 col-md-4 article has-hover-s3">
+                    <div class="img-wrap">
+                      <a href="#">
+                        <img
+                          src="{{ asset('assets/web/img/listing/img-01.jpg') }}"
+                          height="215"
+                          width="370"
+                          alt="image description"
+                        />
+                      </a>
+                      <div class="img-caption text-uppercase">
+                        Discover Timeless
+                      </div>
+                      <div class="hover-article">
+                        <div class="star-rating">
+                          <span><span class="icon-star"></span></span>
+                          <span><span class="icon-star"></span></span>
+                          <span><span class="icon-star"></span></span>
+                          <span><span class="icon-star"></span></span>
+                          <span class="disable"
+                            ><span class="icon-star"></span
+                          ></span>
+                        </div>
+                        <div class="icons">
+                          <a href="#"><span class="icon-heart"></span></a>
+                          <a href="#"><span class="icon-reply"></span></a>
+                        </div>
+                        <div class="info-footer">
+                          <span class="price">from <span>$2749</span></span>
+                          <a href="#" class="link-more">Explore</a>
+                        </div>
+                      </div>
+                    </div>
+                    <h3><a href="#">Jungle safari for families</a></h3>
+                    <p>
+                      This is Photoshop's version of Lorem Ipsum. Proin gravida
+                      nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                      quis bibendum auctor, nisi elit consequat ipsum,
+                    </p>
+                  </article>
+                  <article class="col-sm-6 col-md-4 article has-hover-s3">
+                    <div class="img-wrap">
+                      <a href="#">
+                        <img
+                          src="{{ asset('assets/web/img/listing/img-02.jpg') }}"
+                          height="215"
+                          width="370"
+                          alt="image description"
+                        />
+                      </a>
+                      <div class="img-caption text-uppercase">
+                        Finding Egyptians
+                      </div>
+                      <div class="hover-article">
+                        <div class="star-rating">
+                          <span><span class="icon-star"></span></span>
+                          <span><span class="icon-star"></span></span>
+                          <span><span class="icon-star"></span></span>
+                          <span><span class="icon-star"></span></span>
+                          <span class="disable"
+                            ><span class="icon-star"></span
+                          ></span>
+                        </div>
+                        <div class="icons">
+                          <a href="#"><span class="icon-heart"></span></a>
+                          <a href="#"><span class="icon-reply"></span></a>
+                        </div>
+                        <div class="info-footer">
+                          <span class="price">from <span>$2749</span></span>
+                          <a href="#" class="link-more">Explore</a>
+                        </div>
+                      </div>
+                    </div>
+                    <h3><a href="#">Nature wildlife photography</a></h3>
+                    <p>
+                      This is Photoshop's version of Lorem Ipsum. Proin gravida
+                      nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                      quis bibendum auctor, nisi elit consequat ipsum,
+                    </p>
+                  </article>
+                  <article class="col-sm-6 col-md-4 article has-hover-s3">
+                    <div class="img-wrap">
+                      <a href="#">
+                        <img
+                          src="{{ asset('assets/web/img/listing/img-03.jpg') }}"
+                          height="215"
+                          width="370"
+                          alt="image description"
+                        />
+                      </a>
+                      <div class="img-caption text-uppercase">
+                        Cave Adventures
+                      </div>
+                      <div class="hover-article">
+                        <div class="star-rating">
+                          <span><span class="icon-star"></span></span>
+                          <span><span class="icon-star"></span></span>
+                          <span><span class="icon-star"></span></span>
+                          <span><span class="icon-star"></span></span>
+                          <span class="disable"
+                            ><span class="icon-star"></span
+                          ></span>
+                        </div>
+                        <div class="icons">
+                          <a href="#"><span class="icon-heart"></span></a>
+                          <a href="#"><span class="icon-reply"></span></a>
+                        </div>
+                        <div class="info-footer">
+                          <span class="price">from <span>$2749</span></span>
+                          <a href="#" class="link-more">Explore</a>
+                        </div>
+                      </div>
+                    </div>
+                    <h3><a href="#">Polar arctic expeditions</a></h3>
+                    <p>
+                      This is Photoshop's version of Lorem Ipsum. Proin gravida
+                      nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                      quis bibendum auctor, nisi elit consequat ipsum,
+                    </p>
+                  </article>
+                  <article class="col-sm-6 col-md-4 article has-hover-s3">
+                    <div class="img-wrap">
+                      <a href="#">
+                        <img
+                          src="{{ asset('assets/web/img/listing/img-04.jpg') }}"
+                          height="215"
+                          width="370"
+                          alt="image description"
+                        />
+                      </a>
+                      <div class="img-caption text-uppercase">
+                        Peak Climbing
+                      </div>
+                      <div class="hover-article">
+                        <div class="star-rating">
+                          <span><span class="icon-star"></span></span>
+                          <span><span class="icon-star"></span></span>
+                          <span><span class="icon-star"></span></span>
+                          <span><span class="icon-star"></span></span>
+                          <span class="disable"
+                            ><span class="icon-star"></span
+                          ></span>
+                        </div>
+                        <div class="icons">
+                          <a href="#"><span class="icon-heart"></span></a>
+                          <a href="#"><span class="icon-reply"></span></a>
+                        </div>
+                        <div class="info-footer">
+                          <span class="price">from <span>$2749</span></span>
+                          <a href="#" class="link-more">Explore</a>
+                        </div>
+                      </div>
+                    </div>
+                    <h3><a href="#">Marine diving excursions</a></h3>
+                    <p>
+                      This is Photoshop's version of Lorem Ipsum. Proin gravida
+                      nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                      quis bibendum auctor, nisi elit consequat ipsum,
+                    </p>
+                  </article>
+                  <article class="col-sm-6 col-md-4 article has-hover-s3">
+                    <div class="img-wrap">
+                      <a href="#">
+                        <img
+                          src="{{ asset('assets/web/img/listing/img-05.jpg') }}"
+                          height="215"
+                          width="370"
+                          alt="image description"
+                        />
+                      </a>
+                      <div class="img-caption text-uppercase">
+                        Treasure Hunting
+                      </div>
+                      <div class="hover-article">
+                        <div class="star-rating">
+                          <span><span class="icon-star"></span></span>
+                          <span><span class="icon-star"></span></span>
+                          <span><span class="icon-star"></span></span>
+                          <span><span class="icon-star"></span></span>
+                          <span class="disable"
+                            ><span class="icon-star"></span
+                          ></span>
+                        </div>
+                        <div class="icons">
+                          <a href="#"><span class="icon-heart"></span></a>
+                          <a href="#"><span class="icon-reply"></span></a>
+                        </div>
+                        <div class="info-footer">
+                          <span class="price">from <span>$2749</span></span>
+                          <a href="#" class="link-more">Explore</a>
+                        </div>
+                      </div>
+                    </div>
+                    <h3><a href="#">Go wild at national parks</a></h3>
+                    <p>
+                      This is Photoshop's version of Lorem Ipsum. Proin gravida
+                      nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                      quis bibendum auctor, nisi elit consequat ipsum,
+                    </p>
+                  </article>
+                  <article class="col-sm-6 col-md-4 article has-hover-s3">
+                    <div class="img-wrap">
+                      <a href="#">
+                        <img
+                          src="{{ asset('assets/web/img/listing/img-06.jpg') }}"
+                          height="215"
+                          width="370"
+                          alt="image description"
+                        />
+                      </a>
+                      <div class="img-caption text-uppercase">
+                        A night with sky
+                      </div>
+                      <div class="hover-article">
+                        <div class="star-rating">
+                          <span><span class="icon-star"></span></span>
+                          <span><span class="icon-star"></span></span>
+                          <span><span class="icon-star"></span></span>
+                          <span><span class="icon-star"></span></span>
+                          <span class="disable"
+                            ><span class="icon-star"></span
+                          ></span>
+                        </div>
+                        <div class="icons">
+                          <a href="#"><span class="icon-heart"></span></a>
+                          <a href="#"><span class="icon-reply"></span></a>
+                        </div>
+                        <div class="info-footer">
+                          <span class="price">from <span>$2749</span></span>
+                          <a href="#" class="link-more">Explore</a>
+                        </div>
+                      </div>
+                    </div>
+                    <h3><a href="#">Educational trips in wild</a></h3>
+                    <p>
+                      This is Photoshop's version of Lorem Ipsum. Proin gravida
+                      nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                      quis bibendum auctor, nisi elit consequat ipsum,
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- couter block -->
+          <aside class="count-block">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xs-6 col-md-3 block-1">
+                  <div class="holder">
+                    <span class="icon icon-step"></span>
+                    <span class="info"><span class="counter">8702</span></span>
+                    <span class="txt">WILDLIFE SPECIES</span>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-md-3 block-2">
+                  <div class="holder">
+                    <span class="icon icon-fish-jumping"></span>
+                    <span class="info"><span class="counter">378</span></span>
+                    <span class="txt">ARCTIC EXPERIENCES</span>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-md-3 block-3">
+                  <div class="holder">
+                    <span class="icon icon-tree"></span>
+                    <span class="info"><span class="counter">377</span></span>
+                    <span class="txt">NATIONAL PARKS</span>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-md-3 block-4">
+                  <div class="holder">
+                    <span class="icon icon-duration"></span>
+                    <span class="info"><span class="counter">8973</span></span>
+                    <span class="txt">DAYS IN THE WILD</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <!-- featured adventure content -->
+          <div class="featured-content adventure-holder">
+            <div class="container-fluid">
+              <div class="row same-height">
+                <div class="col-md-6 image height">
+                  <div class="bg-stretch">
+                    <img
+                      src="{{ asset('assets/web/img/img-01.jpg') }}"
+                      height="627"
+                      width="960"
+                      alt="image description"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 text-block height">
+                  <div class="centered">
+                    <h2 class="intro-heading">
+                      Botswana &amp; Angola - The Tribe
+                    </h2>
+                    <p class="intro">
+                      This is Photoshop's version of Lorem Ipsum. Proin gravida
+                      nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                      quis bibendum auctor, nisi elit consequat ipsum, Duis sed
+                      odio sit amet nibh vulputate cursus a it amet mauris.
+                    </p>
+                    <a href="#" class="btn btn-primary btn-lg">explore</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row same-height">
+                <div class="col-md-6 image height">
+                  <div class="bg-stretch">
+                    <img
+                      src="{{ asset('assets/web/img/img-02.jpg') }}"
+                      height="627"
+                      width="960"
+                      alt="image description"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 text-block height">
+                  <div class="centered">
+                    <h2 class="intro-heading">
+                      Maritime Adventure - The Arctic
+                    </h2>
+                    <p class="intro">
+                      This is Photoshop's version of Lorem Ipsum. Proin gravida
+                      nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                      quis bibendum auctor, nisi elit consequat ipsum, Duis sed
+                      odio sit amet nibh vulputate cursus a it amet mauris.
+                    </p>
+                    <a href="#" class="btn btn-primary btn-lg">explore</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- browse block -->
+          <div class="browse-block">
+            <div class="browse-destination column">
+              <a href="#"><span>BROWSE BY DESTINATION</span></a>
+            </div>
+            <div class="browse-adventures column">
+              <a href="#"><span>BROWSE BY ADVENTURES</span></a>
+            </div>
+          </div>
+          <!-- article list with boxed style -->
+          <section class="content-block article-boxed">
+            <div class="container">
+              <header class="content-heading">
+                <h2 class="main-heading">TOP ADVENTURES</h2>
+                <span class="main-subtitle"
+                  >Our collection of the most popular adventures in 2016.</span
+                >
+                <div class="seperator"></div>
+              </header>
+              <div class="content-holder content-boxed">
+                <div class="row db-3-col">
+                  <article class="col-sm-6 col-md-4 article has-hover-s1">
+                    <div class="thumbnail">
+                      <div class="img-wrap">
+                        <img
+                          src="{{ asset('assets/web/img/listing/img-07.jpg') }}"
+                          height="228"
+                          width="350"
+                          alt="image description"
+                        />
+                      </div>
+                      <h3 class="small-space">
+                        <a href="tour-detail.html"
+                          >Evening with Panda in China</a
+                        >
+                      </h3>
+                      <span class="info"
+                        >Nordic Walk, Swiss Alps or French Hiking?</span
+                      >
+                      <aside class="meta">
+                        <span class="country">
+                          <span class="icon-world"> </span>12 Countries
+                        </span>
+                        <span class="activity">
+                          <span class="icon-acitivities"> </span>79 Activities
+                        </span>
+                      </aside>
+                      <p>
+                        This is Photoshop's version of Lorem Ipsum. Proin
+                        gravida nibh vel velit auctor aliquet. Aenean
+                        sollicitudin, lorem quis bibendum auctor, nisi elit
+                        consequat ipsum,
+                      </p>
+                      <a href="tour-detail.html" class="btn btn-default"
+                        >explore</a
+                      >
+                      <footer>
+                        <ul class="social-networks">
+                          <li>
+                            <a href="#"><span class="icon-twitter"></span></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><span class="icon-google-plus"></span
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><span class="icon-facebook"></span></a>
+                          </li>
+                          <li>
+                            <a href="#"><span class="icon-linkedin"></span></a>
+                          </li>
+                        </ul>
+                        <span class="price">from <span>$2749</span></span>
+                      </footer>
+                    </div>
+                  </article>
+                  <article class="col-sm-6 col-md-4 article has-hover-s1">
+                    <div class="thumbnail">
+                      <div class="img-wrap">
+                        <img
+                          src="{{ asset('assets/web/img/listing/img-08.jpg') }}"
+                          height="228"
+                          width="350"
+                          alt="image description"
+                        />
+                      </div>
+                      <h3 class="small-space">
+                        <a href="tour-detail.html"
+                          >Sleeping with Sea Lion in Arctic</a
+                        >
+                      </h3>
+                      <span class="info"
+                        >Nordic Walk, Swiss Alps or French Hiking?</span
+                      >
+                      <aside class="meta">
+                        <span class="country">
+                          <span class="icon-world"> </span>12 Countries
+                        </span>
+                        <span class="activity">
+                          <span class="icon-acitivities"> </span>79 Activities
+                        </span>
+                      </aside>
+                      <p>
+                        This is Photoshop's version of Lorem Ipsum. Proin
+                        gravida nibh vel velit auctor aliquet. Aenean
+                        sollicitudin, lorem quis bibendum auctor, nisi elit
+                        consequat ipsum,
+                      </p>
+                      <a href="tour-detail.html" class="btn btn-default"
+                        >explore</a
+                      >
+                      <footer>
+                        <ul class="social-networks">
+                          <li>
+                            <a href="#"><span class="icon-twitter"></span></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><span class="icon-google-plus"></span
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><span class="icon-facebook"></span></a>
+                          </li>
+                          <li>
+                            <a href="#"><span class="icon-linkedin"></span></a>
+                          </li>
+                        </ul>
+                        <span class="price">from <span>$2749</span></span>
+                      </footer>
+                    </div>
+                  </article>
+                  <article class="col-sm-6 col-md-4 article has-hover-s1">
+                    <div class="thumbnail">
+                      <div class="img-wrap">
+                        <img
+                          src="{{ asset('assets/web/img/listing/img-09.jpg') }}"
+                          height="228"
+                          width="350"
+                          alt="image description"
+                        />
+                      </div>
+                      <h3 class="small-space">
+                        <a href="tour-detail.html"
+                          >Following Zebras to Water hole</a
+                        >
+                      </h3>
+                      <span class="info"
+                        >Nordic Walk, Swiss Alps or French Hiking?</span
+                      >
+                      <aside class="meta">
+                        <span class="country">
+                          <span class="icon-world"> </span>12 Countries
+                        </span>
+                        <span class="activity">
+                          <span class="icon-acitivities"> </span>79 Activities
+                        </span>
+                      </aside>
+                      <p>
+                        This is Photoshop's version of Lorem Ipsum. Proin
+                        gravida nibh vel velit auctor aliquet. Aenean
+                        sollicitudin, lorem quis bibendum auctor, nisi elit
+                        consequat ipsum,
+                      </p>
+                      <a href="tour-detail.html" class="btn btn-default"
+                        >explore</a
+                      >
+                      <footer>
+                        <ul class="social-networks">
+                          <li>
+                            <a href="#"><span class="icon-twitter"></span></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><span class="icon-google-plus"></span
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><span class="icon-facebook"></span></a>
+                          </li>
+                          <li>
+                            <a href="#"><span class="icon-linkedin"></span></a>
+                          </li>
+                        </ul>
+                        <span class="price">from <span>$2749</span></span>
+                      </footer>
+                    </div>
+                  </article>
+                  <article class="col-sm-6 col-md-4 article has-hover-s1">
+                    <div class="thumbnail">
+                      <div class="img-wrap">
+                        <img
+                          src="{{ asset('assets/web/img/listing/img-10.jpg') }}"
+                          height="228"
+                          width="350"
+                          alt="image description"
+                        />
+                      </div>
+                      <h3 class="small-space">
+                        <a href="tour-detail.html"
+                          >Discovering Wild Trails in Africa</a
+                        >
+                      </h3>
+                      <span class="info"
+                        >Nordic Walk, Swiss Alps or French Hiking?</span
+                      >
+                      <aside class="meta">
+                        <span class="country">
+                          <span class="icon-world"> </span>12 Countries
+                        </span>
+                        <span class="activity">
+                          <span class="icon-acitivities"> </span>79 Activities
+                        </span>
+                      </aside>
+                      <p>
+                        This is Photoshop's version of Lorem Ipsum. Proin
+                        gravida nibh vel velit auctor aliquet. Aenean
+                        sollicitudin, lorem quis bibendum auctor, nisi elit
+                        consequat ipsum,
+                      </p>
+                      <a href="tour-detail.html" class="btn btn-default"
+                        >explore</a
+                      >
+                      <footer>
+                        <ul class="social-networks">
+                          <li>
+                            <a href="#"><span class="icon-twitter"></span></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><span class="icon-google-plus"></span
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><span class="icon-facebook"></span></a>
+                          </li>
+                          <li>
+                            <a href="#"><span class="icon-linkedin"></span></a>
+                          </li>
+                        </ul>
+                        <span class="price">from <span>$2749</span></span>
+                      </footer>
+                    </div>
+                  </article>
+                  <article class="col-sm-6 col-md-4 article has-hover-s1">
+                    <div class="thumbnail">
+                      <div class="img-wrap">
+                        <img
+                          src="{{ asset('assets/web/img/listing/img-11.jpg') }}"
+                          height="228"
+                          width="350"
+                          alt="image description"
+                        />
+                      </div>
+                      <h3 class="small-space">
+                        <a href="tour-detail.html"
+                          >Angola Safari for Family &amp; Children</a
+                        >
+                      </h3>
+                      <span class="info"
+                        >Nordic Walk, Swiss Alps or French Hiking?</span
+                      >
+                      <aside class="meta">
+                        <span class="country">
+                          <span class="icon-world"> </span>12 Countries
+                        </span>
+                        <span class="activity">
+                          <span class="icon-acitivities"> </span>79 Activities
+                        </span>
+                      </aside>
+                      <p>
+                        This is Photoshop's version of Lorem Ipsum. Proin
+                        gravida nibh vel velit auctor aliquet. Aenean
+                        sollicitudin, lorem quis bibendum auctor, nisi elit
+                        consequat ipsum,
+                      </p>
+                      <a href="tour-detail.html" class="btn btn-default"
+                        >explore</a
+                      >
+                      <footer>
+                        <ul class="social-networks">
+                          <li>
+                            <a href="#"><span class="icon-twitter"></span></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><span class="icon-google-plus"></span
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><span class="icon-facebook"></span></a>
+                          </li>
+                          <li>
+                            <a href="#"><span class="icon-linkedin"></span></a>
+                          </li>
+                        </ul>
+                        <span class="price">from <span>$2749</span></span>
+                      </footer>
+                    </div>
+                  </article>
+                  <article class="col-sm-6 col-md-4 article has-hover-s1">
+                    <div class="thumbnail">
+                      <div class="img-wrap">
+                        <img
+                          src="{{ asset('assets/web/img/listing/img-12.jpg') }}"
+                          height="228"
+                          width="350"
+                          alt="image description"
+                        />
+                      </div>
+                      <h3 class="small-space">
+                        <a href="tour-detail.html"
+                          >Royal Safari in Bangaladesh</a
+                        >
+                      </h3>
+                      <span class="info"
+                        >Nordic Walk, Swiss Alps or French Hiking?</span
+                      >
+                      <aside class="meta">
+                        <span class="country">
+                          <span class="icon-world"> </span>12 Countries
+                        </span>
+                        <span class="activity">
+                          <span class="icon-acitivities"> </span>79 Activities
+                        </span>
+                      </aside>
+                      <p>
+                        This is Photoshop's version of Lorem Ipsum. Proin
+                        gravida nibh vel velit auctor aliquet. Aenean
+                        sollicitudin, lorem quis bibendum auctor, nisi elit
+                        consequat ipsum,
+                      </p>
+                      <a href="tour-detail.html" class="btn btn-default"
+                        >explore</a
+                      >
+                      <footer>
+                        <ul class="social-networks">
+                          <li>
+                            <a href="#"><span class="icon-twitter"></span></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><span class="icon-google-plus"></span
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><span class="icon-facebook"></span></a>
+                          </li>
+                          <li>
+                            <a href="#"><span class="icon-linkedin"></span></a>
+                          </li>
+                        </ul>
+                        <span class="price">from <span>$2749</span></span>
+                      </footer>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- content block with guide info -->
+          <section class="content-block guide-sub guide-add bg-white">
+            <div class="container">
+              <header class="content-heading">
+                <h2 class="main-heading">MEET THE GUIDES</h2>
+                <span class="main-subtitle"
+                  >Our highly trained and efficient guides at your service</span
+                >
+                <div class="seperator"></div>
+              </header>
+              <div class="content-holder">
+                <div class="row">
+                  <div class="col-sm-6 col-md-4 img-article">
+                    <div class="holder">
+                      <div class="img-wrap">
+                        <img
+                          src="{{ asset('assets/web/img/listing/img-13.jpg') }}"
+                          height="436"
+                          width="370"
+                          alt="image description"
+                        />
+                        <ul class="social-networks">
+                          <li>
+                            <a href="#"><span class="icon-facebook"></span></a>
+                          </li>
+                          <li>
+                            <a href="#"><span class="icon-twitter"></span></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><span class="icon-google-plus"></span
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><span class="icon-linkedin"></span></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="caption">
+                        <h3 class="small-space">Jason Statham</h3>
+                        <span class="designation">TREKKING GUIDE</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 img-article">
+                    <div class="holder">
+                      <div class="img-wrap">
+                        <img
+                          src="{{ asset('assets/web/img/listing/img-14.jpg') }}"
+                          height="436"
+                          width="370"
+                          alt="image description"
+                        />
+                        <ul class="social-networks">
+                          <li>
+                            <a href="#"><span class="icon-facebook"></span></a>
+                          </li>
+                          <li>
+                            <a href="#"><span class="icon-twitter"></span></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><span class="icon-google-plus"></span
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><span class="icon-linkedin"></span></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="caption">
+                        <h3 class="small-space">Cleona Tropez</h3>
+                        <span class="designation">TREKKING GUIDE</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 img-article">
+                    <div class="holder">
+                      <div class="img-wrap">
+                        <img
+                          src="{{ asset('assets/web/img/listing/img-15.jpg') }}"
+                          height="436"
+                          width="370"
+                          alt="image description"
+                        />
+                        <ul class="social-networks">
+                          <li>
+                            <a href="#"><span class="icon-facebook"></span></a>
+                          </li>
+                          <li>
+                            <a href="#"><span class="icon-twitter"></span></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><span class="icon-google-plus"></span
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><span class="icon-linkedin"></span></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="caption">
+                        <h3 class="small-space">Martin Blake</h3>
+                        <span class="designation">TREKKING GUIDE</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- testimonial block -->
+          <div
+            class="testimonial-holder parallax"
+            data-stellar-background-ratio="0.25"
+            id="testimonial-home-page"
+          >
+            <div class="container">
+              <div id="testimonial-home-slide">
+                <div class="slide">
+                  <blockquote class="testimonial-quote">
+                    <div class="img">
+                      <img
+                        src="{{ asset('assets/web/img/thumbs/img-01.jpg') }}"
+                        height="112"
+                        width="112"
+                        alt="image description"
+                      />
+                    </div>
+                    <div class="text">
+                      <cite>STEVE JORGAN - NORWAY</cite>
+                      <q
+                        >This is Photoshop's version of Lorem Ipsum. Proin
+                        gravida nibh vel velit auctor aliquet. Aenean
+                        sollicitudin, lorem quis bibendum auctor, nisi elit
+                        consequat ipsum, nec sagittis sem nibh id elit. Duis sed
+                        odio sit amet nibh vulputate cursus a sit amet
+                        mauris.”</q
+                      >
+                    </div>
+                  </blockquote>
+                </div>
+                <div class="slide">
+                  <blockquote class="testimonial-quote">
+                    <div class="img">
+                      <img
+                        src="{{ asset('assets/web/img/thumbs/img-02.jpg') }}"
+                        height="112"
+                        width="112"
+                        alt="image description"
+                      />
+                    </div>
+                    <div class="text">
+                      <cite>DARREN SPRATT - AUSTRALIA</cite>
+                      <q
+                        >This is Photoshop's version of Lorem Ipsum. Proin
+                        gravida nibh vel velit auctor aliquet. Aenean
+                        sollicitudin, lorem quis bibendum auctor, nisi elit
+                        consequat ipsum, nec sagittis sem nibh id elit. Duis sed
+                        odio sit amet nibh vulputate cursus a sit amet
+                        mauris.”</q
+                      >
+                    </div>
+                  </blockquote>
+                </div>
+                <div class="slide">
+                  <blockquote class="testimonial-quote">
+                    <div class="img">
+                      <img
+                        src="{{ asset('assets/web/img/thumbs/img-03.jpg') }}"
+                        height="112"
+                        width="112"
+                        alt="image description"
+                      />
+                    </div>
+                    <div class="text">
+                      <cite>RIYA YAHIDA - SPAIN</cite>
+                      <q
+                        >This is Photoshop's version of Lorem Ipsum. Proin
+                        gravida nibh vel velit auctor aliquet. Aenean
+                        sollicitudin, lorem quis bibendum auctor, nisi elit
+                        consequat ipsum, nec sagittis sem nibh id elit. Duis sed
+                        odio sit amet nibh vulputate cursus a sit amet
+                        mauris.”</q
+                      >
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- partner list -->
+          <article class="partner-block">
+            <div class="container">
+              <header class="content-heading">
+                <h2 class="main-heading">Partner</h2>
+                <span class="main-subtitle"
+                  >People who always support and endorse our good work</span
+                >
+                <div class="seperator"></div>
+              </header>
+              <div class="partner-list" id="partner-slide">
+                <div class="partner">
+                  <a href="#">
+                    <img
+                      width="130"
+                      src="{{ asset('assets/web/img/logos/logo-travelagancy.svg') }}"
+                      alt="image description"
+                    />
+                    <img
+                      class="hover"
+                      width="130"
+                      src="{{ asset('assets/web/img/logos/logo-travelagancy-hover.svg') }}"
+                      alt="image description"
+                    />
+                  </a>
+                </div>
+                <div class="partner">
+                  <a href="#">
+                    <img
+                      width="130"
+                      src="{{ asset('assets/web/img/logos/logo-around-world.svg') }}"
+                      alt="image description"
+                    />
+                    <img
+                      class="hover"
+                      width="130"
+                      src="{{ asset('assets/web/img/logos/logo-around-world-hover.svg') }}"
+                      alt="image description"
+                    />
+                  </a>
+                </div>
+                <div class="partner">
+                  <a href="#">
+                    <img
+                      width="130"
+                      src="{{ asset('assets/web/img/logos/logo-tourist.svg') }}"
+                      alt="image description"
+                    />
+                    <img
+                      class="hover"
+                      width="130"
+                      src="{{ asset('assets/web/img/logos/logo-tourist-hover.svg') }}"
+                      alt="image description"
+                    />
+                  </a>
+                </div>
+                <div class="partner">
+                  <a href="#">
+                    <img
+                      width="130"
+                      src="{{ asset('assets/web/img/logos/logo-adventure.svg') }}"
+                      alt="image description"
+                    />
+                    <img
+                      class="hover"
+                      width="130"
+                      src="{{ asset('assets/web/img/logos/logo-adventure-hover.svg') }}"
+                      alt="image description"
+                    />
+                  </a>
+                </div>
+                <div class="partner">
+                  <a href="#">
+                    <img
+                      width="130"
+                      src="{{ asset('assets/web/img/logos/logo-around-world.svg') }}"
+                      alt="image description"
+                    />
+                    <img
+                      class="hover"
+                      width="130"
+                      src="{{ asset('assets/web/img/logos/logo-around-world-hover.svg') }}"
+                      alt="image description"
+                    />
+                  </a>
+                </div>
+                <div class="partner">
+                  <a href="#">
+                    <img
+                      width="130"
+                      src="{{ asset('assets/web/img/logos/logo-travelagancy.svg') }}"
+                      alt="image description"
+                    />
+                    <img
+                      class="hover"
+                      width="130"
+                      src="{{ asset('assets/web/img/logos/logo-travelagancy-hover.svg') }}"
+                      alt="image description"
+                    />
+                  </a>
+                </div>
+                <div class="partner">
+                  <a href="#">
+                    <img
+                      width="130"
+                      src="{{ asset('assets/web/img/logos/logo-adventure.svg') }}"
+                      alt="image description"
+                    />
+                    <img
+                      class="hover"
+                      width="130"
+                      src="{{ asset('assets/web/img/logos/logo-adventure-hover.svg') }}"
+                      alt="image description"
+                    />
+                  </a>
+                </div>
+                <div class="partner">
+                  <a href="#">
+                    <img
+                      width="130"
+                      src="{{ asset('assets/web/img/logos/logo-around-world.svg') }}"
+                      alt="image description"
+                    />
+                    <img
+                      class="hover"
+                      width="130"
+                      src="{{ asset('assets/web/img/logos/logo-around-world-hover.svg') }}"
+                      alt="image description"
+                    />
+                  </a>
+                </div>
+                <div class="partner">
+                  <a href="#">
+                    <img
+                      width="130"
+                      src="{{ asset('assets/web/img/logos/logo-travelagancy.svg') }}"
+                      alt="image description"
+                    />
+                    <img
+                      class="hover"
+                      width="130"
+                      src="{{ asset('assets/web/img/logos/logo-travelagancy-hover.svg') }}"
+                      alt="image description"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </main>
 @endsection

@@ -10,9 +10,8 @@ class WebController extends BaseController
     public static function index()
     {
         page_title()->setTitle('Trang chủ');
-        $images = File::allFiles(public_path('/upload/image-gallery'));
-        $videos = File::allFiles(public_path('/upload/video-gallery'));
-        return view('web::web.index', compact('images', 'videos'));
+       
+        return view('web::web.index');
     }
 
     public static function test()
