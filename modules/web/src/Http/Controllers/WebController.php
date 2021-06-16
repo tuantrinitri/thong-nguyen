@@ -21,4 +21,19 @@ class WebController extends BaseController
         $videos = File::allFiles(public_path('/upload/video-gallery'));
         return view('web::web.test', compact('images', 'videos'));
     }
+
+    public static function tourdetail()
+    {
+        
+        
+
+        return view('web::web.tour_detail');
+    }
+
+    public static function booking()
+    {
+        
+        
+        return view('web::web.booking');
+    }
 }

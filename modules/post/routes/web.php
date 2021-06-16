@@ -84,6 +84,6 @@ Route::group(['namespace' => '\Modules\Post\Http\Controllers', 'middleware' => '
     });
 });
 Route::group(['namespace' => '\Modules\Post\Http\Controllers', 'middleware' => ['web']], function () {
-    Route::get('bai-viet/{slug}', 'WebController@post')->name('post.web.post');
+    Route::get('danh-muc/bai-viet/{slug}', 'WebController@post')->name('post.web.post');
     Route::get('danh-muc/{slug}', 'WebController@category')->name('post.web.category');
 });

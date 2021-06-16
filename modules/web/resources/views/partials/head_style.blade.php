@@ -1,17 +1,25 @@
-<link rel="stylesheet" href="{{ asset('assets/web/libs/bootstrap/bootstrap.min.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/web/libs/rvslider/rvslider.min.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/web/libs/desoslide/jquery.desoslide.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/web/libs/slick-master/slick/slick.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/web/libs/slick-master/slick/slick-theme.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/web/libs/owl-carousel/owl.carousel.min.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/web/libs/owl-carousel/owl.theme.default.min.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/web/libs/font-awesome/css/fontawesome.min.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/web/libs/font-awesome/css/brands.min.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/web/libs/font-awesome/css/solid.min.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/web/libs/fancy-box/fancy-box.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/web/css/style.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/web/css_layout/style.css') }}" />
 
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+<!-- link to font awesome -->
+<link media="all" rel="stylesheet" href="{{ asset('assets/web/vendors/font-awesome/css/font-awesome.css') }}" />
+<!-- link to material icon font -->
+<link media="all" rel="stylesheet" href="{{ asset('assets/web/vendors/material-design-icons/material-icons.css')}}" />
+<!-- link to custom icomoon fonts -->
+<link rel="stylesheet" type="text/css" href="{{asset('assets/web/css/fonts/icomoon/icomoon.css')}}" />
+<!-- link to wow js animation -->
+<link media="all" rel="stylesheet" href="{{asset('assets/web/vendors/animate/animate.css')}}" />
+<!-- include bootstrap css -->
+<link media="all" rel="stylesheet" href="{{asset('assets/web/css/bootstrap.css')}}" />
 
-<!-- giu nguyen-->
-<script src="{{ asset('assets/web/libs/jquery-3.1.1.min.js') }}"></script>
+<!-- include owl css -->
+<link media="all" rel="stylesheet" href="{{asset('assets/web/vendors/owl-carousel/owl.carousel.css')}}" />
+<link media="all" rel="stylesheet" href="{{asset('assets/web/vendors/owl-carousel/owl.carousel.css')}}" />
+<!-- include main css -->
+<link media="all" rel="stylesheet" href="{{asset('assets/web/css/main.css')}}" />
+<!-- link to revolution css  -->
+<link rel="stylesheet" type="text/css" href="{{asset('assets/web/vendors/revolution/css/settings.css')}}" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- giu nguyen-->
+<script src="{{ asset('assets/web/vendors/jquery/jquery-2.1.4.min.js') }}"></script>

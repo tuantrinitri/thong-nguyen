@@ -28,17 +28,15 @@
                             <!-- blog list -->
                             <div class="blog-list">
                                 @foreach ($category->posts() as $post)
-                                
                                     <article class="article blog-article">
                                         <div class="img-wrap">
-                                            <a href="{{ route('post.web.post', $post['slug']) }}"><img
-                                                    src="{{ asset($post['image'],) }}" height="480"
+                                            <a href="{{ route('post.web.post') }}"><img
+                                                    src="{{ asset('assets/web/img/blog/img-01.jpg') }}" height="480"
                                                     width="870" alt="image description"></a>
                                         </div>
                                         <div class="description">
                                             <header class="heading">
-                                        
-                                                <h3><a href="{{ route('post.web.post', $post['slug']) }}">{{ $post->title }}</a></h3>
+                                                <h3><a href="{{ route('post.web.post') }}">{{ $post->title }}</a></h3>
                                                 <time class="info-day" datetime="2011-01-12">Aug 11</time>
                                             </header>
                                             <p>{{ Str::limit($post->description, 300)  }}</p>
@@ -66,7 +64,7 @@
                                                 </ul>
                                             </footer>
                                             <div class="link-view">
-                                                <a href="{{ route('post.web.post', $post['slug']) }}">Xem thêm</a>
+                                                <a href="{{ route('post.web.post') }}">Xem thêm</a>
                                             </div>
                                         </div>
                                     </article>

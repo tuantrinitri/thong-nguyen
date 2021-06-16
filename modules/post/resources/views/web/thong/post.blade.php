@@ -5,12 +5,12 @@
         <div class="banner-text">
           <div class="center-text">
             <div class="container">
-              <h1>{{ $post->category->title }}</h1>
-              <strong class="subtitle">{{ $post->category->description }}</strong>
+              <h1>THE TRAVEL BLOG</h1>
+              <strong class="subtitle">The most detailed and modern Adventure theme!</strong>
               <!-- breadcrumb -->
               <nav class="breadcrumbs">
                 <ul>
-                  <li><a href="{{route('web.index')}}">HOME</a></li>
+                  <li><a href="#">HOME</a></li>
                   <li><a href="{{ route('post.web.category',$post->category) }}">{{ $post->category->title }}</a></li>
                 </ul>
               </nav>
