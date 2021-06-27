@@ -55,7 +55,7 @@
 
     @if (isset($posts) && count($posts) > 0)
 
-
+        {{-- thay  tìm class rồi thay vào =  class="table-scrollable" --}}
         <div class="table-scrollable">
             <table class="table">
                 <thead>
