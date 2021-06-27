@@ -79,7 +79,7 @@
                 <input type="hidden" name="redirect_to" value="{{ old('redirect_to', request()->input('redirect_to')) }}">
                 <div class="text-center mb-3">
                     <figure>
-                        <a href="{{ route('index') }}">
+                        <a href="{{ route('web.index') }}">
                             <img class="img-logo" src="{{ asset('upload/default/Logo.png') }}" alt="Logo AdminCP">
                         </a>
                     </figure>

@@ -24,16 +24,26 @@ class WebController extends BaseController
 
     public static function tourdetail()
     {
-        
-        
-
         return view('web::web.tour_detail');
     }
 
     public static function booking()
     {
-        
-        
         return view('web::web.booking');
+    }
+
+    public static function contact()
+    {
+        return view('web::web.contact');
+    }
+
+    public static function tourtype()
+    {
+        return view('web::web.tour_type');
+    }
+
+    public static function search()
+    {
+        return view('web::web.search');
     }
 }

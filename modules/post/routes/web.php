@@ -9,10 +9,10 @@ Route::group(['namespace' => '\Modules\Post\Http\Controllers', 'middleware' => '
                 'uses' => 'PostController@index',
                 'permission' => 'post.admin.index',
             ]);
-            Route::get('create', [
-                'as' => 'post.admin.create',
-                'uses' => 'PostController@create',
-                'permission' => 'post.admin.create',
+            Route::get('create', [ // duong dan dinh tuyen tren trinh duyet
+                'as' => 'post.admin.create', // thao tac voi view code
+                'uses' => 'PostController@create', // thao tac voi controoler
+                'permission' => 'post.admin.create', // thao tac phan quyen
             ]);
             Route::post('create', [
                 'as' => 'post.admin.create',

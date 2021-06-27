@@ -105,7 +105,7 @@ class PostServiceProvider extends ServiceProvider
                     'id'          => 'mod-post',
                     'priority'    => 0,
                     'parent_id'   => null,
-                    'name'        => 'post::post.name',
+                    'name'        => 'Quản lý bài viết',
                     'icon'        => 'fas fa-newspaper',
                     'url'         => '#',
                     'permissions' => [],

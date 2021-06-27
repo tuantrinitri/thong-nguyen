@@ -1,4 +1,4 @@
-<script src="{{ asset('assets/admin/js/main/bootstrap.bundle.min.js') }}"></script>
+{{-- <script src="{{ asset('assets/admin/js/main/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('assets/admin/js/plugins/loaders/blockui.min.js') }}"></script>
 <script src="{{ asset('assets/admin/js/plugins/ui/ripple.min.js') }}"></script>
 <!-- /core JS files -->
@@ -35,15 +35,39 @@
     <script src="{{ asset('assets/admin2/plugins/morris/morris.min.js') }}" ></script>
     <script src="{{ asset('assets/admin2/plugins/morris/raphael-min.js') }}" ></script>
     <script src="{{ asset('assets/admin2/js/pages/chart/morris/morris_home_data.js') }}" ></script>
+ --}}
 
-
-@if (request()->route()->action['as'] != 'login')
+{{-- @if (request()->route()->action['as'] != 'login')
 <script src="{{ asset('assets/admin/js/notification.js') }}"></script>
 @endif
 <script src="{{ asset('vendor/datatables/datatables.min.js') }}"></script>
 <script src="{{ asset('vendor/datatables/buttons.server-side.js') }}"></script>
-<script src="{{ asset('assets/admin/js/dev.custom.js') }}"></script>
+<script src="{{ asset('assets/admin/js/dev.custom.js') }}"></script> --}}
 <!-- /theme JS files -->
+
+
+<!-- start js include path -->
+    <script src="{{ asset('assets/admin2/plugins/jquery/jquery.min.js') }}" ></script>
+    <script src="{{ asset('assets/admin2/plugins/popper/popper.min.js') }}" ></script>
+    <script src="{{ asset('assets/admin2/plugins/jquery-blockui/jquery.blockui.min.js') }}" ></script>
+	<script src="{{ asset('assets/admin2/plugins/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
+    <!-- bootstrap -->
+    <script src="{{ asset('assets/admin2/plugins/bootstrap/js/bootstrap.min.js') }}" ></script>
+    <script src="{{ asset('assets/admin2/plugins/sparkline/jquery.sparkline.min.js') }}" ></script>
+	<script src="{{ asset('assets/admin2/js/pages/sparkline/sparkline-data.js') }}" ></script>
+    <!-- Common js-->
+	<script src="{{ asset('assets/admin2/js/app.js') }}" ></script>
+    <script src="{{ asset('assets/admin2/js/layout.js') }}" ></script>
+    <script src="{{ asset('assets/admin2/js/theme-color.js') }}" ></script>
+    <!-- material -->
+    <script src="{{ asset('assets/admin2/plugins/material/material.min.js') }}"></script>
+    <!-- animation -->
+    <script src="{{ asset('assets/admin2/js/pages/ui/animations.js') }}" ></script>
+    <!-- morris chart -->
+    <script src="{{ asset('assets/admin2/plugins/morris/morris.min.js') }}" ></script>
+    <script src="{{ asset('assets/admin2/plugins/morris/raphael-min.js') }}" ></script>
+    <script src="{{ asset('assets/admin2/js/pages/chart/morris/morris_home_data.js') }}" ></script>
+    <!-- end js include path -->
 <script>
     (function ($, DataTable) {
 

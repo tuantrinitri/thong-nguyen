@@ -39,12 +39,12 @@
                     <div class="dropdown-menu">
                       <ul>
                         <li>
-                          <a href="{{ route('post.web.category', 'tin-tuc-noi-bat')}}"
+                          <a href="{{route('web.tourtype')}}"
                             >Du lịch trong nước</a
                           >
                         </li>
                         <li>
-                          <a href="{{ route('post.web.category', 'cac-su-kien')}}"
+                          <a href="#"
                             >Du lịch nước ngoài</a
                           >
                         </li>
@@ -59,19 +59,19 @@
                       <ul>
                         <li>
                           
-                          <a href="#"
+                          <a href="{{ route('post.web.category', 'tin-tuc-noi-bat')}}"
                             >Cẩm nang du lịch</a
                           >
                         </li>
                         <li>
-                          <a href="grid-view-3-column.html"
+                          <a href="{{ route('post.web.category', 'cac-su-kien')}}"
                             >Kinh nghiệm du lịch</a
                           >
                         </li>
                       </ul>
                     </div>
                   </li>
-                  <li><a href="tour-detail.html">Liên hệ</a></li>
+                  <li><a href="{{route('web.contact')}}">Liên hệ</a></li>
                   <li><a href="{{route('web.tourdetail')}}">Chi tiết</a></li>                          
                 </ul>
                 <ul class="nav navbar-nav navbar-right">

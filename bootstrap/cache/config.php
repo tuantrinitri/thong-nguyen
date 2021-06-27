@@ -21,7 +21,7 @@
     'locale' => 'vi',
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
-    'key' => 'base64:rpvHoP9k6ZD233d2juNuFVpzkJgYzy71pi2cnp+TB/M=',
+    'key' => 'base64:7kAD2gMjFtQtRxXfmpJrasRK2FYrBGGimLw/5z/qVf0=',
     'cipher' => 'AES-256-CBC',
     'providers' => 
     array (
@@ -416,7 +416,7 @@
       array (
         'driver' => 'sqlite',
         'url' => NULL,
-        'database' => 'travel_booking',
+        'database' => 'travel',
         'prefix' => '',
         'foreign_key_constraints' => true,
       ),
@@ -426,7 +426,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'travel_booking',
+        'database' => 'travel',
         'username' => 'root',
         'password' => '',
         'unix_socket' => '',
@@ -450,7 +450,7 @@
         'driver' => 'mysql',
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'travel_booking',
+        'database' => 'travel',
         'username' => 'root',
         'password' => '',
         'strict' => false,
@@ -461,7 +461,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'travel_booking',
+        'database' => 'travel',
         'username' => 'root',
         'password' => '',
         'charset' => 'utf8',
@@ -476,7 +476,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'travel_booking',
+        'database' => 'travel',
         'username' => 'root',
         'password' => '',
         'charset' => 'utf8',
@@ -765,6 +765,17 @@
     'packages' => 
     array (
       'path' => 'larecipe-components',
+    ),
+    'blade-parser' => 
+    array (
+      'regex' => 
+      array (
+        'code-blocks' => 
+        array (
+          'match' => '/\\<pre\\>(.|\\n)*?<\\/pre\\>/',
+          'replacement' => '<code-block>',
+        ),
+      ),
     ),
   ),
   'logging' => 
@@ -1393,6 +1404,7 @@
     array (
       'chunk_size' => 1000,
       'pre_calculate_formulas' => false,
+      'strict_null_comparison' => false,
       'csv' => 
       array (
         'delimiter' => ',',
@@ -1403,10 +1415,23 @@
         'include_separator_line' => false,
         'excel_compatibility' => false,
       ),
+      'properties' => 
+      array (
+        'creator' => '',
+        'lastModifiedBy' => '',
+        'title' => '',
+        'description' => '',
+        'subject' => '',
+        'keywords' => '',
+        'category' => '',
+        'manager' => '',
+        'company' => '',
+      ),
     ),
     'imports' => 
     array (
       'read_only' => true,
+      'ignore_empty' => false,
       'heading_row' => 
       array (
         'formatter' => 'slug',
@@ -1418,6 +1443,18 @@
         'escape_character' => '\\',
         'contiguous' => false,
         'input_encoding' => 'UTF-8',
+      ),
+      'properties' => 
+      array (
+        'creator' => '',
+        'lastModifiedBy' => '',
+        'title' => '',
+        'description' => '',
+        'subject' => '',
+        'keywords' => '',
+        'category' => '',
+        'manager' => '',
+        'company' => '',
       ),
     ),
     'extension_detector' => 
@@ -1443,13 +1480,25 @@
     array (
       'default' => 'Maatwebsite\\Excel\\DefaultValueBinder',
     ),
+    'cache' => 
+    array (
+      'driver' => 'memory',
+      'batch' => 
+      array (
+        'memory_limit' => 60000,
+      ),
+      'illuminate' => 
+      array (
+        'store' => NULL,
+      ),
+    ),
     'transactions' => 
     array (
       'handler' => 'db',
     ),
     'temporary_files' => 
     array (
-      'local_path' => 'C:\\Users\\PHONGV~1\\AppData\\Local\\Temp',
+      'local_path' => 'C:\\Users\\Phong Vu\\Documents\\thong-nguyen\\storage\\framework/laravel-excel',
       'remote_disk' => NULL,
       'remote_prefix' => NULL,
       'force_resync_remote' => NULL,
@@ -1504,6 +1553,7 @@
   ),
   'datatables-html' => 
   array (
+    'namespace' => 'LaravelDataTables',
     'table' => 
     array (
       'class' => 'table',
@@ -1784,6 +1834,33 @@
         'name' => 'SidebarRight',
         'title' => 'Menu bên phải',
       ),
+    ),
+  ),
+  'tour::permissions' => 
+  array (
+    0 => 
+    array (
+      'name' => 'tour.admin.list',
+      'title' => 'tour::common.permission.list_tour',
+      'description' => 'tour::common.permission.list_tour_description',
+    ),
+    1 => 
+    array (
+      'name' => 'tour.admin.create',
+      'title' => 'tour::common.permission.create_tour',
+      'description' => 'tour::common.permission.create_tour_description',
+    ),
+    2 => 
+    array (
+      'name' => 'tour.admin.edit',
+      'title' => 'tour::common.permission.edit_tour',
+      'description' => 'tour::common.permission.edit_user_description',
+    ),
+    3 => 
+    array (
+      'name' => 'tour.admin.delete',
+      'title' => 'tour::common.permission.delete_tour',
+      'description' => 'tour::common.permission.delete_tour_description',
     ),
   ),
   'user::layouts' => 

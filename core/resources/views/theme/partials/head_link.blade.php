@@ -36,7 +36,7 @@
 <!-- /global stylesheets -->
 
 <!-- Core JS files -->
-<script src="{{ asset('assets/admin/js/main/jquery.min.js') }}"></script>
+<script src="{{ asset('assets/admin2/js/main/jquery.min.js') }}"></script>
 
 <script>
     var _token = '{{ csrf_token() }}';

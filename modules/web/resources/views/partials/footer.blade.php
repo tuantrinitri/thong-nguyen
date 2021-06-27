@@ -87,134 +87,73 @@
                 <input
                   type="email"
                   class="form-control"
-                  placeholder="Email Address"
+                  placeholder="Nhập email"
                   name="subscriber_email"
                   id="subscriber_email"
                 />
-                <input type="submit" value="GO" />
+                <input type="submit" value="Đăng Ký" />
               </div>
               <span class="info" id="subscribe_message"
-                >To receive news, updates and tour packages via email.</span
+                >Các deal du lịch giảm giá đến 60% sẽ được gửi đến inbox của bạn
+Khi nhấp vào Đăng ký, bạn đồng ý với Các Điều Kiện & Điều Khoản và Chính Sách Bảo Mật của chúng tôi</span
               >
             </fieldset>
           </form>
           <!-- footer links -->
           <div class="row footer-holder">
-            <nav class="col-sm-4 col-lg-2 footer-nav active">
-              <h3>About Entrada</h3>
+            <nav class="col-sm-4 col-lg-3 footer-nav">
+              <h3>Về Entrana</h3>
               <ul class="slide">
-                <li><a href="#">The Company</a></li>
-                <li><a href="#">Our Values</a></li>
-                <li><a href="#">Responsiblity</a></li>
-                <li><a href="#">Our Mission</a></li>
-                <li><a href="#">Opportunity</a></li>
-                <li><a href="#">Safety Concerns</a></li>
+                <li><a href="#">Cách đặt chỗ </a></li>
+                <li><a href="#">Liên hệ chúng tôi</a></li>
+                <li><a href="#">Trợ giúp</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="#">Về chúng tôi</a></li>
+               
               </ul>
             </nav>
-            <nav class="col-sm-4 col-lg-2 footer-nav">
-              <h3>Destinations</h3>
+            <nav class="col-sm-4 col-lg-3 footer-nav">
+              <h3>Đối Tác</h3>
               <ul class="slide">
-                <li><a href="#">Nepal</a></li>
-                <li><a href="#">Thailand</a></li>
-                <li><a href="#">Vietnam</a></li>
-                <li><a href="#">Fiji Island</a></li>
-                <li><a href="#">United States</a></li>
-                <li><a href="#">Australia</a></li>
+                <li><a href="#">Đối tác đăng nhập</a></li>
+                <li><a href="#">Đối tác liên kết</a></li>
+                <li><a href="#">Chương trình cho Đại lý</a></li>
+                <li><a href="#">Hợp tác cùng chúng tối</a></li>
               </ul>
             </nav>
-            <nav class="col-sm-4 col-lg-2 footer-nav">
-              <h3>themes</h3>
+            <nav class="col-sm-4 col-lg-3 footer-nav">
+              <h3>Thông Tin</h3>
               <ul class="slide">
-                <li><a href="#">Hiking and Camping</a></li>
-                <li><a href="#">Trekking Tours</a></li>
-                <li><a href="#">Jungle Safaris</a></li>
-                <li><a href="#">Bungee Jumping</a></li>
-                <li><a href="#">Wildlife &amp; Polar</a></li>
-                <li><a href="#">Peak Climbing</a></li>
+                <li><a href="#">Tạp chí du lịchn</a></li>
+                <li><a href="#">Cẩm nang du lịch</a></li>
+                <li><a href="#">Kinh nghiệm du lịch</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">FAQ</a></li>
               </ul>
             </nav>
-            <nav class="col-sm-4 col-lg-2 footer-nav">
-              <h3>reservation</h3>
-              <ul class="slide">
-                <li><a href="#">Booking Conditions</a></li>
-                <li><a href="#">My Bookings</a></li>
-                <li><a href="#">Refund Policy</a></li>
-                <li><a href="#">Includes &amp; Excludes</a></li>
-                <li><a href="#">Your Responsibilities</a></li>
-                <li><a href="#">Order a Brochure</a></li>
-              </ul>
-            </nav>
-            <nav class="col-sm-4 col-lg-2 footer-nav">
-              <h3>ask Entrada</h3>
-              <ul class="slide">
-                <li><a href="#">Why Entrada?</a></li>
-                <li><a href="#">Ask an Expert</a></li>
-                <li><a href="#">Safety Updates</a></li>
-                <li><a href="#">We Help When...</a></li>
-                <li><a href="#">Personal Matters</a></li>
-              </ul>
-            </nav>
-            <nav class="col-sm-4 col-lg-2 footer-nav last">
-              <h3>contact Entrada</h3>
+            <nav class="col-sm-4 col-lg-3 footer-nav last">
+              <h3>Liên Hệ</h3>
               <ul class="slide address-block">
                 <li class="wrap-text">
                   <span class="icon-tel"></span>
-                  <a href="tel:02072077878">(020) 72077878</a>
+                  <a href="tel:0971773444">0971773444</a>
                 </li>
                 <li class="wrap-text">
                   <span class="icon-fax"></span>
-                  <a href="tel:02088828282">(020) 88828282</a>
+                  <a href="tel:0375689031">0375689031</a>
                 </li>
                 <li class="wrap-text">
                   <span class="icon-email"></span>
-                  <a href="mailto:info@entrada.com">info@entrada.com</a>
+                  <a href="#">nguyenthongth1906@gmail.com</a>
                 </li>
                 <li>
                   <span class="icon-home"></span>
-                  <address>707 London Road Isleworth, Middx TW7 7QD</address>
+                  <address>Số 07, Mai Xuân Thưởng, TP Nha Trang</address>
                 </li>
               </ul>
             </nav>
           </div>
-          <!-- social wrap -->
-          <ul class="social-wrap">
-            <li class="facebook">
-              <a href="#">
-                <span class="icon-facebook"></span>
-                <strong class="txt">Like Us</strong>
-              </a>
-            </li>
-            <li class="twitter">
-              <a href="#">
-                <span class="icon-twitter"></span>
-                <strong class="txt">Follow On</strong>
-              </a>
-            </li>
-            <li class="google-plus">
-              <a href="#">
-                <span class="icon-google-plus"></span>
-                <strong class="txt">+1 On Google</strong>
-              </a>
-            </li>
-            <li class="vimeo">
-              <a href="#">
-                <span class="icon-vimeo"></span>
-                <strong class="txt">Share At</strong>
-              </a>
-            </li>
-            <li class="pin">
-              <a href="#">
-                <span class="icon-pin"></span>
-                <strong class="txt">Pin It</strong>
-              </a>
-            </li>
-            <li class="dribble">
-              <a href="#">
-                <span class="icon-dribble"></span>
-                <strong class="txt">Dribbble</strong>
-              </a>
-            </li>
-          </ul>
+        
         </div>
         <div class="footer-bottom">
           <div class="container">
@@ -222,8 +161,7 @@
               <div class="col-lg-6">
                 <!-- copyright -->
                 <strong class="copyright"
-                  ><i class="fa fa-copyright"></i> Copyright 2016 - Entrada - An
-                  Adventure Theme - by <a href="#">Waituk</a></strong
+                  ><i class="fa fa-copyright"></i> Design by <a href="#">Thong Thong</a></strong
                 >
               </div>
               <div class="col-lg-6">

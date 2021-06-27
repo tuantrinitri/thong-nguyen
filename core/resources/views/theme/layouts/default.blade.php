@@ -24,7 +24,7 @@
  <div class="page-content-wrapper">
                 <div class="page-content">
                     <div class="page-bar">
-                        <div class="page-title-breadcrumb">
+                        {{-- <div class="page-title-breadcrumb">
                             <div class=" pull-left">
                                 <div class="page-title">Add Room Details</div>
                             </div>
@@ -35,13 +35,13 @@
                                 </li>
                                 <li class="active">Add Room Details</li>
                             </ol>
-                        </div>
+                        </div> --}}
                     </div>
                      <div class="row">
 						<div class="col-sm-12">
 							<div class="card-box">
 								<div class="card-head">
-									<header>Add Room Details</header>
+									<header>Bảng điều khiển</header>
 									<button id = "panel-button" 
 			                           class = "mdl-button mdl-js-button mdl-button--icon pull-right" 
 			                           data-upgraded = ",MaterialButton">
@@ -78,7 +78,7 @@
                         {{-- page content here --}}
 
                     </div>
-            </div> --}}
+            </div>
 
             <!-- end page content -->
             

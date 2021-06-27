@@ -95,7 +95,7 @@
                         <button type="submit" class="btn btn-success">TẠO TÀI KHOẢN</button>
                     </div>
                     @if (module_check_active('web'))
-                    <a href="{{ route('index') }}">&larr; Quay về Trang chủ</a>
+                    <a href="#">&larr; Quay về Trang chủ</a>
                     @endif
                 </div>
             </div>

@@ -16,4 +16,19 @@ Route::group(['namespace' => '\Modules\Web\Http\Controllers', 'middleware' => 'w
         'uses' => 'WebController@booking',
     ]);
 
+    Route::get('contact', [
+        'as' => 'web.contact',
+        'uses' => 'WebController@contact',
+    ]);
+
+    Route::get('tourtype', [
+        'as' => 'web.tourtype',
+        'uses' => 'WebController@tourtype',
+    ]);
+
+    Route::get('search', [
+        'as' => 'web.search',
+        'uses' => 'WebController@search',
+    ]);
+
 });

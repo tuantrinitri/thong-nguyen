@@ -1,7 +1,7 @@
 {
     "name": "activity",
     "title": "Activity",
-    "description": "This is description for module activity",
+    "description": "đây là module active có chức năng ",
     "namespace": "Modules\\Activity\\",
     "provider": "Modules\\Activity\\Providers\\ActivityServiceProvider",
     "author": "MITECH",
