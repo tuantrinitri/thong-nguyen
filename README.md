@@ -1,2 +1,2 @@
-# thong-nguyen
-Thông đít
+# GDST
+Quyet Ma QR code

@@ -35,7 +35,7 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \Core\Middleware\VerifyCsrfToken::class,
             \Core\Middleware\Locale::class,
-            \PragmaRX\Tracker\Vendor\Laravel\Middlewares\Tracker::class,
+            // \PragmaRX\Tracker\Vendor\Laravel\Middlewares\Tracker::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 

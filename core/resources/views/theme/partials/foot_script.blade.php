@@ -36,7 +36,7 @@
 <script src="{{ asset('assets/admin2/plugins/morris/morris.min.js') }}"></script>
 <script src="{{ asset('assets/admin2/plugins/morris/raphael-min.js') }}"></script>
 <script src="{{ asset('assets/admin2/js/pages/chart/morris/morris_home_data.js') }}"></script>
-
+<script src="{{ asset('assets/admin/js/dev.custom.js') }}"></script>
 <!-- end   -->
 
 @if (request()->route()->action['as'] != 'login')

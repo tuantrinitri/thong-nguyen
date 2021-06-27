@@ -2,39 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page_title()->getTitle() }}</title>
-    <!-- open-graph -->
-    <meta property="og:site_name" content="Colby Fayock" />
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:type" content="article" />
-    <meta property="article:publisher" content="" />
-    <meta property="article:section" content="" />
-    <meta property="article:tag" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:image:secure_url" content="" />
-    <meta property="og:image:width" content="" />
-    <meta property="og:image:height" content="" />
-    <meta property="twitter:card" content="" />
-    <meta property="twitter:image" content="" />
-    <meta property="twitter:site" content="" />
-    <link rel="shortcut icon" href="{{ logo_src(setting('site_logo')) }}" />
-    @include('web::partials.head_style')
-    @yield('custom_css')
+    <title>@yield('title')</title>
+   @include('web::partials.head_style')
 </head>
 
-<body>
-    {{-- {!! Widget::listPost() !!} --}}
-    @include('web::partials.header')
-    <main>
-        @yield('page_content')
-    </main>
-    @include('web::partials.footer')
+
+  <body>
+    <div class="preloader" id="pageLoad">
+      <div class="holder">
+        <div class="coffee_cup"></div>
+      </div>
+    </div>
+    <!-- main wrapper -->
+    <div id="wrapper">
+      <div class="page-wrapper">
+        <!-- main header -->
+      @include('web::partials.header')
+        <!-- main index -->
+            @yield('page_content')
+      </div>
+      <!-- main footer -->
+     @include('web::partials.footer')
+    </div>
+    <!-- scroll to top -->
+    <div class="scroll-holder text-center">
+      <a href="javascript:" id="scroll-to-top"
+        ><i class="icon-arrow-down"></i
+      ></a>
+    </div>
+   
     @include('web::partials.foot_script')
-    @yield('custom_js')
-</body>
+
+  </body>
+
+</html>
+
 
 </html>

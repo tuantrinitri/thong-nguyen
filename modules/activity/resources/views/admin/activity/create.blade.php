@@ -41,7 +41,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 p-0">
+            {{-- <div class="col-md-4 p-0">
                 <div class="card-body">
                     <div class="form-group row">
                         <label class="col-form-label col-lg-3"><strong>{{ trans('page::admin.locale') }}</strong> <sup class="text-danger">(*)</sup></label>
@@ -100,7 +100,7 @@
                         <button type="submit" class="btn btn-info btn-sm">{{ trans('page::admin.add_page') }}</button>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </form>
 </div>
