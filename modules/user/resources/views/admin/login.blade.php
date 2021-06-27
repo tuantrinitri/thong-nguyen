@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ trans('user::login.login_page_title') }}{{ isset($global_config['site_name']) ? ' | ' . $global_config['site_name'] : '' }}</title>
+    <title>
+        {{ trans('user::login.login_page_title') }}{{ isset($global_config['site_name']) ? ' | ' . $global_config['site_name'] : '' }}
+    </title>
     @include('core::theme.partials.head_link')
 
     <head>
@@ -61,6 +63,7 @@
                 height: unset;
             }
         }
+
     </style>
 </head>
 
@@ -69,14 +72,17 @@
         <div class="col-12 col-md-8 login-left bg-login">
             <div class="bottom">
                 <h1><strong>{{ setting('site_name', config('cms.site_name')) }}</strong></h1>
-                <p class="mt-2">{{ trans('core::common.powered_by') }} <a href="https://mitechcenter.vn" target="_blank" class="text-white"><strong>MITECH</strong></a>. {{ trans('core::common.version') }}: {{ config('cms.version') }}</p>
+                <p class="mt-2">{{ trans('core::common.powered_by') }} <a href="" target="_blank"
+                        class="text-white"><strong>Thông Nguyễn</strong></a>. {{ trans('core::common.version') }}:
+                    {{ config('cms.version') }}</p>
 
             </div>
         </div>
         <div class="col-12 col-md-4 login-right">
             <form class="login-form" action="{{ route('user.login') }}" method="post">
                 {{ csrf_field() }}
-                <input type="hidden" name="redirect_to" value="{{ old('redirect_to', request()->input('redirect_to')) }}">
+                <input type="hidden" name="redirect_to"
+                    value="{{ old('redirect_to', request()->input('redirect_to')) }}">
                 <div class="text-center mb-3">
                     <figure>
                         <a href="{{ route('index') }}">
@@ -89,14 +95,16 @@
                 </div>
 
                 <div class="form-group form-group-feedback form-group-feedback-left">
-                    <input autocomplete="new-password" name="email" value="{{ old('email') }}" type="text" class="form-control" placeholder="{{ trans('user::login.email_placeholder') }}">
+                    <input autocomplete="new-password" name="email" value="{{ old('email') }}" type="text"
+                        class="form-control" placeholder="{{ trans('user::login.email_placeholder') }}">
                     <div class="form-control-feedback">
                         <i class="icon-envelope text-muted"></i>
                     </div>
                 </div>
 
                 <div class="form-group form-group-feedback form-group-feedback-left">
-                    <input autocomplete="new-password" name="password" type="password" class="form-control" placeholder="{{ trans('user::login.password_placeholder') }}">
+                    <input autocomplete="new-password" name="password" type="password" class="form-control"
+                        placeholder="{{ trans('user::login.password_placeholder') }}">
                     <div class="form-control-feedback">
                         <i class="icon-lock2 text-muted"></i>
                     </div>
@@ -104,7 +112,8 @@
                 <div class="form-group d-flex align-items-center">
                     <div class="form-check mb-0">
                         <label class="form-check-label">
-                            <input type="checkbox" name="is_remember" class="form-check-input-styled" {{ old('is_remember') == 1 ? 'checked' : '' }} value="1">
+                            <input type="checkbox" name="is_remember" class="form-check-input-styled"
+                                {{ old('is_remember') == 1 ? 'checked' : '' }} value="1">
                             {{ trans('user::login.remember_login') }}
                         </label>
                     </div>
@@ -135,22 +144,23 @@
     <script src="{{ asset('assets/admin/js/dev.custom.js') }}"></script>
     <!-- /theme JS files -->
     <script>
-        $(document).ready(function(){
-        $('.form-check-input-styled').uniform();
+        $(document).ready(function() {
+            $('.form-check-input-styled').uniform();
 
-        @if (isset($errors) && count($errors->all()) > 0)
-            @foreach ($errors->all() as $message)
-                app.showNotify("{{ $message }}", "error");
-            @endforeach
-        @endif
+            @if (isset($errors) && count($errors->all()) > 0)
+                @foreach ($errors->all() as $message)
+                    app.showNotify("{{ $message }}", "error");
+                @endforeach
+            @endif
 
-        @if(session('flash_data'))
-            @php
-                $flash_data = session('flash_data');
-            @endphp
-            app.showNotify("{{ $flash_data['message'] }}", "{{ $flash_data['type'] }}");
-        @endif
-    });
+            @if (session('flash_data'))
+                @php
+                    $flash_data = session('flash_data');
+                @endphp
+                app.showNotify("{{ $flash_data['message'] }}", "{{ $flash_data['type'] }}");
+            @endif
+        });
+
     </script>
 
 </body>

@@ -3,73 +3,64 @@
 Route::group(['namespace' => '\Modules\Post\Http\Controllers', 'middleware' => 'web'], function () {
 
     Route::group(['middleware' => 'auth', 'prefix' => config('cms.admin_prefix')], function () {
+
         Route::group(['prefix' => 'posts'], function () {
             Route::get('/', [
                 'as' => 'post.admin.index',
-                'uses' => 'PostController@index',
+                'uses' => 'PostController@getList',
                 'permission' => 'post.admin.index',
             ]);
-            Route::get('create', [
+            Route::get('add', [
                 'as' => 'post.admin.create',
-                'uses' => 'PostController@create',
-                'permission' => 'post.admin.create',
+                'uses' => 'PostController@getAdd',
+                'permission' => 'post.admin.index',
             ]);
-            Route::post('create', [
+            Route::post('add', [
                 'as' => 'post.admin.create',
-                'uses' => 'PostController@store',
-                'permission' => 'post.admin.create',
+                'uses' => 'PostController@postAdd',
+                'permission' => 'post.admin.index',
             ]);
             Route::get('edit/{id}', [
                 'as' => 'post.admin.edit',
-                'uses' => 'PostController@edit',
-                'permission' => 'post.admin.edit'
+                'uses' => 'PostController@getEdit',
+                'permission' => 'post.admin.index',
             ]);
             Route::post('edit/{id}', [
                 'as' => 'post.admin.edit',
-                'uses' => 'PostController@update',
-                'permission' => 'post.admin.edit'
+                'uses' => 'PostController@postEdit',
+                'permission' => 'post.admin.index',
             ]);
             Route::get('delete/{id}', [
                 'as' => 'post.admin.delete',
                 'uses' => 'PostController@delete',
-                'permission' => 'post.admin.delete'
+                'permission' => 'post.admin.index',
             ]);
             Route::post('status', [
                 'as' => 'post.admin.status',
                 'uses' => 'PostController@status',
-                'permission' => 'dashboard',
-            ]);
-            Route::post('langue', [
-                'as' => 'post.ajax.langue',
-                'uses' => 'PostController@langue',
-                'permission' => 'dashboard',
+                'permission' => 'post.admin.index',
             ]);
         });
         Route::group(['prefix' => 'categories'], function () {
             Route::get('/', [
-                'as' => 'category.admin.index',
-                'uses' => 'CategoryController@index',
-                'permission' => 'post.admin.index',
+                'as' => 'category.admin.list',
+                'uses' => 'CategoryController@getList'
             ]);
-            Route::get('/create', [
-                'as' => 'category.admin.create',
-                'uses' => 'CategoryController@create', 'permission' => 'post.admin.index'
-            ]);
-            Route::post('/create', [
+            Route::post('/add', [
                 'as' => 'category.admin.add',
-                'uses' => 'CategoryController@store', 'permission' => 'post.admin.index'
+                'uses' => 'CategoryController@postAdd'
             ]);
             Route::get('/edit/{id}', [
                 'as' => 'category.admin.edit',
-                'uses' => 'CategoryController@edit', 'permission' => 'post.admin.index'
+                'uses' => 'CategoryController@getEdit'
             ]);
             Route::post('/edit/{id}', [
                 'as' => 'category.admin.edit',
-                'uses' => 'CategoryController@update', 'permission' => 'post.admin.index'
+                'uses' => 'CategoryController@postEdit'
             ]);
             Route::get('/delete/{id}', [
                 'as' => 'category.admin.delete',
-                'uses' => 'CategoryController@delete', 'permission' => 'post.admin.index'
+                'uses' => 'CategoryController@getDelete'
             ]);
             Route::post('status', [
                 'as' => 'category.ajax.status',
@@ -83,7 +74,26 @@ Route::group(['namespace' => '\Modules\Post\Http\Controllers', 'middleware' => '
         });
     });
 });
-Route::group(['namespace' => '\Modules\Post\Http\Controllers', 'middleware' => ['web']], function () {
-    Route::get('bai-viet/{slug}', 'WebController@post')->name('post.web.post');
-    Route::get('danh-muc/{slug}', 'WebController@category')->name('post.web.category');
+
+/**
+ * ROUTES FOR API: Company
+ */
+Route::group(['namespace' => '\Modules\Post\Http\Controllers'], function () {
+    Route::get('api/categories/{slug}', [
+        'as' => 'account.api.categories',
+        'uses' => 'ApiController@categories'
+    ]);
+
+    Route::get('api/posts/{slug}', [
+        'as' => 'account.api.post',
+        'uses' => 'ApiController@post'
+    ]);
+
+    Route::get('api/categories', [
+        'uses' => 'ApiController@listCategory'
+    ]);
+
+    Route::get('api/post-in-category/{slug}', [
+        'uses' => 'ApiController@randomFivePost'
+    ]);
 });
