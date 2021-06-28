@@ -4,8 +4,8 @@
           <!-- logo -->
           <div class="logo">
               <a href="{{ route('web.index') }}">
-                  <img class="normal" src="{{ asset('assets/web/img/logos/logo.svg') }}" alt="Entrada" />
-                  <img class="gray-logo" src="{{ asset('assets/web/img/logos/logo-gray.svg') }}" alt="Entrada" />
+                  <img class="normal" src="{{ asset('assets/web/img/logos/logo.png') }}" alt="Entrada" />
+                  <img class="gray-logo " style="margin: -23px 5% 0 auto;" src="{{ asset('assets/web/img/logos/logo.png') }}" alt="Entrada" />
               </a>
           </div>
           <!-- main navigation -->
@@ -44,7 +44,7 @@
                               <ul>
                                   <li>
 
-                                      <a href="#">Cẩm nang du lịch</a>
+                                      <a href="{{ route('web.category') }}">Cẩm nang du lịch</a>
                                   </li>
                                   <li>
                                       <a href="#">Kinh nghiệm du lịch</a>
@@ -53,7 +53,7 @@
                           </div>
                       </li>
                       <li><a href="{{ route('web.contact') }}">Liên hệ</a></li>
-                      <li><a href="{{ route('web.tourdetail') }}">Chi tiết</a></li>
+                      {{-- <li><a href="{{ route('web.tourdetail') }}">Chi tiết</a></li> --}}
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
                       <li class="visible-xs visible-sm">

@@ -3584,7 +3584,7 @@ a.thumbnail img {
 	display: block;
 	font-style: italic;
 	letter-spacing: 1px;
-	max-width: 32%;
+	max-width: 100%;
 	font-weight: 400;
 }
 

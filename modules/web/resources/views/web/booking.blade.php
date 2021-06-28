@@ -73,7 +73,7 @@
                           id="txt"
                           name="txt_ghichu"
                           class="form-control"
-                          placeholder="Please enter any additional information here, eg. food/drug requirements etc."
+                          placeholder="điền ý kiến vào đây"
                         ></textarea>
                       </div>
                     </div>
@@ -89,7 +89,7 @@
                           </thead>
                           <tbody>
                             <tr>
-                              <td>
+                              {{-- <td>
                                 <span class="title"
                                   >Everest Trekking &emsp;<span class="amount"
                                     >x&emsp; 3</span
@@ -98,31 +98,29 @@
                                 <time datetime="2016-09-29"
                                   >Booking Date:&emsp; 14th Jan 2016</time
                                 >
-                              </td>
+                              </td> --}}
                               <td>
-                                <span class="amount">$2,999</span>
+                                <span class="amount">2,990,000đ</span>
                               </td>
                             </tr>
                             <tr>
                               <td>
                                 <span class="title"
-                                  >Bungee Jumping &emsp;<span class="amount"
-                                    >x&emsp; 2</span
-                                  ></span
+                                  >Nha Trang - Phú Yên - Quy Nhơn</span
                                 >
                                 <time datetime="2016-09-29"
-                                  >Booking Date:&emsp; 14th Jan 2016</time
+                                  >Booking Date:&emsp; 28-06-2021</time
                                 >
                               </td>
                               <td>
-                                <span class="amount">$1,999</span>
+                                <span class="amount">2,990,000đ</span>
                               </td>
                             </tr>
                           </tbody>
                           <tfoot>
                             <tr>
                               <td>Tổng giá</td>
-                              <td>$4,988</td>
+                              <td>2,990,000đ</td>
                             </tr>
                           </tfoot>
                         </table>

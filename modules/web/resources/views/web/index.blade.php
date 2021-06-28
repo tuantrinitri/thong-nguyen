@@ -6,21 +6,21 @@
         <!-- revolution slider starts -->
         <div id="rev_slider_279_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="restaurant-header"
             style="
-                          margin: 0px auto;
-                          background-color: #474d4b;
-                          padding: 0px;
-                          margin-top: 0px;
-                          margin-bottom: 0px;
-                            background: rgba(0,0,0,0.4);
-    height: 100%;
-                        ">
+                              margin: 0px auto;
+                              background-color: #474d4b;
+                              padding: 0px;
+                              margin-top: 0px;
+                              margin-bottom: 0px;
+                                background: rgba(0,0,0,0.4);
+        height: 100%;
+                            ">
             <div id="rev_slider_70_1" class="rev_slider fullscreenabanner" style="display: none" data-version="5.1.4">
                 <ul>
                     <li class="slider-color-schema-dark" data-index="rs-2" data-transition="fade" data-slotamount="7"
                         data-easein="default" data-easeout="default" data-masterspeed="1000" data-rotate="0"
                         data-saveperformance="off" data-title="Slide" data-description="">
                         <!-- main image for revolution slider -->
-                        <img src="{{ asset('assets/web/img/banner/img-01.jpg') }}" alt="image description"
+                        <img src="{{ asset('assets/web/img/banner/img -22.png') }}" alt="image description"
                             data-bgposition="center center" data-kenburns="on" data-duration="30000"
                             data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0"
                             data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10"
@@ -33,14 +33,14 @@
                             data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;"
                             data-transform_out="opacity:0;s:300;s:300;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
                             data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="
-                                  z-index: 9;
-                                  white-space: nowrap;
-                                  font-size: 60px;
-                                  line-height: 100px;
-                                  text-align: center;
-                                
-                                ">
-                            <span class="icon-wildlife"></span>
+                                      z-index: 9;
+                                      white-space: nowrap;
+                                      font-size: 60px;
+                                      line-height: 100px;
+                                      text-align: center;
+                                    
+                                    ">
+                            {{-- <span class="icon-wildlife"></span> --}}
                         </div>
 
                         <div class="tp-caption banner-heading-sub tp-resizeme rs-parallaxlevel-0"
@@ -53,12 +53,12 @@
                             data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
                             data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-start="1000"
                             data-splitin="none" data-splitout="none" data-responsive_offset="on" style="
-                                  z-index: 7;
-                                  letter-spacing: 0;
-                                  font-weight: 100;
-                                  text-align: center;
-                                  color: #ffffff;
-                                ">
+                                      z-index: 7;
+                                      letter-spacing: 0;
+                                      font-weight: 100;
+                                      text-align: center;
+                                      color: #ffffff;
+                                    ">
                             Du Lịch An Toàn
                         </div>
 
@@ -72,12 +72,12 @@
                             data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
                             data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="none"
                             data-splitout="none" data-responsive_offset="on" style="
-                                  z-index: 8;
-                                  padding-right: 10px;
-                                  text-indent: 5px;
-                                  font-weight: 900;
-                                  white-space: nowrap;
-                                ">
+                                      z-index: 8;
+                                      padding-right: 10px;
+                                      text-indent: 5px;
+                                      font-weight: 900;
+                                      white-space: nowrap;
+                                    ">
                             An Tâm Trải Nghiệm
                         </div>
 
@@ -110,11 +110,12 @@
                         data-easeout="default" data-masterspeed="1000" data-rotate="0" data-saveperformance="off"
                         data-title="The Menu" data-description="">
                         <!-- main image for revolution slide -->
-                        <img alt="image description" src="{{ asset('assets/web/img/banner/img-01.jpg') }}"
-                            data-lazyload="{{ asset('assets/web/img/banner/img-02.jpg') }}" data-bgposition="right center"
-                            data-kenburns="on" data-duration="30000" data-ease="Power1.easeOut" data-scalestart="110"
-                            data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0"
-                            data-offsetend="0 0" class="rev-slidebg" data-no-retina />
+                        <img alt="image description" src="{{ asset('assets/web/img/banner/img-011.png') }}"
+                            data-lazyload="{{ asset('assets/web/img/banner/img-011.png') }}"
+                            data-bgposition="right center" data-kenburns="on" data-duration="30000"
+                            data-ease="Power1.easeOut" data-scalestart="110" data-scaleend="100" data-rotatestart="0"
+                            data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg"
+                            data-no-retina />
 
                         <div class="tp-caption tp-resizeme" id="slide-897-layer1-7"
                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -123,13 +124,13 @@
                             data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;"
                             data-transform_out="opacity:0;s:300;s:300;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
                             data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="
-                                  z-index: 9;
-                                  white-space: nowrap;
-                                  font-size: 60px;
-                                  line-height: 100px;
-                                  text-align: center;
-                                ">
-                            <span class="icon-hiking-camping"></span>
+                                      z-index: 9;
+                                      white-space: nowrap;
+                                      font-size: 60px;
+                                      line-height: 100px;
+                                      text-align: center;
+                                    ">
+                            {{-- <span class="icon-hiking-camping"></span> --}}
                         </div>
 
                         <div class="tp-caption banner-heading-sub tp-resizeme rs-parallaxlevel-0"
@@ -142,12 +143,12 @@
                             data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
                             data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-start="1000"
                             data-splitin="none" data-splitout="none" data-responsive_offset="on" style="
-                                  z-index: 7;
-                                  letter-spacing: 0;
-                                  font-weight: 100;
-                                  text-align: center;
-                                  color: #ffffff;
-                                ">
+                                      z-index: 7;
+                                      letter-spacing: 0;
+                                      font-weight: 100;
+                                      text-align: center;
+                                      color: #ffffff;
+                                    ">
                             Tự Do Khám Phá
                         </div>
 
@@ -161,14 +162,14 @@
                             data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
                             data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="none"
                             data-splitout="none" data-responsive_offset="on" style="
-                                  z-index: 8;
-                                  padding-right: 10px;
-                                  text-indent: 105px;
-                                  font-weight: 300;
-                                  font-style: italic;
-                                  white-space: nowrap;
-                                  color: ;
-                                ">
+                                      z-index: 8;
+                                      padding-right: 10px;
+                                      text-indent: 105px;
+                                      font-weight: 300;
+                                      font-style: italic;
+                                      white-space: nowrap;
+                                      color: ;
+                                    ">
                             Đặt các hoạt động du lịch với giá độc quyền
                         </div>
                     </li>
@@ -185,7 +186,7 @@
                             <span class="ico">
                                 <span class="icon-wildlife"></span>
                             </span>
-                            <span class="info">TOUR XUYÊN VIỆT</span>
+                            <span class="info">TẤT CẢ</span>
                         </a>
                     </li>
                     <li>
@@ -205,11 +206,19 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('web.search')}}">
+                        <a href="{{ route('web.search') }}">
                             <span class="ico">
                                 <span class="icon-scuba-diving"></span>
                             </span>
                             <span class="info">TÌM KIẾM</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="ico">
+                                <span class="icon-hunting"></span>
+                            </span>
+                            <span class="info">KHÁM PHÁ</span>
                         </a>
                     </li>
                     <li>
@@ -352,24 +361,19 @@
                                         alt="image description" />
                                 </a>
                                 <div class="hover-article">
-                                    <div class="star-rating">
-                                        <span><span class="icon-star"></span></span>
-                                        <span><span class="icon-star"></span></span>
-                                        <span><span class="icon-star"></span></span>
-                                        <span><span class="icon-star"></span></span>
-                                        <span class="disable"><span class="icon-star"></span></span>
-                                    </div>
+
                                     <div class="icons">
                                         <a href="#"><span class="icon-heart"></span></a>
                                         <a href="#"><span class="icon-reply"></span></a>
                                     </div>
                                     <div class="info-footer">
-                                        <span class="price">from <span>$2749</span></span>
-                                        <a href="#" class="link-more">Explore</a>
+                                        {{-- <span class="price">from <span>$2749</span></span> --}}
+                                        <a href="#" class="link-more">Xem Thêm</a>
                                     </div>
                                 </div>
                             </div>
-                            <h3><a href="#">Nha Trang - Phú Yên - Quy Nhơn - Nha Trang</a></h3>
+                            <h3><a href="{{ route('web.tourdetail') }}">Nha Trang - Phú Yên - Quy Nhơn </a>
+                            </h3>
                             <p>
                                 Biển Đại Lãnh: uốn cong hình lưỡi liềm được ví như thiên đường biển nhiệt đới với bãi cát
                                 mịn trải dài hòa cùng nước biển trong vắt nhìn rõ tận đáy. Du khách thỏa thích tắm biển và
@@ -382,23 +386,42 @@
                                     <img src="{{ asset('assets/web/img/listing/img-02.jpg') }}" height="215" width="370"
                                         alt="image description" />
                                 </a>
-
                                 <div class="hover-article">
-                                    <div class="star-rating">
-                                        <span><span class="icon-star"></span></span>
-                                        <span><span class="icon-star"></span></span>
-                                        <span><span class="icon-star"></span></span>
-                                        <span><span class="icon-star"></span></span>
-                                        <span class="disable"><span class="icon-star"></span></span>
-                                    </div>
+
                                     <div class="icons">
                                         <a href="#"><span class="icon-heart"></span></a>
                                         <a href="#"><span class="icon-reply"></span></a>
                                     </div>
                                     <div class="info-footer">
-                                        <span class="price">from <span>$2749</span></span>
-                                        <a href="#" class="link-more">Explore</a>
+                                        {{-- <span class="price">from <span>$2749</span></span> --}}
+                                        <a href="#" class="link-more">Xem Thêm</a>
                                     </div>
+                                </div>
+                            </div>
+                            <h3><a href="{{ route('web.tourdetail') }}">TP.HCM - Phan Thiết - Nha Trang</a>
+                            </h3>
+                            <p>
+                               Tháp Chàm Poklong Garai: đây là một công trình kiến trúc độc đáo xây dựng vào khoảng cuối
+                                thế kỷ 13 đầu thế kỷ 14, được công nhận là di tích kiến trúc nghệ thuật và điêu khắc
+                                Chăm.Vườn Nho Ba Mọi: là loại nho đặc sản vùng đất nắng gió Ninh Thuận.
+                                Tiếp tục hành trình về với thành phố biển Nha Trang xinh đẹp, đoàn ăn tối và nghỉ đêm tại
+                                Nha Trang.
+                            </p>
+                        </article>
+                         {{-- <article class="col-sm-6 col-md-4 article has-hover-s3">
+                            <div class="img-wrap">
+                                <a href="#">
+                                    <img src="{{ asset('assets/web/img/listing/img-02.jpg') }}" height="215" width="370"
+                                        alt="image description" />
+                                </a>
+
+                                <div class="icons">
+                                    <a href="#"><span class="icon-heart"></span></a>
+                                    <a href="#"><span class="icon-reply"></span></a>
+                                </div>
+                                <div class="info-footer">
+                                    <span class="price">from <span>$2749</span></span> 
+                                    <a href="#" class="link-more">Xem Thêm</a>
                                 </div>
                             </div>
                             <h3><a href="#">TP.HCM - Phan Thiết - Nha Trang - TP.HCM</a></h3>
@@ -410,7 +433,7 @@
                                 Nha Trang.
 
                             </p>
-                        </article>
+                        </article>  --}}
                         <article class="col-sm-6 col-md-4 article has-hover-s3">
                             <div class="img-wrap">
                                 <a href="#">
@@ -419,180 +442,123 @@
                                 </a>
 
                                 <div class="hover-article">
-                                    <div class="star-rating">
-                                        <span><span class="icon-star"></span></span>
-                                        <span><span class="icon-star"></span></span>
-                                        <span><span class="icon-star"></span></span>
-                                        <span><span class="icon-star"></span></span>
-                                        <span class="disable"><span class="icon-star"></span></span>
-                                    </div>
+
                                     <div class="icons">
                                         <a href="#"><span class="icon-heart"></span></a>
                                         <a href="#"><span class="icon-reply"></span></a>
                                     </div>
                                     <div class="info-footer">
-                                        <span class="price">from <span>$2749</span></span>
-                                        <a href="#" class="link-more">Explore</a>
+                                        {{-- <span class="price">from <span>$2749</span></span> --}}
+                                        <a href="#" class="link-more">Xem Thêm</a>
                                     </div>
                                 </div>
-                            </div>
-                            <h3><a href="#">Nha Trang: Bùn khoáng Iresort- Hành trình khám phá Vịnh Nha Trang trên Du Thuyền
-                                    Emperor Sang Trọng
-
-                                </a></h3>
-                            <p>
-                                Tháp Bà Ponagar: công trình tiêu biểu cho nghệ thuật kiến trúc và điêu khắc tín ngưỡng tôn
-                                giáo bậc nhất của dân tộc Chăm tại Nha Trang.
-
-                            </p>
-                        </article>
-                        <article class="col-sm-6 col-md-4 article has-hover-s3">
-                            <div class="img-wrap">
-                                <a href="#">
-                                    <img src="{{ asset('assets/web/img/listing/img-04.jpg') }}" height="215" width="370"
-                                        alt="image description" />
-                                </a>
-
-                                <div class="hover-article">
-                                    <div class="star-rating">
-                                        <span><span class="icon-star"></span></span>
-                                        <span><span class="icon-star"></span></span>
-                                        <span><span class="icon-star"></span></span>
-                                        <span><span class="icon-star"></span></span>
-                                        <span class="disable"><span class="icon-star"></span></span>
-                                    </div>
-                                    <div class="icons">
-                                        <a href="#"><span class="icon-heart"></span></a>
-                                        <a href="#"><span class="icon-reply"></span></a>
-                                    </div>
-                                    <div class="info-footer">
-                                        <span class="price">from <span>$2749</span></span>
-                                        <a href="#" class="link-more">Explore</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <h3><a href="#">Nha Trang: Biển Nhũ Tiên - VinWonders - Bùn khoáng Iresort</a></h3>
-                            <p>
-                                Làng Yến Mai Sinh: tham quan vách yến nhân tạo lớn nhất Việt Nam, tìm hiểu quy trình lấy yến
-                                ở độ cao cheo leo hiểm trở và cách thức sơ chế để tạo ra sản phẩm dinh dưỡng cho sức khỏe.
-                                Ăn tối tại nhà hàng địa phương. Đoàn nhận phòng, tự do tham quan thành phố về đêm: Thưởng
-                                thức hải sản tại Phố Tháp Bà hay những nhà hàng dọc đường Trần Phú và thư giãn với massage
-                                chân xua tan mệt mỏi,..
-
-                            </p>
-                        </article>
-                        <article class="col-sm-6 col-md-4 article has-hover-s3">
-                            <div class="img-wrap">
-                                <a href="#">
-                                    <img src="{{ asset('assets/web/img/listing/img-05.jpg') }}" height="215" width="370"
-                                        alt="image description" />
-                                </a>
-
-                                <div class="hover-article">
-                                    <div class="star-rating">
-                                        <span><span class="icon-star"></span></span>
-                                        <span><span class="icon-star"></span></span>
-                                        <span><span class="icon-star"></span></span>
-                                        <span><span class="icon-star"></span></span>
-                                        <span class="disable"><span class="icon-star"></span></span>
-                                    </div>
-                                    <div class="icons">
-                                        <a href="#"><span class="icon-heart"></span></a>
-                                        <a href="#"><span class="icon-reply"></span></a>
-                                    </div>
-                                    <div class="info-footer">
-                                        <span class="price">from <span>$2749</span></span>
-                                        <a href="#" class="link-more">Explore</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <h3><a href="#">Nha Trang - Thiên đường biển đảo/a></h3>
-                            <p>
-                                Đoàn làm thủ tục lên đảo. Tại đây
-                                Quý khách tự do đắm mình vào làn biển trong xanh với bãi cát trải dài.
-                                Thả mình thư giãn trên những chiếc ghế tắm nắng, chòi lá đặt tại bãi biển.
-                                Trải nghiệm các môn thể thao nước như chèo thuyền thúng, thuyền kayak và khám phá các trò
-                                chơi vận động Floating Park, Nerf Gun…
-                            </p>
-                        </article>
-                        <article class="col-sm-6 col-md-4 article has-hover-s3">
-                            <div class="img-wrap">
-                                <a href="#">
-                                    <img src="{{ asset('assets/web/img/listing/img-06.jpg') }}" height="215" width="370"
-                                        alt="image description" />
-                                </a>
-
-                                <div class="hover-article">
-                                    <div class="star-rating">
-                                        <span><span class="icon-star"></span></span>
-                                        <span><span class="icon-star"></span></span>
-                                        <span><span class="icon-star"></span></span>
-                                        <span><span class="icon-star"></span></span>
-                                        <span class="disable"><span class="icon-star"></span></span>
-                                    </div>
-                                    <div class="icons">
-                                        <a href="#"><span class="icon-heart"></span></a>
-                                        <a href="#"><span class="icon-reply"></span></a>
-                                    </div>
-                                    <div class="info-footer">
-                                        <span class="price">from <span>$2749</span></span>
-                                        <a href="#" class="link-more">Explore</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <h3><a href="#">Nha Trang: Con Sẻ Tre - VinWonders - Bùn khoáng Iresort
-
-                                </a></h3>
-                            <p>
-                                Bãi Tranh: Tại Bãi Tranh, Quý khách tự do nghỉ ngơi, thư giãn, tắm biển hoặc tham gia các
-                                trò chơi thể thao dưới nước (chi phí tự túc)
-                                Hòn Mun: Quý khách tự do tắm biển, lặn ngắm san hô, khám phá cuộc sống sinh động của đại
-                                dương với nhiều màu sắc rực rỡ bằng kính lặn, ống thở. Quý khách tham gia các dịch vụ tại
-                                đây như: lặn biển, tàu đáy kính… (chi phí trải nghiệm tự túc).
-                                Làng chài: Tham quan bè nổi nuôi hải sản
-
-
-                            </p>
-                        </article>
                     </div>
+                    <h3><a href="#">Nha Trang: Bùn khoáng Iresort- Hành trình khám phá Vịnh Nha Trang trên Du Thuyền
+                            Emperor Sang Trọng
+
+                        </a></h3>
+                    <p>
+                        Tháp Bà Ponagar: công trình tiêu biểu cho nghệ thuật kiến trúc và điêu khắc tín ngưỡng tôn
+                        giáo bậc nhất của dân tộc Chăm tại Nha Trang.
+
+                    </p>
+                    </article>
+                    <article class="col-sm-6 col-md-4 article has-hover-s3">
+                        <div class="img-wrap">
+                            <a href="#">
+                                <img src="{{ asset('assets/web/img/listing/img-04.jpg') }}" height="215" width="370"
+                                    alt="image description" />
+                            </a>
+
+                            <div class="hover-article">
+
+                                    <div class="icons">
+                                        <a href="#"><span class="icon-heart"></span></a>
+                                        <a href="#"><span class="icon-reply"></span></a>
+                                    </div>
+                                    <div class="info-footer">
+                                        {{-- <span class="price">from <span>$2749</span></span> --}}
+                                        <a href="#" class="link-more">Xem Thêm</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <h3><a href="#">Nha Trang: Biển Nhũ Tiên - VinWonders - Bùn khoáng Iresort</a></h3>
+                        <p>
+                            Làng Yến Mai Sinh: tham quan vách yến nhân tạo lớn nhất Việt Nam, tìm hiểu quy trình lấy yến
+                            ở độ cao cheo leo hiểm trở và cách thức sơ chế để tạo ra sản phẩm dinh dưỡng cho sức khỏe.
+                            Ăn tối tại nhà hàng địa phương. Đoàn nhận phòng, tự do tham quan thành phố về đêm: Thưởng
+                            thức hải sản tại Phố Tháp Bà hay những nhà hàng dọc đường Trần Phú và thư giãn với massage
+                            chân xua tan mệt mỏi,..
+
+                        </p>
+                    </article>
+                    <article class="col-sm-6 col-md-4 article has-hover-s3">
+                        <div class="img-wrap">
+                            <a href="#">
+                                <img src="{{ asset('assets/web/img/listing/img-05.jpg') }}" height="215" width="370"
+                                    alt="image description" />
+                            </a>
+
+                            <div class="hover-article">
+
+                                    <div class="icons">
+                                        <a href="#"><span class="icon-heart"></span></a>
+                                        <a href="#"><span class="icon-reply"></span></a>
+                                    </div>
+                                    <div class="info-footer">
+                                        {{-- <span class="price">from <span>$2749</span></span> --}}
+                                        <a href="#" class="link-more">Xem Thêm</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <h3><a href="#">Nha Trang - Thiên đường biển đảo/a></h3>
+                        <p>
+                            Đoàn làm thủ tục lên đảo. Tại đây
+                            Quý khách tự do đắm mình vào làn biển trong xanh với bãi cát trải dài.
+                            Thả mình thư giãn trên những chiếc ghế tắm nắng, chòi lá đặt tại bãi biển.
+                            Trải nghiệm các môn thể thao nước như chèo thuyền thúng, thuyền kayak và khám phá các trò
+                            chơi vận động Floating Park, Nerf Gun…
+                        </p>
+                    </article>
+                    <article class="col-sm-6 col-md-4 article has-hover-s3">
+                        <div class="img-wrap">
+                            <a href="#">
+                                <img src="{{ asset('assets/web/img/listing/img-06.jpg') }}" height="215" width="370"
+                                    alt="image description" />
+                            </a>
+
+                            <div class="hover-article">
+
+                                    <div class="icons">
+                                        <a href="#"><span class="icon-heart"></span></a>
+                                        <a href="#"><span class="icon-reply"></span></a>
+                                    </div>
+                                    <div class="info-footer">
+                                        {{-- <span class="price">from <span>$2749</span></span> --}}
+                                        <a href="#" class="link-more">Xem Thêm</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <h3><a href="#">Nha Trang: Con Sẻ Tre - VinWonders - Bùn khoáng Iresort
+
+                            </a></h3>
+                        <p>
+                            Bãi Tranh: Tại Bãi Tranh, Quý khách tự do nghỉ ngơi, thư giãn, tắm biển hoặc tham gia các
+                            trò chơi thể thao dưới nước (chi phí tự túc)
+                            Hòn Mun: Quý khách tự do tắm biển, lặn ngắm san hô, khám phá cuộc sống sinh động của đại
+                            dương với nhiều màu sắc rực rỡ bằng kính lặn, ống thở. Quý khách tham gia các dịch vụ tại
+                            đây như: lặn biển, tàu đáy kính… (chi phí trải nghiệm tự túc).
+                            Làng chài: Tham quan bè nổi nuôi hải sản
+
+
+                        </p>
+                    </article>
                 </div>
             </div>
         </div>
+        </div>
         <!-- couter block -->
-        <aside class="count-block">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-6 col-md-3 block-1">
-                        <div class="holder">
-                            <span class="icon icon-step"></span>
-                            <span class="info"><span class="counter">8702</span></span>
-                            <span class="txt">WILDLIFE SPECIES</span>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3 block-2">
-                        <div class="holder">
-                            <span class="icon icon-fish-jumping"></span>
-                            <span class="info"><span class="counter">378</span></span>
-                            <span class="txt">ARCTIC EXPERIENCES</span>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3 block-3">
-                        <div class="holder">
-                            <span class="icon icon-tree"></span>
-                            <span class="info"><span class="counter">377</span></span>
-                            <span class="txt">NATIONAL PARKS</span>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3 block-4">
-                        <div class="holder">
-                            <span class="icon icon-duration"></span>
-                            <span class="info"><span class="counter">8973</span></span>
-                            <span class="txt">DAYS IN THE WILD</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </aside>
+
         <!-- featured adventure content -->
         <div class="featured-content adventure-holder">
             <div class="container-fluid">
@@ -662,40 +628,27 @@
                                         alt="image description" />
                                 </div>
                                 <h3 class="small-space">
-                                    <a href="tour-detail.html">Evening with Panda in China</a>
+                                    <a href="tour-detail.html">Hạ Long - Thiền Tâm Nơi Yên Tử</a>
                                 </h3>
-                                <span class="info">Nordic Walk, Swiss Alps or French Hiking?</span>
-                                <aside class="meta">
+                                <span class="info"></span>
+                                {{-- <aside class="meta">
                                     <span class="country">
                                         <span class="icon-world"> </span>12 Countries
                                     </span>
                                     <span class="activity">
                                         <span class="icon-acitivities"> </span>79 Activities
                                     </span>
-                                </aside>
+                                </aside> --}}
                                 <p>
-                                    This is Photoshop's version of Lorem Ipsum. Proin
-                                    gravida nibh vel velit auctor aliquet. Aenean
-                                    sollicitudin, lorem quis bibendum auctor, nisi elit
-                                    consequat ipsum,
+                                    Guồng quay công việc và cuộc sống khiến cho Quý khách mất đi sự cân bằng sức khỏe và
+                                    tinh thần. Thấu hiểu điều đó, Vietravel mang đến cho Quý khách cùng những người thân yêu
+                                    bộ sản phẩm du lịch nghỉ dưỡng kết hợp chăm sóc sức khỏe, tái tạo năng lượng và phục hồi
+                                    sự cân bằng thuần khiết.
                                 </p>
-                                <a href="tour-detail.html" class="btn btn-default">explore</a>
+                                <a href="tour-detail.html" class="btn btn-default">Xem thêm</a>
                                 <footer>
-                                    <ul class="social-networks">
-                                        <li>
-                                            <a href="#"><span class="icon-twitter"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-google-plus"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-facebook"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-linkedin"></span></a>
-                                        </li>
-                                    </ul>
-                                    <span class="price">from <span>$2749</span></span>
+
+                                    <span class="price">Giá <span>11,990,000đ</span></span>
                                 </footer>
                             </div>
                         </article>
@@ -706,40 +659,26 @@
                                         alt="image description" />
                                 </div>
                                 <h3 class="small-space">
-                                    <a href="tour-detail.html">Sleeping with Sea Lion in Arctic</a>
+                                    <a href="tour-detail.html">Sapa - Nơi gặp gỡ đất trời</a>
                                 </h3>
-                                <span class="info">Nordic Walk, Swiss Alps or French Hiking?</span>
-                                <aside class="meta">
+                                <span class="info"></span>
+                                {{-- <aside class="meta">
                                     <span class="country">
                                         <span class="icon-world"> </span>12 Countries
                                     </span>
                                     <span class="activity">
                                         <span class="icon-acitivities"> </span>79 Activities
                                     </span>
-                                </aside>
+                                </aside> --}}
                                 <p>
-                                    This is Photoshop's version of Lorem Ipsum. Proin
-                                    gravida nibh vel velit auctor aliquet. Aenean
-                                    sollicitudin, lorem quis bibendum auctor, nisi elit
-                                    consequat ipsum,
+                                    Tham quan Núi Hàm Rồng, Vườn Lan 1,2, Sân ngắm Phansipan,Cổng Trời 1,2, Sân Mây. Qúy
+                                    khách có dịp ngắm đỉnh Phansipan cao 3.143m hùng vỹ trên dãy Hoàng Liên và ngắm toàn
+                                    cảnh Thị Trấn Sapa từ trên cao.
                                 </p>
-                                <a href="tour-detail.html" class="btn btn-default">explore</a>
+                                <a href="tour-detail.html" class="btn btn-default">Xem Thêm</a>
                                 <footer>
-                                    <ul class="social-networks">
-                                        <li>
-                                            <a href="#"><span class="icon-twitter"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-google-plus"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-facebook"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-linkedin"></span></a>
-                                        </li>
-                                    </ul>
-                                    <span class="price">from <span>$2749</span></span>
+
+                                    <span class="price">Giá <span>2,490,000đ</span></span>
                                 </footer>
                             </div>
                         </article>
@@ -750,175 +689,23 @@
                                         alt="image description" />
                                 </div>
                                 <h3 class="small-space">
-                                    <a href="tour-detail.html">Following Zebras to Water hole</a>
+                                    <a href="#">Quy Nhơn - Hội An - Đà Nẵng - Huế</a>
                                 </h3>
-                                <span class="info">Nordic Walk, Swiss Alps or French Hiking?</span>
-                                <aside class="meta">
-                                    <span class="country">
-                                        <span class="icon-world"> </span>12 Countries
-                                    </span>
-                                    <span class="activity">
-                                        <span class="icon-acitivities"> </span>79 Activities
-                                    </span>
-                                </aside>
+                                <span class="info"></span>
+
                                 <p>
-                                    This is Photoshop's version of Lorem Ipsum. Proin
-                                    gravida nibh vel velit auctor aliquet. Aenean
-                                    sollicitudin, lorem quis bibendum auctor, nisi elit
-                                    consequat ipsum,
+                                    Chùa Thiên Ấn, Mộ Huỳnh Thúc Kháng, Sông Trà Khúc tại Quảng Ngãi: một ngôi chùa cổ tọa
+                                    lạc trên đỉnh núi Thiên Ấn nhìn xuống sông Trà Khúc hiền hòa. Quý khách tham quan khu
+                                    viên mộ, lăng mộ hình tháp, giếng Phật, chuông Thần và ngôi mộ của nhà yêu nước Huỳnh
+                                    Thúc Kháng.
                                 </p>
-                                <a href="tour-detail.html" class="btn btn-default">explore</a>
+                                <a href="tour-detail.html" class="btn btn-default">Xem thêm</a>
                                 <footer>
-                                    <ul class="social-networks">
-                                        <li>
-                                            <a href="#"><span class="icon-twitter"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-google-plus"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-facebook"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-linkedin"></span></a>
-                                        </li>
-                                    </ul>
-                                    <span class="price">from <span>$2749</span></span>
+                                    <span class="price">Giá <span>5,990,000đ</span></span>
                                 </footer>
                             </div>
                         </article>
-                        <article class="col-sm-6 col-md-4 article has-hover-s1">
-                            <div class="thumbnail">
-                                <div class="img-wrap">
-                                    <img src="{{ asset('assets/web/img/listing/img-10.jpg') }}" height="228" width="350"
-                                        alt="image description" />
-                                </div>
-                                <h3 class="small-space">
-                                    <a href="tour-detail.html">Discovering Wild Trails in Africa</a>
-                                </h3>
-                                <span class="info">Nordic Walk, Swiss Alps or French Hiking?</span>
-                                <aside class="meta">
-                                    <span class="country">
-                                        <span class="icon-world"> </span>12 Countries
-                                    </span>
-                                    <span class="activity">
-                                        <span class="icon-acitivities"> </span>79 Activities
-                                    </span>
-                                </aside>
-                                <p>
-                                    This is Photoshop's version of Lorem Ipsum. Proin
-                                    gravida nibh vel velit auctor aliquet. Aenean
-                                    sollicitudin, lorem quis bibendum auctor, nisi elit
-                                    consequat ipsum,
-                                </p>
-                                <a href="tour-detail.html" class="btn btn-default">explore</a>
-                                <footer>
-                                    <ul class="social-networks">
-                                        <li>
-                                            <a href="#"><span class="icon-twitter"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-google-plus"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-facebook"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-linkedin"></span></a>
-                                        </li>
-                                    </ul>
-                                    <span class="price">from <span>$2749</span></span>
-                                </footer>
-                            </div>
-                        </article>
-                        <article class="col-sm-6 col-md-4 article has-hover-s1">
-                            <div class="thumbnail">
-                                <div class="img-wrap">
-                                    <img src="{{ asset('assets/web/img/listing/img-11.jpg') }}" height="228" width="350"
-                                        alt="image description" />
-                                </div>
-                                <h3 class="small-space">
-                                    <a href="tour-detail.html">Angola Safari for Family &amp; Children</a>
-                                </h3>
-                                <span class="info">Nordic Walk, Swiss Alps or French Hiking?</span>
-                                <aside class="meta">
-                                    <span class="country">
-                                        <span class="icon-world"> </span>12 Countries
-                                    </span>
-                                    <span class="activity">
-                                        <span class="icon-acitivities"> </span>79 Activities
-                                    </span>
-                                </aside>
-                                <p>
-                                    This is Photoshop's version of Lorem Ipsum. Proin
-                                    gravida nibh vel velit auctor aliquet. Aenean
-                                    sollicitudin, lorem quis bibendum auctor, nisi elit
-                                    consequat ipsum,
-                                </p>
-                                <a href="tour-detail.html" class="btn btn-default">explore</a>
-                                <footer>
-                                    <ul class="social-networks">
-                                        <li>
-                                            <a href="#"><span class="icon-twitter"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-google-plus"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-facebook"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-linkedin"></span></a>
-                                        </li>
-                                    </ul>
-                                    <span class="price">from <span>$2749</span></span>
-                                </footer>
-                            </div>
-                        </article>
-                        <article class="col-sm-6 col-md-4 article has-hover-s1">
-                            <div class="thumbnail">
-                                <div class="img-wrap">
-                                    <img src="{{ asset('assets/web/img/listing/img-12.jpg') }}" height="228" width="350"
-                                        alt="image description" />
-                                </div>
-                                <h3 class="small-space">
-                                    <a href="tour-detail.html">Royal Safari in Bangaladesh</a>
-                                </h3>
-                                <span class="info">Nordic Walk, Swiss Alps or French Hiking?</span>
-                                <aside class="meta">
-                                    <span class="country">
-                                        <span class="icon-world"> </span>12 Countries
-                                    </span>
-                                    <span class="activity">
-                                        <span class="icon-acitivities"> </span>79 Activities
-                                    </span>
-                                </aside>
-                                <p>
-                                    This is Photoshop's version of Lorem Ipsum. Proin
-                                    gravida nibh vel velit auctor aliquet. Aenean
-                                    sollicitudin, lorem quis bibendum auctor, nisi elit
-                                    consequat ipsum,
-                                </p>
-                                <a href="tour-detail.html" class="btn btn-default">explore</a>
-                                <footer>
-                                    <ul class="social-networks">
-                                        <li>
-                                            <a href="#"><span class="icon-twitter"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-google-plus"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-facebook"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-linkedin"></span></a>
-                                        </li>
-                                    </ul>
-                                    <span class="price">from <span>$2749</span></span>
-                                </footer>
-                            </div>
-                        </article>
+
                     </div>
                 </div>
             </div>

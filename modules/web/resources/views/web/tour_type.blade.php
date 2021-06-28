@@ -5,14 +5,14 @@
         <div class="banner-text">
             <div class="center-text">
                 <div class="container">
-                    <h1>Adventures 2016</h1>
-                    <strong class="subtitle">Three Column Adventure Grid View Show.</strong>
+                    <h1>Tour Trong Nước</h1>
+                    <strong class="subtitle">Danh sách các tour nổi bật</strong>
                     <!-- breadcrumb -->
                     <nav class="breadcrumbs">
                         <ul>
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">ADVENTURES</a></li>
-                            <li><span>ALL</span></li>
+                            <li><a href="#">TRANG CHỦ</a></li>
+                            <li><a href="#">DU LỊCH</a></li>
+                            <li><span>TRONG NƯỚC</span></li>
                         </ul>
                     </nav>
                 </div>
@@ -29,14 +29,14 @@
                     <aside id="sidebar" class="col-md-4 col-lg-3 sidebar sidebar-list">
                         <div class="sidebar-holder">
                             <header class="heading">
-                                <h3>FILTER</h3>
+                                <h3>BỘ LỌC</h3>
                             </header>
                             <div class="accordion">
                                 <div class="accordion-group">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
                                             <a role="button" data-toggle="collapse" href="#collapse1" aria-expanded="true"
-                                                aria-controls="collapse1">SELECT REGION</a>
+                                                aria-controls="collapse1">CÁC ĐỊA DANH</a>
                                         </h4>
                                     </div>
                                     <div id="collapse1" class="panel-collapse collapse in" role="tabpanel">
@@ -47,7 +47,7 @@
                                                         <span class="ico-holder">
                                                             <span class="icon-asia"></span>
                                                         </span>
-                                                        <span class="text">Asia</span>
+                                                        <span class="text">Nha Trang</span>
                                                     </a>
                                                 </li>
                                                 <li>
@@ -55,7 +55,7 @@
                                                         <span class="ico-holder">
                                                             <span class="icon-arctic"></span>
                                                         </span>
-                                                        <span class="text">Arctic</span>
+                                                        <span class="text">Đà Lạt</span>
                                                     </a>
                                                 </li>
                                                 <li>
@@ -63,7 +63,7 @@
                                                         <span class="ico-holder">
                                                             <span class="icon-middle-east"></span>
                                                         </span>
-                                                        <span class="text">Middle East</span>
+                                                        <span class="text">Cần Thơ</span>
                                                     </a>
                                                 </li>
                                                 <li>
@@ -71,7 +71,7 @@
                                                         <span class="ico-holder">
                                                             <span class="icon-africa"></span>
                                                         </span>
-                                                        <span class="text">Africa</span>
+                                                        <span class="text">Hà Nội</span>
                                                     </a>
                                                 </li>
                                                 <li>
@@ -79,7 +79,7 @@
                                                         <span class="ico-holder">
                                                             <span class="icon-europe"></span>
                                                         </span>
-                                                        <span class="text">Europe</span>
+                                                        <span class="text">Huế </span>
                                                     </a>
                                                 </li>
                                                 <li>
@@ -87,14 +87,14 @@
                                                         <span class="ico-holder">
                                                             <span class="icon-north-america"></span>
                                                         </span>
-                                                        <span class="text">North America</span>
+                                                        <span class="text">Đà Nẵng</span>
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-group">
+                                {{-- <div class="accordion-group">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
                                             <a role="button" data-toggle="collapse" href="#collapse2" aria-expanded="true"
@@ -179,8 +179,8 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="accordion-group">
+                                </div> --}}
+                                {{-- <div class="accordion-group">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
                                             <a role="button" data-toggle="collapse" href="#collapse3" aria-expanded="true"
@@ -241,8 +241,8 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="accordion-group">
+                                </div> --}}
+                                {{-- <div class="accordion-group">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
                                             <a role="button" data-toggle="collapse" href="#collapse4" aria-expanded="true"
@@ -303,8 +303,8 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="accordion-group">
+                                </div> --}}
+                                {{-- <div class="accordion-group">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
                                             <a role="button" data-toggle="collapse" href="#collapse5" aria-expanded="true"
@@ -318,8 +318,8 @@
                                             <div id="ammount" class="price-input"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="accordion-group">
+                                </div> --}}
+                                {{-- <div class="accordion-group">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
                                             <a role="button" data-toggle="collapse" href="#collapse6" aria-expanded="true"
@@ -363,13 +363,13 @@
                                             <strong class="sub-link"><a href="#">CAST YOUR VOTE</a></strong>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </aside>
                     <div id="content" class="col-md-8 col-lg-9">
                         <div class="filter-option filter-box">
-                            <strong class="result-info">179 TRIPS MATCHES YOUR SEARCH</strong>
+                            {{-- <strong class="result-info">179 TRIPS MATCHES YOUR SEARCH</strong> --}}
                             <div class="layout-holder">
                                 <div class="layout-action">
                                     <a href="#" class="link link-list"><span class="icon-list"></span></a>
@@ -378,10 +378,10 @@
                                 <div class="select-holder">
                                     <div class="select-col">
                                         <select class="filter-select sort-select">
-                                            <option value="sort">Sort Order</option>
-                                            <option value="sort">Price</option>
-                                            <option value="sort">Recent</option>
-                                            <option value="sort">Popular</option>
+                                            <option value="sort">SẮP XẾP</option>
+                                            <option value="sort">GIÁ</option>
+                                            <option value="sort">GẦN ĐÂY</option>
+                                            <option value="sort">PHỔ BIẾN</option>
                                         </select>
                                     </div>
                                 </div>
@@ -392,387 +392,188 @@
                                 <article class="col-md-6 col-lg-4 article has-hover-s1 thumb-full">
                                     <div class="thumbnail">
                                         <div class="img-wrap">
-                                            <img src="img/listing/img-19.jpg" height="228" width="350"
+                                            <img src="{{asset('assets/web/img/listing/img-19.jpg')}}" height="228" width="350"
                                                 alt="image description" />
                                         </div>
                                         <h3 class="small-space">
-                                            <a href="tour-detail.html">Evening with Panda</a>
+                                            <a href="{{ route('web.tourdetail') }}">Nha Trang - Phú Yên - Quy Nhơn</a>
                                         </h3>
-                                        <span class="info">Nordic Walk, Swiss Alps or French Hiking?</span>
-                                        <aside class="meta">
-                                            <span class="country">
-                                                <span class="icon-world"> </span>12 Countries
-                                            </span>
-                                            <span class="activity">
-                                                <span class="icon-acitivities"> </span>79
-                                                Activities
-                                            </span>
-                                        </aside>
+                                        <span class="info"></span>
+                                      
                                         <p>
-                                            This is Photoshop's version of Lorem Ipsum. Proin
-                                            gravida nibh vel velit auctor aliquet.
+                                            Biển Đại Lãnh: uốn cong hình lưỡi liềm được ví như thiên đường biển nhiệt đới với bãi cát mịn trải dài hòa cùng nước biển trong vắt nhìn rõ tận đáy. 
                                         </p>
-                                        <a href="tour-detail.html" class="btn btn-default">explore</a>
+                                        <a href="tour-detail.html" class="btn btn-default">xem thêm</a>
                                         <footer>
-                                            <ul class="social-networks">
-                                                <li>
-                                                    <a href="#"><span class="icon-twitter"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-google-plus"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-facebook"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-linkedin"></span></a>
-                                                </li>
-                                            </ul>
-                                            <span class="price">from <span>$2749</span></span>
+                                            <span class="price">Giá<span>2,990,000đ</span></span>
+                                        </footer>
+                                    </div>  
+                                </article>
+                                <article class="col-md-6 col-lg-4 article has-hover-s1 thumb-full">
+                                    <div class="thumbnail">
+                                        <div class="img-wrap">
+                                            <img src="{{asset('assets/web/img/listing/img-20.jpg')}}" height="228" width="350"
+                                                alt="image description" />
+                                        </div>
+                                        <h3 class="small-space">
+                                            <a href="tour-detail.html">TP.HCM - Phan Thiết - Nha Trang - TP.HCM</a>
+                                        </h3>
+                                        <span class="info"></span>
+                                        
+                                        <p>
+                                            háp Chàm Poklong Garai: đây là một công trình kiến trúc độc đáo xây dựng vào khoảng cuối thế kỷ 13 đầu thế kỷ 14...
+                                        </p>
+                                        <a href="tour-detail.html" class="btn btn-default">xem thêm</a>
+                                        <footer>
+                                           
+                                            <span class="price">Giá <span>2,590,000đ</span></span>
                                         </footer>
                                     </div>
                                 </article>
                                 <article class="col-md-6 col-lg-4 article has-hover-s1 thumb-full">
                                     <div class="thumbnail">
                                         <div class="img-wrap">
-                                            <img src="img/listing/img-20.jpg" height="228" width="350"
+                                            <img src="{{asset('assets/web/img/listing/img-21.jpg')}}" height="228" width="350"
                                                 alt="image description" />
                                         </div>
                                         <h3 class="small-space">
-                                            <a href="tour-detail.html">Sleeping with Sea Lion</a>
+                                            <a href="tour-detail.html">Nha Trang: Bùn khoáng Iresort</a>
                                         </h3>
-                                        <span class="info">Nordic Walk, Swiss Alps or French Hiking?</span>
-                                        <aside class="meta">
-                                            <span class="country">
-                                                <span class="icon-world"> </span>12 Countries
-                                            </span>
-                                            <span class="activity">
-                                                <span class="icon-acitivities"> </span>79
-                                                Activities
-                                            </span>
-                                        </aside>
+                                        <span class="info"></span>
+                                       
                                         <p>
-                                            This is Photoshop's version of Lorem Ipsum. Proin
-                                            gravida nibh vel velit auctor aliquet.
+                                           Tháp Bà Ponagar: công trình tiêu biểu cho nghệ thuật kiến trúc và điêu khắc tín ngưỡng tôn giáo bậc nhất của dân tộc Chăm tại Nha Trang.
                                         </p>
-                                        <a href="tour-detail.html" class="btn btn-default">explore</a>
+                                        <a href="tour-detail.html" class="btn btn-default">xem thêm</a>
                                         <footer>
-                                            <ul class="social-networks">
-                                                <li>
-                                                    <a href="#"><span class="icon-twitter"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-google-plus"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-facebook"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-linkedin"></span></a>
-                                                </li>
-                                            </ul>
-                                            <span class="price">from <span>$2749</span></span>
+                                           
+                                            <span class="price">Giá <span>2,590,000đ</span></span>
                                         </footer>
                                     </div>
                                 </article>
                                 <article class="col-md-6 col-lg-4 article has-hover-s1 thumb-full">
                                     <div class="thumbnail">
                                         <div class="img-wrap">
-                                            <img src="img/listing/img-21.jpg" height="228" width="350"
+                                            <img src="{{asset('assets/web/img/listing/img-22.jpg')}}" height="228" width="350"
                                                 alt="image description" />
                                         </div>
                                         <h3 class="small-space">
-                                            <a href="tour-detail.html">Following the Zebras</a>
+                                            <a href="tour-detail.html">Nha Trang: Biển Nhũ Tiên</a>
                                         </h3>
-                                        <span class="info">Nordic Walk, Swiss Alps or French Hiking?</span>
-                                        <aside class="meta">
-                                            <span class="country">
-                                                <span class="icon-world"> </span>12 Countries
-                                            </span>
-                                            <span class="activity">
-                                                <span class="icon-acitivities"> </span>79
-                                                Activities
-                                            </span>
-                                        </aside>
+                                        <span class="info"></span>
+                                        
                                         <p>
-                                            This is Photoshop's version of Lorem Ipsum. Proin
-                                            gravida nibh vel velit auctor aliquet.
+                                           Làng Yến Mai Sinh: tham quan vách yến nhân tạo lớn nhất Việt Nam, tìm hiểu quy trình lấy yến ở độ cao cheo leo hiểm...
                                         </p>
-                                        <a href="tour-detail.html" class="btn btn-default">explore</a>
+                                        <a href="tour-detail.html" class="btn btn-default">xem thêm</a>
                                         <footer>
-                                            <ul class="social-networks">
-                                                <li>
-                                                    <a href="#"><span class="icon-twitter"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-google-plus"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-facebook"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-linkedin"></span></a>
-                                                </li>
-                                            </ul>
-                                            <span class="price">from <span>$2749</span></span>
+                                            
+                                            <span class="price">Giá <span>2,590,000đ</span></span>
                                         </footer>
                                     </div>
                                 </article>
                                 <article class="col-md-6 col-lg-4 article has-hover-s1 thumb-full">
                                     <div class="thumbnail">
                                         <div class="img-wrap">
-                                            <img src="img/listing/img-22.jpg" height="228" width="350"
+                                            <img src="{{asset('assets/web/img/listing/img-23.jpg')}}" height="228" width="350"
                                                 alt="image description" />
                                         </div>
                                         <h3 class="small-space">
-                                            <a href="tour-detail.html">Discovering Wild Trails</a>
+                                            <a href="tour-detail.html">Nha Trang - Thiên đường biển đảo</a>
                                         </h3>
-                                        <span class="info">Nordic Walk, Swiss Alps or French Hiking?</span>
-                                        <aside class="meta">
-                                            <span class="country">
-                                                <span class="icon-world"> </span>12 Countries
-                                            </span>
-                                            <span class="activity">
-                                                <span class="icon-acitivities"> </span>79
-                                                Activities
-                                            </span>
-                                        </aside>
+                                        <span class="info"></span>
+                                        
                                         <p>
-                                            This is Photoshop's version of Lorem Ipsum. Proin
-                                            gravida nibh vel velit auctor aliquet.
+                                            Đoàn làm thủ tục lên đảo. Tại đây Quý khách tự do đắm mình vào làn biển trong xanh với bãi cát trải dài. 
                                         </p>
-                                        <a href="tour-detail.html" class="btn btn-default">explore</a>
+                                        <a href="tour-detail.html" class="btn btn-default">xem thêm</a>
                                         <footer>
-                                            <ul class="social-networks">
-                                                <li>
-                                                    <a href="#"><span class="icon-twitter"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-google-plus"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-facebook"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-linkedin"></span></a>
-                                                </li>
-                                            </ul>
-                                            <span class="price">from <span>$2749</span></span>
+                                           
+                                            <span class="price">Giá <span>2,590,000đ</span></span>
                                         </footer>
                                     </div>
                                 </article>
                                 <article class="col-md-6 col-lg-4 article has-hover-s1 thumb-full">
                                     <div class="thumbnail">
                                         <div class="img-wrap">
-                                            <img src="img/listing/img-23.jpg" height="228" width="350"
+                                            <img src="{{asset('assets/web/img/listing/img-24.jpg')}}" height="228" width="350"
                                                 alt="image description" />
                                         </div>
                                         <h3 class="small-space">
-                                            <a href="tour-detail.html">Angola Safari for Family</a>
+                                            <a href="tour-detail.html">Nha Trang: Con Sẻ Tre</a>
                                         </h3>
-                                        <span class="info">Nordic Walk, Swiss Alps or French Hiking?</span>
-                                        <aside class="meta">
-                                            <span class="country">
-                                                <span class="icon-world"> </span>12 Countries
-                                            </span>
-                                            <span class="activity">
-                                                <span class="icon-acitivities"> </span>79
-                                                Activities
-                                            </span>
-                                        </aside>
+                                        <span class="info"></span>
+                                        
                                         <p>
-                                            This is Photoshop's version of Lorem Ipsum. Proin
-                                            gravida nibh vel velit auctor aliquet.
+                                            Bãi Tranh: Tại Bãi Tranh, Quý khách tự do nghỉ ngơi, thư giãn, tắm biển hoặc tham gia các trò chơi thể thao dưới nước (chi phí tự túc) Hòn Mun
                                         </p>
-                                        <a href="tour-detail.html" class="btn btn-default">explore</a>
+                                        <a href="tour-detail.html" class="btn btn-default">xem thêm</a>
                                         <footer>
-                                            <ul class="social-networks">
-                                                <li>
-                                                    <a href="#"><span class="icon-twitter"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-google-plus"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-facebook"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-linkedin"></span></a>
-                                                </li>
-                                            </ul>
-                                            <span class="price">from <span>$2749</span></span>
+                                            
+                                            <span class="price">Giá <span>2,590,000đ</span></span>
                                         </footer>
                                     </div>
                                 </article>
                                 <article class="col-md-6 col-lg-4 article has-hover-s1 thumb-full">
                                     <div class="thumbnail">
                                         <div class="img-wrap">
-                                            <img src="img/listing/img-24.jpg" height="228" width="350"
+                                            <img src="{{asset('assets/web/img/listing/img-25.jpg')}}" height="228" width="350"
                                                 alt="image description" />
                                         </div>
                                         <h3 class="small-space">
-                                            <a href="tour-detail.html">Royal Safari in Peru</a>
+                                            <a href="tour-detail.html">Nha Trang - Trải Nghiệm Golf</a>
                                         </h3>
-                                        <span class="info">Nordic Walk, Swiss Alps or French Hiking?</span>
-                                        <aside class="meta">
-                                            <span class="country">
-                                                <span class="icon-world"> </span>12 Countries
-                                            </span>
-                                            <span class="activity">
-                                                <span class="icon-acitivities"> </span>79
-                                                Activities
-                                            </span>
-                                        </aside>
+                                        <span class="info"></span>
+                                       
                                         <p>
-                                            This is Photoshop's version of Lorem Ipsum. Proin
-                                            gravida nibh vel velit auctor aliquet.
+                                            Không giống với bất cứ nơi nào, An Lam Retreats Ninh Van Bay mang đến cho du khách những giây phút “sống chậm” hiếm hoi giữa nhịp đời tất bật,
                                         </p>
-                                        <a href="tour-detail.html" class="btn btn-default">explore</a>
+                                        <a href="tour-detail.html" class="btn btn-default">xem thêm</a>
                                         <footer>
-                                            <ul class="social-networks">
-                                                <li>
-                                                    <a href="#"><span class="icon-twitter"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-google-plus"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-facebook"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-linkedin"></span></a>
-                                                </li>
-                                            </ul>
-                                            <span class="price">from <span>$2749</span></span>
+                                           
+                                            <span class="price">Giá <span>2,590,000đ</span></span>
                                         </footer>
                                     </div>
                                 </article>
                                 <article class="col-md-6 col-lg-4 article has-hover-s1 thumb-full">
                                     <div class="thumbnail">
                                         <div class="img-wrap">
-                                            <img src="img/listing/img-25.jpg" height="228" width="350"
+                                            <img src="{{asset('assets/web/img/listing/img-26.jpg')}}" height="228" width="350"
                                                 alt="image description" />
                                         </div>
                                         <h3 class="small-space">
-                                            <a href="tour-detail.html">Evening with Panda</a>
+                                            <a href="tour-detail.html">Nha Trang - Hòn Lao Đảo Khỉ</a>
                                         </h3>
-                                        <span class="info">Nordic Walk, Swiss Alps or French Hiking?</span>
-                                        <aside class="meta">
-                                            <span class="country">
-                                                <span class="icon-world"> </span>12 Countries
-                                            </span>
-                                            <span class="activity">
-                                                <span class="icon-acitivities"> </span>79
-                                                Activities
-                                            </span>
-                                        </aside>
+                                        <span class="info"></span>
+                                       
                                         <p>
-                                            This is Photoshop's version of Lorem Ipsum. Proin
-                                            gravida nibh vel velit auctor aliquet.
+                                            TNha Trang với khí hậu ôn hòa, biển xanh trong quanh năm cùng những điểm vui chơi bậc nhất và không ngừng đổi mới hằng ngày luôn thu 
                                         </p>
-                                        <a href="tour-detail.html" class="btn btn-default">explore</a>
+                                        <a href="tour-detail.html" class="btn btn-default">xem thêm</a>
                                         <footer>
-                                            <ul class="social-networks">
-                                                <li>
-                                                    <a href="#"><span class="icon-twitter"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-google-plus"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-facebook"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-linkedin"></span></a>
-                                                </li>
-                                            </ul>
-                                            <span class="price">from <span>$2749</span></span>
+                                           
+                                            <span class="price">Giá <span>2,590,000đ</span></span>
                                         </footer>
                                     </div>
                                 </article>
                                 <article class="col-md-6 col-lg-4 article has-hover-s1 thumb-full">
                                     <div class="thumbnail">
                                         <div class="img-wrap">
-                                            <img src="img/listing/img-26.jpg" height="228" width="350"
+                                            <img src="{{asset('assets/web/img/listing/img-27.jpg')}}" height="228" width="350"
                                                 alt="image description" />
                                         </div>
                                         <h3 class="small-space">
-                                            <a href="tour-detail.html">Sleeping with Sea Lion</a>
+                                            <a href="tour-detail.html">Nha Trang - Nghỉ dưỡng Vinpearl</a>
                                         </h3>
-                                        <span class="info">Nordic Walk, Swiss Alps or French Hiking?</span>
-                                        <aside class="meta">
-                                            <span class="country">
-                                                <span class="icon-world"> </span>12 Countries
-                                            </span>
-                                            <span class="activity">
-                                                <span class="icon-acitivities"> </span>79
-                                                Activities
-                                            </span>
-                                        </aside>
+                                        <span class="info"></span>
+                                        
                                         <p>
-                                            This is Photoshop's version of Lorem Ipsum. Proin
-                                            gravida nibh vel velit auctor aliquet.
+                                           VinWonders Nha Trang: Cánh cửa mở ra thiên đường vui chơi giải trí – nơi giấc mơ thơ ấu trở thành hiện thực.
                                         </p>
-                                        <a href="tour-detail.html" class="btn btn-default">explore</a>
+                                        <a href="tour-detail.html" class="btn btn-default">xem thêm</a>
                                         <footer>
-                                            <ul class="social-networks">
-                                                <li>
-                                                    <a href="#"><span class="icon-twitter"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-google-plus"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-facebook"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-linkedin"></span></a>
-                                                </li>
-                                            </ul>
-                                            <span class="price">from <span>$2749</span></span>
-                                        </footer>
-                                    </div>
-                                </article>
-                                <article class="col-md-6 col-lg-4 article has-hover-s1 thumb-full">
-                                    <div class="thumbnail">
-                                        <div class="img-wrap">
-                                            <img src="img/listing/img-27.jpg" height="228" width="350"
-                                                alt="image description" />
-                                        </div>
-                                        <h3 class="small-space">
-                                            <a href="tour-detail.html">Following the Zebras</a>
-                                        </h3>
-                                        <span class="info">Nordic Walk, Swiss Alps or French Hiking?</span>
-                                        <aside class="meta">
-                                            <span class="country">
-                                                <span class="icon-world"> </span>12 Countries
-                                            </span>
-                                            <span class="activity">
-                                                <span class="icon-acitivities"> </span>79
-                                                Activities
-                                            </span>
-                                        </aside>
-                                        <p>
-                                            This is Photoshop's version of Lorem Ipsum. Proin
-                                            gravida nibh vel velit auctor aliquet.
-                                        </p>
-                                        <a href="tour-detail.html" class="btn btn-default">explore</a>
-                                        <footer>
-                                            <ul class="social-networks">
-                                                <li>
-                                                    <a href="#"><span class="icon-twitter"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-google-plus"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-facebook"></span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><span class="icon-linkedin"></span></a>
-                                                </li>
-                                            </ul>
-                                            <span class="price">from <span>$2749</span></span>
+                                            
+                                            <span class="price">Giá <span>2,590,000đ</span></span>
                                         </footer>
                                     </div>
                                 </article>
@@ -807,21 +608,21 @@
         <!-- recent block -->
         <aside class="recent-block recent-list recent-wide-thumbnail">
             <div class="container">
-                <h2 class="text-center text-uppercase">RECENTLY VIEWED</h2>
+                <h2 class="text-center text-uppercase">ĐÃ XEM GẦN ĐÂY</h2>
                 <div class="row">
                     <article class="col-sm-6 col-md-3 article">
                         <div class="thumbnail">
                             <h3 class="no-space">
-                                <a href="#">Everest Basecamp Trek</a>
+                                <a href="#">Nghỉ dưỡng Vinpearl</a>
                             </h3>
-                            <strong class="info-title">Everest Region, Nepal</strong>
+                            <strong class="info-title">Nha Trang</strong>
                             <div class="img-wrap">
-                                <img src="img/listing/img-31.jpg" height="210" width="250" alt="image description" />
+                                <img src="{{asset('assets/web/img/listing/img-31.jpg')}}" height="210" width="250" alt="image description" />
                             </div>
                             <footer>
                                 <div class="sub-info">
-                                    <span>5 Days</span>
-                                    <span>$299</span>
+                                    <span>5 Ngày</span>
+                                    {{-- <span>$299</span> --}}
                                 </div>
                                 <ul class="ico-list">
                                     <li class="pop-opener">
@@ -849,16 +650,16 @@
                     <article class="col-sm-6 col-md-3 article">
                         <div class="thumbnail">
                             <h3 class="no-space">
-                                <a href="#">Everest Basecamp Trek</a>
+                                <a href="#">Thiền Tâm Nơi Yên Tử</a>
                             </h3>
-                            <strong class="info-title">Everest Region, Nepal</strong>
+                            <strong class="info-title">Đà Nẵng</strong>
                             <div class="img-wrap">
-                                <img src="img/listing/img-32.jpg" height="210" width="250" alt="image description" />
+                                <img src="{{asset('assets/web/img/listing/img-32.jpg')}}" height="210" width="250" alt="image description" />
                             </div>
                             <footer>
                                 <div class="sub-info">
-                                    <span>5 Days</span>
-                                    <span>$299</span>
+                                    <span>2 Ngày</span>
+                                    
                                 </div>
                                 <ul class="ico-list">
                                     <li class="pop-opener">
@@ -886,16 +687,16 @@
                     <article class="col-sm-6 col-md-3 article">
                         <div class="thumbnail">
                             <h3 class="no-space">
-                                <a href="#">Everest Basecamp Trek</a>
+                                <a href="#">Nơi gặp gỡ đất trời</a>
                             </h3>
-                            <strong class="info-title">Everest Region, Nepal</strong>
+                            <strong class="info-title">Spa</strong>
                             <div class="img-wrap">
-                                <img src="img/listing/img-33.jpg" height="210" width="250" alt="image description" />
+                                <img src="{{asset('assets/web/img/listing/img-33.jpg')}}" height="210" width="250" alt="image description" />
                             </div>
                             <footer>
                                 <div class="sub-info">
-                                    <span>5 Days</span>
-                                    <span>$299</span>
+                                    <span>4 ngày</span>
+                                  
                                 </div>
                                 <ul class="ico-list">
                                     <li class="pop-opener">
@@ -923,16 +724,16 @@
                     <article class="col-sm-6 col-md-3 article">
                         <div class="thumbnail">
                             <h3 class="no-space">
-                                <a href="#">Everest Basecamp Trek</a>
+                                <a href="#">Eo Gió - Kỳ Co</a>
                             </h3>
-                            <strong class="info-title">Everest Region, Nepal</strong>
+                            <strong class="info-title">Quy Nhơn</strong>
                             <div class="img-wrap">
-                                <img src="img/listing/img-34.jpg" height="210" width="250" alt="image description" />
+                                <img src="{{asset('assets/web/img/listing/img-34.jpg')}}" height="210" width="250" alt="image description" />
                             </div>
                             <footer>
                                 <div class="sub-info">
-                                    <span>5 Days</span>
-                                    <span>$299</span>
+                                    <span>3 Days</span>
+                                    
                                 </div>
                                 <ul class="ico-list">
                                     <li class="pop-opener">

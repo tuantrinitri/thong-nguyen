@@ -46,4 +46,14 @@ class WebController extends BaseController
     {
         return view('web::web.search');
     }
+
+    public static function category()
+    {
+        return view('web::web.category');
+    }
+
+    public static function post()
+    {
+        return view('web::web.post');
+    }
 }
