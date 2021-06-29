@@ -17,7 +17,7 @@ return [
     'of'              => 'của',
     'entries'         => 'bản ghi',
     'title'           => 'Tiêu đề',
-    'slug'            => 'Liên kết tĩnh',
+    'slug'            => 'liên kết tĩnh',
     'illustration'    => 'Hình minh họa',
     'description'     => 'Giới thiệu ngắn',
     'content_detail'  => 'Nội dung chi tiết',
@@ -46,5 +46,4 @@ return [
     'deletesuccess'   => 'Xóa trang thành công',
     'notierror'       => 'Đã có lỗi xảy ra',
     'updatesuccess'   => 'Cập nhật thành công',
-    'locale'   => 'Ngôn ngữ trang',
 ];

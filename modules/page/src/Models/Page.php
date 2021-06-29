@@ -3,23 +3,27 @@
 namespace Modules\Page\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Astrotomic\Translatable\Translatable;
-use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 
-class Page extends Model implements TranslatableContract
+class Page extends Model
 {
-    use Translatable;
-    public $translatedAttributes = ['title', 'content', 'description'];
     protected $table = 'pages';
+
     protected $fillable = [
-        'id',
+        'title',
+        'slug',
+        'description',
+        'content',
         'image',
         'status',
-        'slug',
         'order',
+        'seo_title',
+        'seo_image',
+        'seo_keywords',
+        'seo_description',
     ];
-    public function ptranstion()
+
+    public function menu_rights()
     {
-        return $this->hasMany(PageTranslation::class);
+        return $this->morphOne(MenuRight::class, 'menuable');
     }
 }

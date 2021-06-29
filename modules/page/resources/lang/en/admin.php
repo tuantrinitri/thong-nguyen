@@ -20,7 +20,7 @@ return [
     'slug'            => 'Slug',
     'illustration'    => 'Illustration',
     'description'     => 'Description',
-    'content_detail'  => 'Contents',
+    'content_detail'  => 'Details',
     'hidden'          => 'Hidden',
     'cancel'          => 'Cancel',
     'seo_conf'        => 'SEO configuration',
@@ -46,5 +46,4 @@ return [
     'deletesuccess'   => 'Delete page success',
     'notierror'       => 'Error',
     'updatesuccess'   => 'Update success',
-    'locale'   => 'Page Language',
 ];

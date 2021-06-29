@@ -25,14 +25,12 @@ class PageRequest extends FormRequest
     {
         if ($this->has('id')) {
             return [
-                'title' => 'required',
-                'slug' => 'required',
-                'content' => 'required'
+                'title' => 'required|unique:pages,title,' . $this->id,
             ];
         }
         return [
-            'title' => 'required',
-            'slug' => 'required',
+            'title' => 'required|unique:pages,title',
+            'slug' => 'required|unique:pages,slug',
             'content' => 'required'
         ];
     }
@@ -41,7 +39,9 @@ class PageRequest extends FormRequest
     {
         return [
             'title.required' => 'Chưa nhập tiêu đề',
+            'title.unique' => 'Tiêu đề bị trùng',
             'slug.required' => 'Chưa nhập liên kết tĩnh',
+            'slug.unique' => 'Liên kết tĩnh bị trùng',
             'content.required' => 'Chưa nhập nội dung chi tiết'
         ];
     }
