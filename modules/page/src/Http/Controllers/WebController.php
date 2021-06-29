@@ -2,19 +2,21 @@
 
 namespace Modules\Page\Http\Controllers;
 
-use Core\Supports\Controllers\BaseController;
-use Modules\Page\Models\Page;
+use Core\Http\Controllers\WebController as ControllersWebController;
 use Modules\Page\Repositories\Interfaces\PageInterface;
 
-class WebController extends BaseController
+class WebController extends ControllersWebController
 {
-    public function detail(string $slug)
+    protected static $pageRepository;
+
+    function __construct(PageInterface $pageRepository)
     {
-        app()->getLocale();
-        $page = Page::where('slug', $slug)->where('status', 1)->first();
-        if (!empty($page)) {
-            return view('page::web.detail_page', compact('page'));
-        }
-        return abort(404);
+        self::$pageRepository = $pageRepository;
+    }
+
+    public static function getDetailPage(string $slug)
+    {
+        $page = self::$pageRepository->getDetailsPageBySlug($slug);
+        return view('page::web.detail_page', compact('page'))->withShortcodes();
     }
 }

@@ -9,6 +9,5 @@ class Module
     public static function uninstall()
     {
         Schema::dropIfExists('pages');
-        Schema::dropIfExists('page_transtions');
     }
 }

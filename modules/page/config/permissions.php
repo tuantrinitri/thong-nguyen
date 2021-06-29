@@ -3,22 +3,22 @@
 return [
     [
         'name' => 'page.admin.list',
-        'title' => 'Quản lý page',
-        'description' => 'Quản lý page'
+        'title' => 'page::common.permission.list_page',
+        'description' => 'page::common.permission.list_page_description',
     ],
     [
         'name' => 'page.admin.create',
-        'title' => 'Quản lý thêm nội dung page',
-        'description' => 'Quản lý thêm nội dung page'
+        'title' => 'page::common.permission.create_page',
+        'description' => 'page::common.permission.create_page_description',
     ],
     [
         'name' => 'page.admin.edit',
-        'title' => 'Quản lý chỉnh sửa page',
-        'description' => 'Quản lý chỉnh sửa page'
+        'title' => 'page::common.permission.edit_page',
+        'description' => 'page::common.permission.edit_user_description',
     ],
     [
         'name' => 'page.admin.delete',
-        'title' => 'Quản lý xóa page',
-        'description' => 'Quản lý xóa page'
-    ]
+        'title' => 'page::common.permission.delete_page',
+        'description' => 'page::common.permission.delete_page_description',
+    ],
 ];

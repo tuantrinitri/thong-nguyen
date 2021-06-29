@@ -79,21 +79,22 @@ Route::group(['namespace' => '\Modules\Post\Http\Controllers', 'middleware' => '
  * ROUTES FOR API: Company
  */
 Route::group(['namespace' => '\Modules\Post\Http\Controllers'], function () {
-    Route::get('api/categories/{slug}', [
-        'as' => 'account.api.categories',
-        'uses' => 'ApiController@categories'
+    
+    Route::get('danh-muc-bai-viet/{slug}', [
+        'as' => 'web.post.categories',
+        'uses' => 'WebController@categories'
     ]);
 
-    Route::get('api/posts/{slug}', [
-        'as' => 'account.api.post',
-        'uses' => 'ApiController@post'
+    Route::get('baiviet/{slug}', [
+        'as' => 'web.post.post',
+        'uses' => 'WebController@post'
     ]);
 
-    Route::get('api/categories', [
-        'uses' => 'ApiController@listCategory'
-    ]);
+    // Route::get('api/categories', [
+    //     'uses' => 'ApiController@listCategory'
+    // ]);
 
-    Route::get('api/post-in-category/{slug}', [
-        'uses' => 'ApiController@randomFivePost'
-    ]);
+    // Route::get('api/post-in-category/{slug}', [
+    //     'uses' => 'ApiController@randomFivePost'
+    // ]);
 });

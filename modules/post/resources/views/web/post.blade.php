@@ -11,7 +11,8 @@
               <nav class="breadcrumbs">
                 <ul>
                   <li><a href="{{route('web.index')}}">HOME</a></li>
-                  <li><a href="{{ route('post.web.category',$post->category) }}">{{ $post->category->title }}</a></li>
+                  <li><a href="{{ route('web.post.categories',$post->category['slug']) }}">{{ $post->category->title }}</a></li>
+                  <li class="active">{{ $post['title'] }}</li>
                 </ul>
               </nav>
             </div>
@@ -28,47 +29,15 @@
                   <!-- blog single -->
                   <article class="blog-single">
                     <div class="img-wrap">
-                      <img src="img/blog/img-01.jpg" height="480" width="870" alt="image description" />
+                      <img src="{{ asset('') }}" height="480" width="870" alt="image description" />
                     </div>
                     <div class="description">
                       <h1 class="content-main-heading">
                         {{ $post->title }}
                       </h1>
-                      <p>
-                       {!! $post->content !!}
-                      </p>
-                      <p>
+                    
                       {!! $post->content !!}
-                      </p>
-                      <p>
-                       {!! $post->content !!}
-                      </p>
-                      <p>
-                        {!! $post->content !!}
-                      </p>
-                      <p>
-                       {!! $post->content !!}
-                      </p>
-                      <div class="block-quotation">
-                        <div class="bg-stretch">
-                          <img src="img/blog/img-09.jpg" height="203" width="809" alt="image description" />
-                        </div>
-                        <blockquote>
-                          <q>“Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua.”
-                          </q>
-                        </blockquote>
-                      </div>
-                      <p>
-                      {!! $post->content !!}
-                      </p>
-                      <p>
-                       {!! $post->content !!}
-                      </p>
-                      <p>
-                       {!! $post->content !!}
-                      </p>
+                      
                       <footer class="meta-article">
                         <span class="star-rating">
                           <span><span class="icon-star"></span></span>
@@ -81,18 +50,9 @@
                           <div class="rate-info">
                             Post by <a href="#">{{ $post->author }}</a>
                           </div>
-                          <div class="comment">
-                            <a href="#">37 Comments</a>
-                          </div>
+                        
                         </div>
-                        <ul class="ico-action">
-                          <li>
-                            <a href="#"><span class="icon-share"></span></a>
-                          </li>
-                          <li>
-                            <a href="#"><span class="icon-favs"></span></a>
-                          </li>
-                        </ul>
+                     
                       </footer>
                     </div>
                     <div class="header-box">

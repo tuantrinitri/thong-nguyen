@@ -21,9 +21,10 @@
               <!-- main menu items and drop for mobile -->
               <div class="collapse navbar-collapse" id="nav">
                   <!-- main navbar -->
-                  <ul class="nav navbar-nav nav-center">
-                      <li><a href="{{ route('web.index') }}">Trang chủ</a></li>
-                      <li class="dropdown">
+                  <ul class="nav navbar-nav nav-center" style="font-size: 18px; font-weight: bold;">
+                      <li class="action"><a href="{{ route('web.index') }}">Trang chủ</a></li>
+                      <li><a href="{{ route('web.tourtype') }}">Du lịch</a></li>
+                      {{-- <li class="dropdown">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Du lịch <b
                                   class="icon-angle-down"></b></a>
                           <div class="dropdown-menu">
@@ -36,7 +37,7 @@
                                   </li>
                               </ul>
                           </div>
-                      </li>
+                      </li> --}}
                       <li class="dropdown">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tin tức <b
                                   class="icon-angle-down"></b></a>
@@ -44,7 +45,7 @@
                               <ul>
                                   <li>
 
-                                      <a href="{{ route('web.category') }}">Cẩm nang du lịch</a>
+                                      <a href="#">Cẩm nang du lịch</a>
                                   </li>
                                   <li>
                                       <a href="#">Kinh nghiệm du lịch</a>

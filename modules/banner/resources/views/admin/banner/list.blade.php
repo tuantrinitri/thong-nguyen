@@ -32,11 +32,11 @@
         </tbody>
     </table>
 </div>
-@if ($banners->links('vendor.pagination.bootstrap-4'))
+{{-- @if ($banners->links('vendor.pagination.bootstrap-4'))
 <div class="cms-paginate float-right mr-3">
     {{ $banners->links('vendor.pagination.bootstrap-4') }}
 </div>
-@endif
+@endif --}}
 @else
 <div class="alert alert-info">Chưa có dữ liệu</div>
 @endif

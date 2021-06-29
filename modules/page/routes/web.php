@@ -7,46 +7,45 @@ Route::group(['namespace' => '\Modules\Page\Http\Controllers', 'middleware' => '
     Route::group(['middleware' => ['auth'], 'prefix' => config('cms.admin_prefix') . '/pages'], function () {
         Route::get('/', [
             'as' => 'page.admin.list',
-            'uses' => 'PageController@index',
-            'permission' => 'page.admin.list',
+            'uses' => 'PageController@getList'
         ]);
         Route::get('create', [
             'as' => 'page.admin.create',
-            'uses' => 'PageController@create',
-            'permission' => 'page.admin.create',
+            'uses' => 'PageController@getCreate'
         ]);
         Route::post('create', [
             'as' => 'page.admin.create',
-            'uses' => 'PageController@store',
-            'permission' => 'page.admin.create',
+            'uses' => 'PageController@postCreate'
         ]);
         Route::get('edit/{id}', [
             'as' => 'page.admin.edit',
-            'uses' => 'PageController@edit',
-            'permission' => 'page.admin.edit',
+            'uses' => 'PageController@getEdit'
         ]);
         Route::post('edit/{id}', [
             'as' => 'page.admin.edit',
-            'uses' => 'PageController@update',
-            'permission' => 'page.admin.edit',
+            'uses' => 'PageController@postEdit'
         ]);
         Route::get('delete/{id}', [
             'as' => 'page.admin.delete',
-            'uses' => 'PageController@delete',
-            'permission' => 'page.admin.delete',
+            'uses' => 'PageController@getDelete'
         ]);
         Route::post('changePage', [
             'as' => 'page.admin.ajaxchangepage',
-            'uses' => 'PageController@ajaxChangePage',
-            'permission' => 'dashboard',
+            'uses' => 'PageController@ajaxChangPage'
         ]);
         Route::post('changeStatus', [
             'as' => 'page.admin.ajaxchangestatus',
-            'uses' => 'PageController@ajaxChangeStatus',
-            'permission' => 'dashboard'
+            'uses' => 'PageController@ajaxChangeStatus'
+        ]);
+        Route::post('getslug', [
+            'as' => 'get-slug-page',
+            'uses' => 'PageController@postGetSlugPage'
         ]);
     });
-    Route::group(['middleware' => ['web']], function () {
-        Route::get('/trang/{slug}', 'WebController@detail')->name('page.web.page');
-    });
+});
+Route::group(['namespace' => '\Modules\Page\Http\Controllers', 'prefix' => 'page'], function () {
+    Route::get('/{slug}', [
+        'as' => 'get-details-page',
+        'uses' => 'WebController@getDetailPage'
+    ]);
 });

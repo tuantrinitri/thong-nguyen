@@ -15,19 +15,18 @@ class CreatePagesTable extends Migration
     {
         Schema::create('pages', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('lang', 5)->default('vi');
+            $table->string('title', 255);
             $table->string('slug', 255);
             $table->string('image')->nullable();
-            $table->unsignedInteger('order')->nullable();
-            $table->unsignedTinyInteger('status')->default(1);
-            $table->timestamps();
-        });
-        Schema::create('page_transtions', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('locale', 5)->default('vi');
-            $table->unsignedInteger('page_id');
-            $table->string('title', 255);
             $table->text('description')->nullable();
             $table->longText('content');
+            $table->unsignedInteger('order')->nullable();
+            $table->string('seo_title', 255)->nullable();
+            $table->string('seo_image')->nullable();
+            $table->text('seo_keywords')->nullable();
+            $table->text('seo_description')->nullable();
+            $table->unsignedTinyInteger('status')->default(1);
             $table->timestamps();
         });
     }
@@ -40,6 +39,5 @@ class CreatePagesTable extends Migration
     public function down()
     {
         Schema::dropIfExists('pages');
-        Schema::dropIfExists('page_transtions');
     }
 }

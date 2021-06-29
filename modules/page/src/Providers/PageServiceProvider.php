@@ -7,16 +7,13 @@ use Illuminate\Routing\Events\RouteMatched;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
 use Modules\Page\Repositories\Eloquents\PageRepository;
-use Modules\Page\Repositories\Eloquents\PageTranslationRepository;
 use Modules\Page\Repositories\Interfaces\PageInterface;
-use Modules\Page\Repositories\Interfaces\PageTranslationInterface;
 
 class PageServiceProvider extends ServiceProvider
 {
     public function register()
     {
         $this->app->bind(PageInterface::class, PageRepository::class);
-        $this->app->bind(PageTranslationInterface::class, PageTranslationRepository::class);
     }
 
     public function boot()
@@ -86,7 +83,7 @@ class PageServiceProvider extends ServiceProvider
         /**
          * Load widgets, shortcodes,...
          */
-        widgets: app('arrilot.widget-namespaces')->registerNamespace($module, $namespace . 'Widgets');
+        // widgets: app('arrilot.widget-namespaces')->registerNamespace($module, $namespace . 'Widgets');
         // shortcodes: Shortcode::register('product', ProductShortcode::class);
     }
 
@@ -101,7 +98,7 @@ class PageServiceProvider extends ServiceProvider
                     'name'        => 'page::admin.page_management',
                     'icon'        => 'fa fa-network-wired',
                     'url'         => route('page.admin.list'),
-                    'permissions' => ['page.admin.list'],
+                    'permissions' => [],
                 ])
                 ->registerItem([
                     'id'          => 'mod-page-list',
@@ -109,7 +106,7 @@ class PageServiceProvider extends ServiceProvider
                     'parent_id'   => 'mod-page',
                     'name'        => 'page::admin.list_page',
                     'url'         => route('page.admin.list'),
-                    'permissions' => ['page.admin.list'],
+                    'permissions' => [],
                 ]);
         });
     }

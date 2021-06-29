@@ -1,88 +1,58 @@
 @extends('core::theme.layouts.default')
-@section('custom_css')
-@endsection
 @section('page_content')
-<div class="p-2" style="display: flex;justify-content: flex-start;">
+<div class="p-3">
     <a href="{{ route('page.admin.create') }}" class="btn btn-success btn-sm">{{ trans('page::admin.add_page') }}</a>
+    @if (count($pages) > 0)
+    <div class="table-responsive">
+        <table class="table datatable-basic">
+            <thead class="bg-light">
+                <tr>
+                    <th class="text-center" style="width:100px">{{ trans('page::admin.order') }}</th>
+                    <th class="text-center">{{ trans('page::admin.name_page') }}</th>
+                    <th class="text-center">{{ trans('page::admin.status_page') }}</th>
+                    <th class="text-center">{{ trans('page::admin.action_page') }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($pages as $page)
+                <tr>
+                    <td class="text-center">
+                        <span style="display:none;">{{ $page['order'] }}</span>
+                        <select data-min="{{ $minOrder }}" data-max="{{ $maxOrder }}" data-order="{{ $page['order'] }}"
+                            data-id="{{ $page['id'] }}" class="form-control changOrderPage"></select>
+                    </td>
+                    <td><a target="_blank" {{-- href="{{ route('executeSlug',$page['slug']) }}"></a> --}}
+                        <strong>{{ $page['title'] }}</strong>
+                    </td>
+                    <td class="text-center">
+                        <div class="form-check form-check-switchery form-check-switchery-sm">
+                            <label class="form-check-label">
+                                <input data-id="{{ $page['id'] }}" type="checkbox" class="form-input-switchery"
+                                    {{ $page['status'] ? 'checked' : '' }}>
+                            </label>
+                        </div>
+                    </td>
+                    <td class="text-center">
+                        <a href="{{ route('page.admin.edit', $page['id']) }}" class="text-warning mr-2"
+                            data-popup="tooltip" title="{{ trans('page::admin.edit') }}"><i class="fa fa-edit"></i></a>
+                        <a href="javascript:;" onclick="askToDeletePage(this);return false;"
+                            data-href="{{ route('page.admin.delete', $page['id']) }}" class="text-danger"
+                            data-popup="tooltip" title="{{ trans('page::admin.delete') }}"><i
+                                class="fas fa-trash-alt"></i></a>
+                    </td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
+    @else
+    <div class="card-body">
+        <div class="alert alert-info">
+            {{ trans('page::admin.datayet') }}
+        </div>
+    </div>
+    @endif
 </div>
-@if (count($pages) > 0)
-<div id="table-conten">
-    <table class="table table-bordered card-body table-active">
-        <thead class="bg-light">
-            <tr>
-                <th class="text-center" style="width:100px">{{ trans('page::admin.order') }}</th>
-                <th class="text-center">{{ trans('page::admin.name_page') }}</th>
-                <th class="text-center">
-                    <img src="{{ asset('assets/admin/images/vn.svg') }}" alt="" width="20" height="20" srcset="" class="mr-2">
-                </th>
-                <th class="text-center">
-                    <img src="{{ asset('assets/admin/images/en.svg') }}" alt="" width="20" height="20" srcset="" class="mr-2">
-                </th>
-                <th class="text-center">{{ trans('page::admin.action_page') }}</th>
-                <th class="text-center">{{ trans('page::admin.status_page') }}</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach ($pages as $i => $page)
-            @foreach ($page->ptranstion as $j => $item)
-            <tr>
-                @if ($j==0)
-                <td class="text-center" rowspan="{{ count($page->ptranstion) }}">
-                    <span style="display:none;">{{ $page['order'] }}</span>
-                    <select data-min="{{ $minOrder }}" data-max="{{ $maxOrder }}" data-order="{{ $page['order'] }}" data-id="{{ $page['id'] }}" class="form-control changOrderPage"></select>
-                </td>
-                @endif
-                @if ($j==0)
-                <td class="text-left">{{ $item->title }}</td>
-                @else
-                <td class="text-left">{{ $item->title }}</td>
-                @endif
-                @if (count($page->ptranstion) == 2)
-                <td class="text-center">
-                    <a href="{{ $item['locale'] == 'vi' ? route('page.admin.edit', ['lang'=> 'vi', $page['id']]) : route('page.admin.edit', ['lang'=>'vi', $page['id'] ]) }}" data-popup="tooltip" title="{{ trans('page::admin.edit') }}">
-                        {!! $item['locale'] == 'vi' ? '<i class="fa fa-check" aria-hidden="true"></i>' : '<i class="fa fa-edit" aria-hidden="true"></i>' !!}
-                    </a>
-                </td>
-                <td class="text-center">
-                    <a href="{{ $item['locale'] == 'en' ? route('page.admin.edit',['lang'=> 'en', $page['id']]) : route('page.admin.edit', ['lang'=>'en', $page['id'] ]) }}" data-popup="tooltip" title="{{ trans('page::admin.edit') }}">
-                        {!! $item['locale'] == 'en' ? '<i class="fa fa-check" aria-hidden="true"></i>' : '<i class="fa fa-edit" aria-hidden="true"></i>' !!}
-                    </a>
-                </td>
-                @else
-                <td class="text-center">
-                    <a href="{{ $item['locale'] == 'vi' ? route('page.admin.edit', ['lang'=> 'vi', $page['id']]) : route('page.admin.create', ['lang'=>'vi', 'page_id' =>$page['id'] ]) }}" data-popup="tooltip" title="{{ $item['locale'] == 'vi' ? trans('page::admin.edit') : trans('page::admin.add_page') }}">
-                        {!! $item['locale'] == 'vi' ? '<i class="fa fa-check" aria-hidden="true"></i>' : '<i class="fa fa-plus" aria-hidden="true"></i>' !!}
-                    </a>
-                </td>
-                <td class="text-center">
-                    <a href="{{ $item['locale'] == 'en' ? route('page.admin.edit', ['lang'=> 'en', $page['id']]) : route('page.admin.create', ['lang'=>'en', 'page_id' =>$page['id'] ]) }}" data-popup="tooltip" title="{{ $item['locale'] == 'en' ? trans('page::admin.edit') : trans('page::admin.add_page') }}">
-                        {!! $item['locale'] == 'en' ? '<i class=" fa fa-check" aria-hidden="true"></i>' : '<i class="fa fa-plus" aria-hidden="true"></i>' !!}
-                    </a>
-                </td>
-                @endif
-                <td class="text-center">
-                    <a href="javascript:;" onclick="askToDeletePage(this);return false;" data-href="{{ route('page.admin.delete', $item['id']) }}" class="text-danger" data-popup="tooltip" title="{{ trans('page::admin.delete') }}"><i class="fas fa-trash-alt"></i></a>
-                </td>
-                @if ( $j==0)
-                <td class="text-center" rowspan="{{ count($page->ptranstion) }}">
-                    <div class="form-check form-check-switchery form-check-switchery-sm">
-                        <label class="form-check-label">
-                            <input data-id="{{ $page['id'] }}" type="checkbox" class="form-input-switchery" {{ $page['status'] ? 'checked' : '' }}>
-                        </label>
-                    </div>
-                </td>
-                @endif
-            </tr>
-            @endforeach
-            @endforeach
-        </tbody>
-    </table>
-</div>
-@else
-<div class="alert alert-info mt-2">
-    {{ trans('page::admin.datayet') }}
-</div>
-@endif
 @endsection
 @section('custom_js')
 <script>

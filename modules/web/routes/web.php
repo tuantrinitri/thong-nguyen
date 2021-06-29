@@ -31,14 +31,14 @@ Route::group(['namespace' => '\Modules\Web\Http\Controllers', 'middleware' => 'w
         'uses' => 'WebController@search',
     ]);
 
-    Route::get('category', [
-        'as' => 'web.category',
-        'uses' => 'WebController@category',
-    ]);
+    // Route::get('category', [
+    //     'as' => 'web.category',
+    //     'uses' => 'WebController@category',
+    // ]);
 
-    Route::get('post', [
-        'as' => 'web.post',
-        'uses' => 'WebController@post',
-    ]);
+    // Route::get('post', [
+    //     'as' => 'web.post',
+    //     'uses' => 'WebController@post',
+    // ]);
 
 });

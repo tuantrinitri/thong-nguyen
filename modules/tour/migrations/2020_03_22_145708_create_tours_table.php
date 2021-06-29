@@ -14,13 +14,13 @@ class CreateToursTable extends Migration
     public function up()
     {
         // dia diem 
-        Schema::create('lcoations', function (Blueprint $table) {
+        Schema::create('locations', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
             $table->unsignedTinyInteger('status')->default(1);
             $table->timestamps();
         });
-        // tour du lic
+        // tour du lich
         Schema::create('tours', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');

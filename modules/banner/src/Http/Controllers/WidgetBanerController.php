@@ -23,7 +23,7 @@ class WidgetBanerController extends BaseController
    {
       page_title()->setTitle('Danh sách Widget baner');
       $widgets = $this->widgetRepository->orderBy('id', 'desc')->paginate(20);
-      dd($widgets);
+      // dd($widgets);
       return view('banner::admin.banner.list', compact('banners'));
    }
 }

@@ -3,10 +3,8 @@
 namespace Modules\Page\Repositories\Eloquents;
 
 use Core\Supports\Repositories\Eloquents\BaseRepository;
-use Illuminate\Support\Facades\DB;
 use Modules\Page\Models\Page;
 use Modules\Page\Repositories\Interfaces\PageInterface;
-use Modules\Page\Repositories\Interfaces\PageTranslationInterface;
 
 class PageRepository extends BaseRepository implements PageInterface
 {
@@ -20,76 +18,48 @@ class PageRepository extends BaseRepository implements PageInterface
         return Page::class;
     }
 
-    public function index()
-    {
-        return  $this->with('ptranstion')->get();
-    }
-
     public function createPage($request)
     {
-        try {
-            $data = $request->all();
-            $oldPage = $this->where('slug', $data['slug'])->first();
-            if ($oldPage) {
-                app(PageTranslationInterface::class)->create([
-                    'content' => $data['content'],
-                    'title' => $data['title'],
-                    'description' => $data['description'],
-                    'page_id' => $oldPage['id'],
-                    'locale' => $data['locale']
-                ]);
-            } else {
-                DB::transaction(function () use ($data) {
-                    $id_page = $this->create([
-                        'image' => $data['image'],
-                        'slug' => $data['slug'],
-                        'status' => $data['status'],
-                        'order' => $this->max('order') ? $this->max('order') + 1 : 1
-                    ])->id;
-                    if ($id_page) {
-                        app(PageTranslationInterface::class)->create([
-                            'content' => $data['content'],
-                            'title' => $data['title'],
-                            'description' => $data['description'],
-                            'page_id' => $id_page,
-                            'locale' => $data['locale']
-                        ]);
-                    }
-                });
-            }
-            return true;
-        } catch (Throwable $th) {
-            return $th;
-        }
+        $maxOrder = $this->max('order');
+        $new_page = $this->create([
+            'title' => $request->title,
+            'slug' => empty($request->slug) ? str_slug($request->title) : $request->slug,
+            'image' => $request->image,
+            'description' => $request->description,
+            'content' => $request->content,
+            'status' => $request->status,
+            'seo_title' => $request->seo_title,
+            'seo_description' => $request->seo_description,
+            'seo_image' => $request->seo_image,
+            'seo_keywords' => $request->seo_keywords,
+            'order' => $maxOrder ? $maxOrder + 1 : 1
+        ]);
+        return $new_page;
     }
 
-    public function updatePage($request)
+    public function editPage($request, $id)
     {
-        try {
-            DB::transaction(function () use ($request) {
-                app(PageTranslationInterface::class)->where('page_id', $request->id)->where('locale', $request->locale)->update([
-                    'content' => $request->content,
-                    'title' => $request->title,
-                    'description' => $request->description,
-                    'page_id' => $request->id
-                ]);
-                $this->update([
-                    'image' => $request->image,
-                    'slug' => $request->slug,
-                    'status' => $request->status,
-                ], $request->id);
-            });
-        } catch (Throwable $th) {
-            return $th;
-        }
+        $edit_page = $this->update([
+            'title' => $request->title,
+            'slug' => empty($request->slug) ? str_slug($request->title) : $request->slug,
+            'image' => $request->image,
+            'description' => $request->description,
+            'content' => $request->content,
+            'status' => $request->status,
+            'seo_title' => $request->seo_title,
+            'seo_description' => $request->seo_description,
+            'seo_image' => $request->seo_image,
+            'seo_keywords' => $request->seo_keywords
+        ], $id);
+        return $edit_page;
     }
 
-    public function getListPageWhereNotInID($id)
+    public function getListPageWhereNotInID(int $id)
     {
         return Page::where([['id', '!=', $id]])->orderBy('order', 'asc')->get();
     }
 
-    public function getDetailsPageBySlug($slug)
+    public function getDetailsPageBySlug(string $slug)
     {
         return Page::where('slug', $slug)->first();
     }

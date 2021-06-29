@@ -9,8 +9,8 @@
                     <!-- breadcrumb -->
                     <nav class="breadcrumbs">
                         <ul>
-                            <li><a href="#">HOME</a></li>
-                            <li><span>Blog</span></li>
+                            <li><a href="#">TRANG CHỦ</a></li>
+                            <li><span>TIN TỨC</span></li>
                         </ul>
                     </nav>
                 </div>
@@ -22,56 +22,41 @@
 
         <div class="common-spacing blog-full-width">
             <div class="container">
-                <div id="two-columns">
-                    <div id="content">
+                <div>
+                    <div>
                         <div class="blog-holder">
                             <!-- blog list -->
                             <div class="blog-list">
-                                @foreach ($category->posts() as $post)
-                                
+                                @foreach ($posts as $post)
+                                    {{-- @dd($post['image']) --}}
                                     <article class="article blog-article">
                                         <div class="img-wrap">
-                                            <a href="{{ route('post.web.post', $post['slug']) }}"><img
-                                                    src="{{ asset($post['image'],) }}" height="480"
-                                                    width="870" alt="image description"></a>
+
+                                            <a href="#"><img src="{{ asset($post['image']) }}" height="480" width="870"
+                                                    alt="image description"></a>
                                         </div>
                                         <div class="description">
                                             <header class="heading">
-                                        
-                                                <h3><a href="{{ route('post.web.post', $post['slug']) }}">{{ $post->title }}</a></h3>
+
+                                                <h3><a
+                                                        href="{{ route('web.post.post', $post->slug) }}">{{ $post->title }}</a>
+                                                </h3>
                                                 <time class="info-day" datetime="2011-01-12">Aug 11</time>
                                             </header>
-                                            <p>{{ Str::limit($post->description, 300)  }}</p>
+                                            <p>{{ Str::limit($post->description, 300) }}</p>
                                             <footer class="meta">
-                                                <div class="star-rating">
-                                                    <span><span class="icon-star"></span></span>
-                                                    <span><span class="icon-star"></span></span>
-                                                    <span><span class="icon-star"></span></span>
-                                                    <span><span class="icon-star"></span></span>
-                                                    <span class='disable'><span class="icon-star"></span></span>
-                                                </div>
+
                                                 <div class="rate-info">
                                                     Post by <a href="#">Ian Lee</a>
                                                 </div>
-                                                <div class="comment">
-                                                    <a href="#">37 Comments</a>
-                                                </div>
-                                                <ul class="ico-action">
-                                                    <li>
-                                                        <a href="#"><span class="icon-share"></span></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><span class="icon-favs"></span></a>
-                                                    </li>
-                                                </ul>
+
                                             </footer>
                                             <div class="link-view">
-                                                <a href="{{ route('post.web.post', $post['slug']) }}">Xem thêm</a>
+                                                <a href="#">Xem thêm</a>
                                             </div>
                                         </div>
                                     </article>
- 								@endforeach
-								 
+                                @endforeach
                             </div>
                         </div>
                         <!-- pagination wrap -->
@@ -100,6 +85,6 @@
                 </div>
             </div>
         </div>
-       
+
     </main>
 @endsection
