@@ -26,6 +26,7 @@ class ItemController extends BaseController
         page_title()->setTitle('Thêm menu phụ');
         try {
             $menu = $this->itemRepository->createItem($id);
+            // dd($menu);
             return view('menu::admin.item.create', compact('menu'));
         } catch (\Throwable $th) {
             return redirect()->route('menu.admin.index')->with('flash_data', ['type' => 'warning', 'message' => 'Không tìm thấy khối menu']);

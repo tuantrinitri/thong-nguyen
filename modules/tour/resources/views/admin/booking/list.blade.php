@@ -2,56 +2,18 @@
 @section('page_content')
     <div class="page-header-content header-elements-md-inline">
         <div class="page-title d-flex">
-            <h4><i class="far fa-newspaper mr-2"></i> <span class="font-weight-semibold">Tour</span> - Danh sách
+            <h4><i class="far fa-newspaper mr-2"></i> <span class="font-weight-semibold">Booking</span> - Danh sách
             </h4>
             <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-        </div>
-        <div class="header-elements d-none">
-            <div class="d-flex justify-content-center">
-                <a href=""></a>
-                <a href="{{ route('tour.admin.create') }}" class="btn btn-primary btn-sm">Thêm tour mới</a>
-            </div>
         </div>
     </div>
     <div class="card-header border-bottom mb-0 header-elements-inline p-0">
         <div class="text-center" style="margin-top: 20px!important;width: 100%;padding-left: 10px;padding-right: 10px;">
-            {{-- <form action="#" method="GET">
-                <div class="row">
-                    <div class="col-12 col-md-3 mt-1">
-                        <div class="form-group">
-                            <input type="text" placeholder="{{ trans('post::post.search') }}" class="form-control"
-                                name="title" value="{{ isset($param['title']) ? $param['title'] : '' }}">
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-2 mt-1">
-                        <div class="form-group">
-                            <select class="form-control" name="categoryId">
-                                <option value="-1"
-                                    {{ (isset($param['category_id']) ? $param['category_id'] : -1) == -1 ? 'selected' : '' }}>
-                                    {{ trans('post::category.all') }}</option>
-                                @foreach ($categories as $iCat)
-                                    <option value="{{ $iCat['id'] }}"
-                                        {{ old('categoryId', isset($param['categoryId']) ? $param['categoryId'] : '') == $iCat['id'] ? 'selected' : '' }}>
-                                        {{ $iCat['prefix'] }} {{ $iCat['title'] }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3 mt-1">
-                        <input autocomplete="off" name="created_at" type="text" class="form-control daterange-basic"
-                            value="{{ isset($param['created_at']) ? $param['created_at'] : '' }}">
-                    </div>
-                    <div class="col-12 col-md-2 mt-1 mb-1">
-                        <button type="submit" class="btn btn-info"><i class="fas fa-filter mr-2"></i></button>
-                        <a href="{{ route('post.admin.index') }}" class="btn btn-warning"><i
-                                class="fas fa-trash-restore-alt"></i></a>
-                    </div>
-                </div>
-            </form> --}}
+
         </div>
     </div>
 
-    @if (isset($tours) && count($tours) > 0)
+    @if (isset($bookings) && count($bookings) > 0)
 
         {{-- thay  tìm class rồi thay vào =  class="table-scrollable" --}}
         <div class="table-scrollable">
@@ -59,53 +21,50 @@
                 <thead>
                     <tr>
                         <th class="text-center">#</th>
-                        <th>Tiêu đề</th>
-                        <th class="text-center">Địa điểm</th>
-                        <th class="text-center">Liên hệ</th>
-                        <th class="text-center">Giá tour</th>
-                        <th class="text-center">Thời gian</th>
-                        <th class="text-center">Trạng thái</th>
+                        <th>Khách hàng</th>
+                        <th class="text-center">Điạ chỉ</th>
+                        <th class="text-center">Số khách</th>
+                        <th class="text-center">Email</th>
+                        <th class="text-center">Số điện thoại</th>
+                        <th class="text-center">Ghi chú</th>
+                        <th style="width:100px;">Trạng thái</th>
                         <th style="width:100px;">Thao tác</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($tours as $tour)
-                        {{-- @dd($tour) --}}
+                    @foreach ($bookings as $booking)
+                        {{-- @dd($booking) --}}
                         <tr>
-                            <td class="text-center">{{ $tour['tour_code'] }}</td>
+                            <td class="text-center">{{ $booking['id'] }}</td>
                             <td>
-                                <strong>{{ Str::limit($tour['title'], 40) }}</strong>
+                                <strong>{{ $booking['customer'] }}></strong>
                             </td>
                             <td class="text-center">
-                                <strong>{{ $tour->location['title'] }}</strong>
+                                {{ $booking['address'] }}
                             </td>
-                            <td class="text-center">{{ $tour['contact_us'] }}</td>
+                            <td class="text-center">{{ $booking['total_customer'] }}</td>
 
-                            <td class="text-center">{{ $tour['total_date'] }}</td>
+                            <td class="text-center">{{ $booking['email'] }}</td>
 
-                            <td class="text-center">{{ $tour['price'] }}</td>
-
+                            <td class="text-center">{{ $booking['phone'] }}</td>
+                            <td class="text-center">{{ $booking['note'] }}</td>
 
                             <td class="text-center">
-                                {{-- <span style="display:none;">{{ $tour['status'] }}</span> --}}
-                                {{ $tour['status'] == 1 ? 'Đang hoạt động' : 'Tạm ngưng' }}
+                                {{ $booking['status'] == 1 ? 'Đang hoạt động' : 'Tạm ngưng' }}
                             </td>
 
                             <td class="text-center">
-                                <a href="{{ route('tour.admin.edit', $tour['id']) }}" class="text-warning mr-2"
-                                    data-popup="tooltip" title="Sửa"><i class="fa fa-edit"></i></a>
+                                <a href="{{ route('tour.admin.cancel', $booking['id']) }}" class="text-danger mr-2"
+                                    data-popup="tooltip" title="Hủy "><i class="fa fa-trash-o"></i></a>
 
-                                <a href="javascript:;" onclick="askToDelete(this);return false;"
-                                    data-href="{{ route('tour.admin.delete', $tour['id']) }}" class="text-danger"
-                                    data-popup="tooltip" title="Xóa"><i class="fa fa-trash-o"></i></a>
 
                             </td>
                         </tr>
                     @endforeach
                 </tbody>
-                {{-- @if ($tours->links('vendor.pagination.bootstrap-4'))
+                {{-- @if ($bookings->links('vendor.pagination.bootstrap-4'))
                     <div class="cms-paginate float-right mr-3">
-                        {{ $tours->links('vendor.pagination.bootstrap-4') }}
+                        {{ $bookings->links('vendor.pagination.bootstrap-4') }}
                     </div>
                 @endif --}}
             </table>

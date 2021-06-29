@@ -32,21 +32,36 @@
 <script src="{{ asset('assets/admin2/plugins/material/material.min.js') }}"></script>
 <!-- animation -->
 <script src="{{ asset('assets/admin2/js/pages/ui/animations.js') }}"></script>
-<!-- morris chart -->
-<script src="{{ asset('assets/admin2/plugins/morris/morris.min.js') }}"></script>
-<script src="{{ asset('assets/admin2/plugins/morris/raphael-min.js') }}"></script>
-<script src="{{ asset('assets/admin2/js/pages/chart/morris/morris_home_data.js') }}"></script>
-<script src="{{ asset('assets/admin/js/dev.custom.js') }}"></script>
-<!-- end   -->
 
+
+<script src="{{ asset('assets/admin/js/plugins/ui/headroom.min.js') }}"></script>
+<script src="{{ asset('assets/js.cookie.min.js') }}"></script>
+
+<script src="{{ asset('assets/admin/js/plugins/notifications/sweet_alert.min.js') }}"></script>
+<script src="{{ asset('assets/admin/js/plugins/forms/styling/uniform.min.js') }}"></script>
+<script src="{{ asset('assets/admin/js/plugins/ui/dragula.min.js') }}"></script>
+<script src="{{ asset('assets/admin/js/plugins/forms/styling/switchery.min.js') }}"></script>
+<script src="{{ asset('assets/admin/js/plugins/forms/styling/switch.min.js') }}"></script>
+
+<script src="{{ asset('assets/admin/js/noty.min.js') }}"></script>
 @if (request()->route()->action['as'] != 'login')
     <script src="{{ asset('assets/admin/js/notification.js') }}"></script>
 @endif
-{{-- <script src="{{ asset('vendor/datatables/datatables.min.js') }}"></script>
+<script src="{{ asset('assets/admin/js/main/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('assets/admin/js/plugins/loaders/blockui.min.js') }}"></script>
+<script src="{{ asset('assets/admin/js/plugins/ui/ripple.min.js') }}"></script>
+<!-- /core JS files -->
+
+<script src="{{ asset('assets/admin/js/plugins/ui/perfect_scrollbar.min.js') }}"></script>
+<script src="{{ asset('assets/admin/js/plugins/ui/headroom.min.js') }}"></script>
+<script src="{{ asset('assets/js.cookie.min.js') }}"></script>
+
+
+<script src="{{ asset('vendor/datatables/datatables.min.js') }}"></script>
 <script src="{{ asset('vendor/datatables/buttons.server-side.js') }}"></script>
-<script src="{{ asset('assets/admin/js/dev.custom.js') }}"></script> --}}
+<script src="{{ asset('assets/admin/js/dev.custom.js') }}"></script>
 <!-- /theme JS files -->
-{{-- <script>
+<script>
     (function($, DataTable) {
 
         // Datatable global configuration
@@ -72,12 +87,10 @@
         });
 
     })(jQuery, jQuery.fn.dataTable);
-
 </script>
 <script>
     $(document).ready(function() {
         $('.form-check-input-styled').uniform();
-
         var navbarTop = document.querySelector('.navbar-slide-top');
         if (navbarTop) {
             // Construct an instance of Headroom, passing the element
@@ -123,5 +136,4 @@
             app.showNotify("{{ $flash_data['message'] }}", "{{ $flash_data['type'] }}");
         @endif
     });
-
-</script> --}}
+</script>

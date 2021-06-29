@@ -102,10 +102,19 @@ class TourServiceProvider extends ServiceProvider
                 ])
                 ->registerItem([
                     'id'          => 'mod-tour-list',
+                    'priority'    => 2,
+                    'parent_id'   => 'mod-tour',
+                    'name'        => 'Danh sách tour',
+                    'url'         => route('tour.admin.list'),
+                    'permissions' => [],
+                ])
+                ->registerItem([
+                    'id'          => 'mod-tour-add',
                     'priority'    => 1,
                     'parent_id'   => 'mod-tour',
-                    'name'        => 'tour::admin.list_tour',
-                    'url'         => route('tour.admin.list'),
+                    'name'        => 'Thêm tour du lịch',
+                    'icon'        => null,
+                    'url'         => route('tour.admin.create'),
                     'permissions' => [],
                 ]);
         });

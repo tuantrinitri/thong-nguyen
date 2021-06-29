@@ -11,23 +11,66 @@ Route::group(['namespace' => '\Modules\Tour\Http\Controllers', 'middleware' => '
         ]);
         Route::get('create', [
             'as' => 'tour.admin.create',
-            'uses' => 'TourController@getCreate'
+            'uses' => 'TourController@create'
         ]);
         Route::post('create', [
             'as' => 'tour.admin.create',
-            'uses' => 'TourController@postCreate'
+            'uses' => 'TourController@store'
         ]);
         Route::get('edit/{id}', [
             'as' => 'tour.admin.edit',
-            'uses' => 'TourController@getEdit'
+            'uses' => 'TourController@edit'
         ]);
         Route::post('edit/{id}', [
             'as' => 'tour.admin.edit',
-            'uses' => 'TourController@postEdit'
+            'uses' => 'TourController@update'
         ]);
         Route::get('delete/{id}', [
             'as' => 'tour.admin.delete',
-            'uses' => 'TourController@getDelete'
+            'uses' => 'TourController@delete'
+        ]);
+
+        Route::get('location', [
+            // 'as' => 'tour.admin.delete',
+            'uses' => 'TourController@location'
+        ]);
+
+        Route::get('booking', [
+            'as' => 'tour.admin.booking',
+            'uses' => 'TourController@booking'
+        ]);
+
+        Route::get('booking/cancel/{id}', [
+            'as' => 'tour.admin.cancel',
+            'uses' => 'TourController@cancel'
         ]);
     });
+});
+
+
+/**
+ * ROUTES FOR WEB: TOur
+ */
+Route::group(['namespace' => '\Modules\Tour\Http\Controllers'], function () {
+
+    Route::get('danh-sach-tour', [
+        'as' => 'web.tour.list',
+        'uses' => 'WebController@listTour'
+    ]);
+
+    Route::get('chi-tiet-tours/{id}', [
+        'as' => 'web.tour.detail',
+        'uses' => 'WebController@tour'
+    ]);
+
+    Route::get('dat-tours/{id}', [
+        'as' => 'web.tour.booking',
+        'uses' => 'WebController@booking'
+    ]);
+
+
+    Route::post('dat-tours/{id}', [
+        'as' => 'web.tour.booking',
+        'uses' => 'WebController@bookingStore'
+    ]);
 });

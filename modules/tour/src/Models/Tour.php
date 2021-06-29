@@ -10,7 +10,27 @@ class Tour extends Model
 
     protected $fillable = [
         'id',
-        'title',
-        'status'
+        'title', // tieu de tour
+        'description', // Mo ta ngan
+        'tour_code', // ma tour
+        'date_go', // ngay di
+        'price', // gia
+        'leave_from', // diem du lich 
+        'total_date', // tong so ngay
+        'contact_us', // lien he
+        'locaion_id',
+        'image_tour', // lien he
+        'status',
     ];
+
+    public function location()
+    {
+        return $this->belongsTo(Location::class, 'locaion_id');
+    }
+
+
+    public function calendarTour()
+    {
+        return $this->hasOne(TourContent::class, 'tour_id');
+    }
 }
